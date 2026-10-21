@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kaagaz vendored copy of Godavari's LendingService WSDL (stand-in). Changes from the served file:
+     - removed <xsd:import> of common.xsd from corelend-dev01 (host unreachable); CoreError inlined into tns
+     - fault message part now references tns:CoreError instead of cmn:CoreError
+     - soap:address set to http://localhost/placeholder; the client always passes the real address
+     Reviewed with the core-system owner. Do not edit by hand: run wsdl_gen. -->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://core.godavarifinance.example/lending/2009"
+    targetNamespace="http://core.godavarifinance.example/lending/2009" name="LendingService">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://core.godavarifinance.example/lending/2009" elementFormDefault="qualified">
+      <xsd:complexType name="ApplicationType">
+        <xsd:sequence>
+          <xsd:element name="FILE_NO" type="xsd:string"/>
+          <xsd:element name="BRANCH_CD" type="xsd:string"/>
+          <xsd:element name="PROD_CD" type="xsd:string"/>
+          <xsd:element name="SCHM_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="SRC_CHNL" type="xsd:string"/>
+          <xsd:element name="APPL_DT" type="xsd:string"/>
+          <xsd:element name="EXT_REF" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ENTRY_USR" type="xsd:string"/>
+          <xsd:element name="VRFY_USR" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="APPL_NM" type="xsd:string"/>
+          <xsd:element name="APPL_DOB" type="xsd:string"/>
+          <xsd:element name="APPL_GNDR" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="PAN_NO" type="xsd:string"/>
+          <xsd:element name="AADH_REF" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="MOB_NO" type="xsd:string"/>
+          <xsd:element name="ALT_MOB_NO" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="EMAIL_ID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ADDR_LN1" type="xsd:string"/>
+          <xsd:element name="ADDR_LN2" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ADDR_LN3" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CITY_NM" type="xsd:string"/>
+          <xsd:element name="DIST_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="STATE_CD" type="xsd:string"/>
+          <xsd:element name="PIN_CD" type="xsd:string"/>
+          <xsd:element name="ADDR_PRF_CD" type="xsd:string"/>
+          <xsd:element name="RES_TYP" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="YRS_AT_ADDR" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="CUST_FLG_1" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CUST_FLG_2" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CUST_FLG_3" type="xsd:string"/>
+          <xsd:element name="CUST_FLG_4" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="EMP_NM" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="EMP_TYP" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="MNTH_INC" type="xsd:decimal"/>
+          <xsd:element name="INC_PRF_CD" type="xsd:string"/>
+          <xsd:element name="BANK_ACC_LST4" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="BANK_IFSC" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="LOAN_AMT" type="xsd:decimal"/>
+          <xsd:element name="TENOR_MM" type="xsd:decimal"/>
+          <xsd:element name="ROI_PCT" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="EMI_AMT" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="PURP_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="DLR_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ONRD_PRC" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="QTN_DT" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="VEH_MAKE" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="VEH_MODEL" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="GOLD_GRS_WT" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="GOLD_NET_WT" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="GOLD_PURITY" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="APPR_DT" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="APPR_ID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CO_APPL_FLG" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CO_APPL_NM" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CO_APPL_PAN" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CO_APPL_REL" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="KYC_STAT" type="xsd:string"/>
+          <xsd:element name="DOC_CNT" type="xsd:decimal"/>
+          <xsd:element name="RMK_TXT" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="RM_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CNSNT_FLG" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ApplicationSummaryType">
+        <xsd:sequence>
+          <xsd:element name="APPL_ID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="FILE_NO" type="xsd:string"/>
+          <xsd:element name="BRANCH_CD" type="xsd:string"/>
+          <xsd:element name="APPL_STAT" type="xsd:string"/>
+          <xsd:element name="EXT_REF" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CRT_TS" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ApplicationDetailType">
+        <xsd:sequence>
+          <xsd:element name="APPL_ID" type="xsd:string"/>
+          <xsd:element name="FILE_NO" type="xsd:string"/>
+          <xsd:element name="BRANCH_CD" type="xsd:string"/>
+          <xsd:element name="PROD_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="APPL_STAT" type="xsd:string"/>
+          <xsd:element name="KYC_STAT" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="LOAN_AMT" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="TENOR_MM" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="MNTH_INC" type="xsd:decimal" minOccurs="0"/>
+          <xsd:element name="CUST_FLG_3" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="DLR_CD" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="EXT_REF" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ENTRY_USR" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="VRFY_USR" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="APPL_NM" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="PAN_NO" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="MOB_NO" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CR_CHK_RSLT" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CRT_TS" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="LST_UPD_TS" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="CoreError">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Code" type="xsd:string"/>
+            <xsd:element name="Field" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="Text" type="xsd:string" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateApplicationRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Application" type="tns:ApplicationType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateApplicationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="APPL_ID" type="xsd:string"/>
+            <xsd:element name="APPL_STAT" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetApplicationByFileNumberRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="FILE_NO" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetApplicationByFileNumberResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ApplicationSummary" type="tns:ApplicationSummaryType" minOccurs="0" maxOccurs="unbounded"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetApplicationRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="APPL_ID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetApplicationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ApplicationDetail" type="tns:ApplicationDetailType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateKYCStatusRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="APPL_ID" type="xsd:string"/>
+            <xsd:element name="KYC_STAT" type="xsd:string"/>
+            <xsd:element name="RSN_CD" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="USR_ID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateKYCStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="APPL_ID" type="xsd:string"/>
+            <xsd:element name="KYC_STAT" type="xsd:string"/>
+            <xsd:element name="HIST_SEQ" type="xsd:decimal"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CoreFault">
+    <wsdl:part name="fault" element="tns:CoreError"/>
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByFileNumberInput">
+    <wsdl:part name="parameters" element="tns:GetApplicationByFileNumberRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByFileNumberOutput">
+    <wsdl:part name="parameters" element="tns:GetApplicationByFileNumberResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationInput">
+    <wsdl:part name="parameters" element="tns:CreateApplicationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationOutput">
+    <wsdl:part name="parameters" element="tns:CreateApplicationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetApplicationInput">
+    <wsdl:part name="parameters" element="tns:GetApplicationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetApplicationOutput">
+    <wsdl:part name="parameters" element="tns:GetApplicationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateKYCStatusInput">
+    <wsdl:part name="parameters" element="tns:UpdateKYCStatusRequest"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateKYCStatusOutput">
+    <wsdl:part name="parameters" element="tns:UpdateKYCStatusResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="LendingServicePortType">
+    <wsdl:operation name="GetApplicationByFileNumber">
+      <wsdl:input message="tns:GetApplicationByFileNumberInput"/>
+      <wsdl:output message="tns:GetApplicationByFileNumberOutput"/>
+      <wsdl:fault name="CoreFault" message="tns:CoreFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <wsdl:input message="tns:CreateApplicationInput"/>
+      <wsdl:output message="tns:CreateApplicationOutput"/>
+      <wsdl:fault name="CoreFault" message="tns:CoreFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplication">
+      <wsdl:input message="tns:GetApplicationInput"/>
+      <wsdl:output message="tns:GetApplicationOutput"/>
+      <wsdl:fault name="CoreFault" message="tns:CoreFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKYCStatus">
+      <wsdl:input message="tns:UpdateKYCStatusInput"/>
+      <wsdl:output message="tns:UpdateKYCStatusOutput"/>
+      <wsdl:fault name="CoreFault" message="tns:CoreFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LendingServiceBinding" type="tns:LendingServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetApplicationByFileNumber">
+      <soap:operation soapAction="urn:godavari:corelend:GetApplicationByFileNumber"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+      <wsdl:fault name="CoreFault"><soap:fault name="CoreFault" use="literal"/></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <soap:operation soapAction="urn:godavari:corelend:CreateApplication"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+      <wsdl:fault name="CoreFault"><soap:fault name="CoreFault" use="literal"/></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplication">
+      <soap:operation soapAction="urn:godavari:corelend:GetApplication"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+      <wsdl:fault name="CoreFault"><soap:fault name="CoreFault" use="literal"/></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKYCStatus">
+      <soap:operation soapAction="urn:godavari:corelend:UpdateKYCStatus"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+      <wsdl:fault name="CoreFault"><soap:fault name="CoreFault" use="literal"/></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LendingService">
+    <wsdl:port name="LendingServicePort" binding="tns:LendingServiceBinding">
+      <soap:address location="http://localhost/placeholder"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

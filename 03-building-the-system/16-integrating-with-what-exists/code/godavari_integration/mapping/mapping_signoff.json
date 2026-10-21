@@ -1,0 +1,9 @@
+{
+  "godavari_core_mapping.toml": {
+    "version": "1.3.0",
+    "fingerprint": "0b12e0a77d41e77011dba6e4c1171816f9a044a98bed6354f8e2cbd2a99736df",
+    "status": "reviewed",
+    "reviewed_by": "the core-system owner",
+    "reviewed_on": "2026-11-10"
+  }
+}

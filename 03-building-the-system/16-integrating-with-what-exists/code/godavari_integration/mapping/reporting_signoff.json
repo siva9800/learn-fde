@@ -1,0 +1,16 @@
+{
+  "database": "CORELEND reporting copy (nightly, 05:00), production",
+  "account": "RPT_KAAGAZ_RO",
+  "signed_by": "the core-system owner",
+  "signed_on": "2026-11-10",
+  "pii_exclusion_agreed_by": "the compliance head",
+  "note": "Columns not listed are denied by the reader's authorizer. Customer name, date of birth, PAN, mobile and address are deliberately not listed: they are read on demand from the core, for one file, by the analyst working it.",
+  "tables": {
+    "APPL_MST": ["APPL_ID", "FILE_NO", "BRANCH_CD", "PROD_CD", "APPL_STAT", "KYC_STAT", "LOAN_AMT", "EXT_REF", "ENTRY_USR", "CRT_TS", "LST_UPD_TS"],
+    "APPL_STAT_HIST": ["APPL_ID", "OLD_STAT", "NEW_STAT", "CHG_TS", "CHG_USR"],
+    "FILE_REG": ["FILE_NO", "BRANCH_CD", "REG_TS", "PAGE_CNT"],
+    "BRANCH_MST": ["BRANCH_CD", "BRANCH_NM", "REGION_CD", "STATE_CD"],
+    "CODE_MST": ["CODE_TYP", "CODE_VAL", "CODE_DESC", "ACTIVE_FLG"],
+    "RPT_REFRESH_LOG": ["REFRESH_TS", "ROWS_COPIED"]
+  }
+}

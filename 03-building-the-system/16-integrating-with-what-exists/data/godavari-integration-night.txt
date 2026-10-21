@@ -1,0 +1,104 @@
+== Day 16 · integrating with what exists: one night of Godavari's integration, offline ==
+mapping 1.3.0 (reviewed by the core-system owner, 2026-11-10): 61 core fields, 40 mapped, 21 not ours; problems: 0
+input: Day 7's sample through Day 11's pipeline: 27 Kukatpally files, 12 routed ready or review and approved by the analysts
+
+-- A. DUPLICATE_ON_RETRY, reproduced against the stand-in core --
+   two creates tonight get a late reply (1.2 s against a 0.5 s client timeout):
+   commit_then_stall = the core commits, the reply is lost; stall_then_commit = the core commits after
+   the client gave up. Same ten approved files each time, fresh sandbox each time.
+   mode               client                     applications  files duplicated
+   commit_then_stall  naive (the 2022 vendor)              12                 2
+   commit_then_stall  lookup, then retry at once           10                 0
+   commit_then_stall  safe writer                          10                 0
+   stall_then_commit  naive (the 2022 vendor)              12                 2
+   stall_then_commit  lookup, then retry at once           12                 2
+   stall_then_commit  safe writer                          10                 0
+
+-- B. The stale sandbox: the same create, July's rules against August's --
+   sandbox          GF-25040 without DLR_CD -> created AP0000000001
+   production-like  GF-25040 without DLR_CD -> CL-E023 MANDATORY FIELD MISSING: DLR_CD
+   mapping 1.3.0 sends DLR_CD for every two-wheeler file; known drift SBX-01 records why (contracts/)
+
+-- C. The night of Thursday 12 November 2026 --
+02:00 Godavari's job (simulated): 27 files to HYD/20261112 with manifest and .done; 27 shells registered
+02:30 poll: late 1, partial 1, picked 26
+   GF-25129: 1793 of 3587 bytes; held for the next poll
+   GF-25035: on disk, not in the manifest: held for the next night's manifest
+03:30 poll: already_picked 26, late 1, picked 1
+   GF-25035: on disk, not in the manifest: held for the next night's manifest
+04:10 re-run: already_picked 27, late 1
+   GF-25035: on disk, not in the manifest: held for the next night's manifest
+picked up and staged: 27 files, each under a temporary name, hash-checked, then renamed
+
+11:00 the owner keys GF-25010 by hand in the sandbox, to see what a shell looks like
+16:10 the analysts' approved files go to the writer:
+   GF-25001 confirmed        AP0000000002  created
+   GF-25003 confirmed        AP0000000003  created
+   GF-25010 exists_not_ours  AP0000000001  an application was already keyed for this file; not created
+   GF-25040 unknown                        no reply: AmbiguousOutcome; lookup after 2 s quiet
+   GF-25100 confirmed        AP0000000005  created
+   GF-25115 confirmed        AP0000000006  created
+   GF-25122 unknown                        no reply: AmbiguousOutcome; lookup after 2 s quiet
+   GF-25129 confirmed        AP0000000007  created
+   GF-25147 confirmed        AP0000000009  created
+   GF-25148 failed                         mapping: INC_PRF_CD (Income proof submitted) is mandatory and income_p
+   GF-25183 failed                         mapping: INC_PRF_CD (Income proof submitted) is mandatory and income_p
+17:40 GF-25179 approved late: deferred: write window closed; held until 20:00
+17:50 resolving no-reply writes (quiet period 2 s here; 90 s in production):
+   GF-25040 confirmed        AP0000000004  resolved by lookup: the write had happened
+   GF-25122 confirmed        AP0000000008  resolved by lookup: the write had happened
+20:05 window open again: GF-25179 confirmed AP0000000010
+
+on demand: GF-AN-1142 opens GF-25001; PAN read from the core and shown as XXXXX4563X in every log; 2 views logged (1 from the 900 s cache)
+on demand: refused: purpose 'model_context' is not one the compliance head allowed
+
+trackers: 3 workbooks, 40 rows -> 37 queue items; 1 for a person, 1 conflict, 1 duplicate row merged
+   Tracker_GF-AN-1142_Nov26.xlsx: header on row 3, 18 columns recognised, 14 rows, skipped: row 18: a total row
+   Tracker_GF-AN-1157_Nov26.xlsx: header on row 1, 19 columns recognised, 13 rows
+   Tracker_GF-AN-1163_Nov26.xlsx: header on row 2, 19 columns recognised, 13 rows
+reporting copy refused: SELECT APPL_NM, PAN_NO FROM APPL_MST -> access to APPL_MST.APPL_NM is prohibited
+reporting copy refused: UPDATE APPL_MST SET APPL_STAT = 'K' -> not authorized
+Fri 02:30 poll: GF-25035 picked; GF-25040 rescan (version 2 of GF-25040: same application, new documents)
+
+06:00 reconciliation for the core-system owner: CLEAN
+   1. Our writes to the sandbox, checked against the core: ok
+      journal: confirmed 9, exists_not_ours 1, failed 2
+      looked up live: 10 files; exactly one application each: 10
+      duplicates: 0
+      journal says written, core disagrees: 0
+      GF-25010: already keyed by someone else (AP0000000001, no Kaagaz EXT_REF); we did not create a second one
+      GF-25148: failed: mapping: INC_PRF_CD (Income proof submitted) is mandatory and income_proof_kind is empty
+      GF-25183: failed: mapping: INC_PRF_CD (Income proof submitted) is mandatory and income_proof_kind is empty
+   2. Fields changed in the core after our write: ok
+      none
+   3. Our call log against your access log for SVC_KAAGAZ_SBX: ok
+      calls: ours 23, yours 23; 2 we logged as no-reply, which your log records as OK (the core did the work; we did not hear back)
+      write calls between 17:30 and the end of the batch: 0
+      files with more than one successful CreateApplication in your log: 0
+      CL-E099 busy faults: 0
+      | operation | outcome | our log | your log | difference
+      | CreateApplication | AMBIGUOUS | 2 | 0 | 2
+      | CreateApplication | OK | 7 | 9 | -2
+      | GetApplication | OK | 1 | 1 | 0
+      | GetApplicationByFileNumber | OK | 13 | 13 | 0
+   4. The 02:00 SFTP batch: ok
+      GF-25040: rescan: version 2 of GF-25040: same application, new documents
+      | poll | manifest rows | picked | re-scan | already picked | partial | late | missing | corrupt
+      | 1: HYD 12 Nov | 27 | 26 | 0 | 0 | 1 | 1 | 0 | 0
+      | 2: HYD 12 Nov | 27 | 1 | 0 | 26 | 0 | 1 | 0 | 0
+      | 3: HYD 12 Nov | 27 | 0 | 0 | 27 | 0 | 1 | 0 | 0
+      | 4: HYD 13 Nov | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0
+   5. The analysts' trackers against production (reporting copy): ok
+      tracker rows read: 40; queue items: 37; rows for a person: 1; conflicts: 1; duplicate rows merged: 1
+      for a person: Tracker_GF-AN-1163_Nov26.xlsx:4: not a file number: 'GF-2503'
+      conflict: GF-25001: Tracker_GF-AN-1142_Nov26.xlsx:4 says GF-AN-1142/received, Tracker_GF-AN-1163_Nov26.xlsx:12 says GF-AN-1163/received; the team lead decides
+      tracker and core disagree: 2
+      | file | tracker | core | what to check
+      | GF-25037 | verified | Q | tracker says verified, the core says query to branch
+      | GF-25147 | keyed | S | tracker says keyed, the core says shell
+   6. Codes in your CODE_MST that the mapping does not know: ok
+      APPLSTAT H 'ON HOLD - FRAUD CHECK': not in mapping 1.3.0; anything reading it fails closed until the owner reviews the meaning
+customer names or PANs in our journal, our log lines and the report: 0
+
+wrote data/reconciliation-2026-11-13.md, data/reconciliation-history.csv, data/kaagaz/, data/sources/
+elapsed: 60.6 s

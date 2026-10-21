@@ -1,0 +1,30 @@
+# Known differences between Godavari's sandbox and production, confirmed with the core-system owner.
+# Each entry names the test that holds our side of it, and expires: after the date, the build fails until
+# someone re-checks it with the owner (usually after the next quarterly refresh). Synthetic, for the course.
+
+[[drift]]
+id = "SBX-01"
+what = "DLR_CD is mandatory for PROD_CD TW in production since release R26.08 (August 2026); the sandbox, refreshed 2026-07-15, does not enforce it. The WSDL marks it optional in both."
+our_side = "mapping 1.3.0 sends DLR_CD for every two-wheeler file and fails closed if it is empty"
+test = "test_two_wheeler_without_dealer_passes_sandbox_and_fails_production"
+confirmed_by = "the core-system owner"
+confirmed_on = "2026-11-10"
+expires = "2027-01-31"
+
+[[drift]]
+id = "SBX-02"
+what = "CR_CHK_RSLT in the sandbox comes from credit rules three months behind production."
+our_side = "no test, report or model ever asserts on CR_CHK_RSLT from the sandbox"
+test = "test_contract_tests_never_assert_on_credit_check_result"
+confirmed_by = "the core-system owner"
+confirmed_on = "2026-11-10"
+expires = "2027-01-31"
+
+[[drift]]
+id = "SBX-03"
+what = "The sandbox's data stops at the July snapshot; the 02:00 job does not run against it, so shells for test files are registered by hand by the owner's team."
+our_side = "the night run registers shells itself for the stand-in; against the real sandbox, the owner registers them"
+test = "test_create_refuses_a_file_with_no_shell"
+confirmed_by = "the core-system owner"
+confirmed_on = "2026-11-10"
+expires = "2027-01-31"

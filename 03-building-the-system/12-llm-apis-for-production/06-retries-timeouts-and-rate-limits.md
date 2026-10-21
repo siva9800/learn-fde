@@ -65,8 +65,10 @@ report** (Anthropic's Usage and Cost API, or the console) every week.
 
 It also means the retried call is a second, separately billed request. For a model call, the harm of a
 repeat is cost, not a duplicate record. For a write to the core system it is a second loan application,
-which is why Day 17 makes every `CreateLoanApplication` carry an idempotency key (the Stripe pattern:
-the server remembers the key and returns the first result for a repeat).
+which is why the write needs idempotency. Where the server supports it, that is an idempotency key (the
+Stripe pattern: the server remembers the key and returns the first result for a repeat). Godavari's 2009
+core has no such keys, so Day 16 makes every `CreateApplication` safe to retry by looking up before it
+creates.
 
 For model calls the client keeps its own memory. The key is built from content, not from time:
 

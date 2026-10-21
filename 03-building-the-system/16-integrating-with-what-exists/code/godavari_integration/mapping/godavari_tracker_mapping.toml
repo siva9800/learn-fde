@@ -1,0 +1,76 @@
+# The Excel tracker, translated: what the analysts' columns, colours and phrases mean in the review queue.
+#
+# Owned by the two team leads: every alias and colour here came from them, not from guessing at the
+# workbooks. The tracker has no schema; this file is the schema it never had. Synthetic, for the course.
+
+[meta]
+name = "godavari-tracker-mapping"
+version = "0.4.0"
+owners = "Srinivas (Hyderabad team lead) and the Vijayawada team lead"
+reviewed_on = "2026-11-11"
+date_order = "day_first"          # 05/11/2026 is 5 November; Excel on these machines is set to en-IN
+
+[columns]
+file_number = ["file no", "file no.", "file number", "file#", "fileno"]
+branch = ["branch", "br", "branch name"]
+customer_name = ["customer name", "cust name", "name of customer"]
+product = ["product", "prod"]
+amount = ["loan amt", "amount", "loan amount"]
+assigned_to = ["assigned", "assigned to", "analyst"]
+received = ["received", "recd", "rcvd"]
+keyed = ["keyed"]
+docs_checked = ["docs checked", "docs chkd", "docs chk"]
+waiting_on = ["waiting on", "pending with", "waiting"]
+verified = ["verified", "verfied"]
+batch = ["batch"]
+memo = ["memo"]
+remarks = ["remarks", "comments", "notes"]
+branch_phone = ["branch ph", "branch phone", "br ph"]
+senior_check = ["senior chk", "senior check"]
+ageing = ["ageing (days)", "ageing", "age (days)"]
+last_updated = ["last upd", "last updated"]
+priority = ["priority"]
+
+[status]
+# Bhavani's seven columns, in the order a file moves through them (Day 6, transcript 10).
+columns = ["received", "keyed", "docs_checked", "waiting_on", "verified", "batch", "memo"]
+truthy = ["y", "yes", "done", "ok", "x", "1"]
+falsy = ["n", "no", "", "-", "0"]
+
+[colours]
+# Fill colour of the file-number cell, as openpyxl reports it (ARGB). From the team leads, 2026-11-11.
+"FFFF0000" = "waiting_on_branch"
+"FFFF5050" = "waiting_on_branch"
+"FFFFFF00" = "query_with_senior"
+"FFFFC000" = "query_with_senior"
+"FF92D050" = "ready_for_batch"
+"FF00B050" = "ready_for_batch"
+
+[waiting_on_phrases]
+# Lower-case fragments of the free text in "waiting on", mapped to the document the signed rules name.
+"addr" = "proof_of_address"
+"address" = "proof_of_address"
+"bank st" = "bank_statement"
+"stmt" = "bank_statement"
+"salary" = "income_proof"
+"income" = "income_proof"
+"pan" = "pan_card"
+"photo" = "photograph"
+"quotation" = "dealer_quotation"
+"nach" = "nach_mandate"
+"cheque" = "cancelled_cheque"
+"declaration" = "customer_declaration"
+
+[branches]
+"kukatpally" = "KKP01"
+"kphb" = "KKP01"
+"dilsukhnagar" = "DSN02"
+"dsnr" = "DSN02"
+"warangal" = "WGL05"
+"hanamkonda" = "WGL05"
+
+[not_migrated]
+customer_name = "a direct identifier: the queue shows it on demand from the core, it is never copied out of the workbook"
+branch_phone = "the analysts' own branch phone list (the core's is two years old): offered to the team leads as a separate list, not put in the queue"
+ageing = "recomputed from the received date; in the workbook it is a typed number or a formula"
+amount = "the core's LOAN_AMT is the record; the tracker's figure is a note"

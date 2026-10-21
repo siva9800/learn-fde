@@ -118,7 +118,7 @@ discovery document to a thin end-to-end slice running by week three.*
   - Schema drift and contract tests against the sandbox on every build
   - Idempotent writes into the core system, previewed for D17
   - The customer's engineer paired from day one, so the integration has an owner after you leave
-- **Real-time example:** Godavari's core lending system exposes CreateLoanApplication and UpdateKYCStatus over SOAP, and scanned bundles arrive by SFTP at 2 a.m. You generate a client from the WSDL, write contract tests against the sandbox, and build the metadata layer mapping forty cryptic fields to their meaning, reviewed by the system owner. Customer PII stays on the on-prem read replica; only masked fields and document hashes travel to the pipeline, the first concrete form of "nothing leaves India".
+- **Real-time example:** Godavari's core lending system exposes CreateApplication and UpdateKYCStatus over SOAP, and scanned bundles arrive by SFTP at 2 a.m. You generate a client from the WSDL, write contract tests against the sandbox, and build the metadata layer mapping forty cryptic fields to their meaning, reviewed by the system owner. Customer PII stays on the on-prem read replica; only masked fields and document hashes travel to the pipeline, the first concrete form of "nothing leaves India".
 - **Analogy (Telugu audience):** the auto driver. Your new car (the model) still cannot reach the house with no street name. The auto driver who knows every lane in the old city is the integration layer, and he charges for it.
 - **Shorts:**
   - "The core system is from 2009 and it is not going anywhere. Integrate."

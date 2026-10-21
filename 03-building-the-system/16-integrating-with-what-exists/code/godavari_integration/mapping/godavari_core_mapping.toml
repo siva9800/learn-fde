@@ -1,0 +1,533 @@
+# The metadata translation layer for Godavari's 2009 core lending system.
+#
+# One entry per field the core knows: its business meaning in words an analyst (or a model) can use, the
+# canonical field on Kaagaz's side, how values are transformed, and the data class that decides what may
+# be copied, cached, logged or shown to a model. Codes and enums are translated in [codes.*].
+#
+# Versioned and owned. Any change bumps meta.version and is reviewed by the section's owner; the
+# fingerprint in mapping_signoff.json must match or nothing runs. Synthetic: invented for the course.
+
+[meta]
+name = "godavari-core-mapping"
+version = "1.3.0"
+canonical_schema = "kaagaz-intake-canonical/1.0"
+core_release = "production R26.08 (August 2026); sandbox refreshed 2026-07-15"
+changes = [
+  "1.0.0 2026-10-29 first draft from the WSDL and the 2011 data dictionary PDF",
+  "1.1.0 2026-11-03 business meanings for CUST_FLG_1 to CUST_FLG_4 from the core-system owner",
+  "1.2.0 2026-11-06 gold-loan conventions: MNTH_INC 0, INC_PRF_CD NA, CUST_FLG_3 N",
+  "1.3.0 2026-11-10 DLR_CD mapped for two-wheeler: mandatory in production since R26.08, not in the July sandbox",
+]
+
+[owners]
+"core.fields" = "the core-system owner"
+"codes" = "the core-system owner"
+"data_classes" = "the compliance head, with the CISO"
+"canonical names" = "Kaagaz FDE"
+
+[data_classes.direct_identifier]
+meaning = "identifies a person on its own: name, PAN, Aadhaar reference, mobile, email, address lines, date of birth"
+copy_out_of_godavari_systems = false
+store_in_kaagaz_components = "masked or hashed only"
+cache = "process memory only, at most 900 seconds, for the analyst who opened the file"
+write_to_logs = false
+show_to_model = "only as page text of the file being read, on the machine inside the building (D08)"
+
+[data_classes.quasi_identifier]
+meaning = "does not identify a person alone but narrows it: PIN code, city"
+copy_out_of_godavari_systems = true
+store_in_kaagaz_components = "yes"
+cache = "yes"
+write_to_logs = true
+show_to_model = "yes"
+
+[data_classes.business]
+meaning = "amounts, codes, flags and dates about the loan, not the person"
+copy_out_of_godavari_systems = true
+store_in_kaagaz_components = "yes"
+cache = "yes"
+write_to_logs = true
+show_to_model = "yes"
+
+[data_classes.system]
+meaning = "identifiers and timestamps the systems use to talk to each other"
+copy_out_of_godavari_systems = true
+store_in_kaagaz_components = "yes"
+cache = "yes"
+write_to_logs = true
+show_to_model = "no, it adds nothing and invites the model to guess"
+
+# ---------------------------------------------------------------------------------------------------
+# CreateApplication: 61 fields. 40 are filled from the canonical record; 21 are not ours to fill.
+# ---------------------------------------------------------------------------------------------------
+
+[core.fields.FILE_NO]
+canonical = "file_number"
+business_name = "File number"
+meaning = "The number the branch writes on the paper file, GF- and five digits. The 02:00 job registers it as a shell."
+transform = "file_no"
+data_class = "system"
+
+[core.fields.BRANCH_CD]
+canonical = "branch_code"
+business_name = "Branch code"
+meaning = "The five-character code of the branch that holds the customer, for example KKP01 for Kukatpally."
+transform = "text"
+data_class = "business"
+
+[core.fields.PROD_CD]
+canonical = "product"
+business_name = "Loan product"
+meaning = "Which loan product the application is for. Decides the document checklist and the credit scorecard."
+transform = "code:PROD"
+data_class = "business"
+
+[core.fields.SCHM_CD]
+ours = false
+business_name = "Scheme code"
+meaning = "A dealer or festival scheme the branch applies on the core screen. Not known at intake."
+
+[core.fields.SRC_CHNL]
+canonical = "channel"
+business_name = "How the file arrived"
+meaning = "Scanned at the branch, photographed on a phone, or both. Used in the ops report, not in decisions."
+transform = "code:CHNL"
+data_class = "business"
+
+[core.fields.APPL_DT]
+canonical = "application_date"
+business_name = "Application date"
+meaning = "The date the customer signed the application form at the branch, not the date it was keyed."
+transform = "date"
+data_class = "business"
+
+[core.fields.EXT_REF]
+canonical = "idempotency_key"
+business_name = "Kaagaz write reference"
+meaning = "Twenty characters Kaagaz stamps on every application it creates: a hash of file number and branch code. Agreed with the core-system owner on 2026-11-10 as the only spare field long enough. Lets anyone tell our records from keyed ones."
+transform = "text"
+data_class = "system"
+
+[core.fields.ENTRY_USR]
+canonical = "entry_user"
+business_name = "Maker"
+meaning = "The user who created the record. For Kaagaz writes, the service account the CISO issued."
+transform = "text"
+data_class = "system"
+
+[core.fields.VRFY_USR]
+canonical = "approved_by"
+business_name = "Checker (approving analyst)"
+meaning = "The employee ID of the analyst who approved the file. This is the auditor's 'who decided' (finding A6)."
+transform = "text"
+data_class = "system"
+
+[core.fields.APPL_NM]
+canonical = "applicant_name"
+business_name = "Applicant's name"
+meaning = "The applicant's full name as on the PAN card, in capitals."
+transform = "upper"
+data_class = "direct_identifier"
+
+[core.fields.APPL_DOB]
+canonical = "date_of_birth"
+business_name = "Applicant's date of birth"
+meaning = "From the PAN card or the application form."
+transform = "date"
+data_class = "direct_identifier"
+
+[core.fields.APPL_GNDR]
+ours = false
+business_name = "Gender"
+meaning = "Optional. Keyed by the branch if at all. Never inferred from a name."
+
+[core.fields.PAN_NO]
+canonical = "pan"
+business_name = "PAN"
+meaning = "The applicant's Permanent Account Number: five letters, four digits, one letter."
+transform = "pan"
+data_class = "direct_identifier"
+
+[core.fields.AADH_REF]
+canonical = "aadhaar_masked"
+business_name = "Aadhaar reference (masked)"
+meaning = "Eight X characters and the last four digits. The full number is never stored, by Godavari or by us."
+transform = "aadhaar_masked"
+data_class = "direct_identifier"
+
+[core.fields.MOB_NO]
+canonical = "mobile"
+business_name = "Applicant's mobile"
+meaning = "Ten digits, no country code."
+transform = "mobile"
+data_class = "direct_identifier"
+
+[core.fields.ALT_MOB_NO]
+ours = false
+business_name = "Alternate mobile"
+meaning = "Optional; keyed by the branch."
+
+[core.fields.EMAIL_ID]
+canonical = "email"
+business_name = "Applicant's email"
+meaning = "Optional. Rarely on the form."
+transform = "text"
+data_class = "direct_identifier"
+
+[core.fields.ADDR_LN1]
+canonical = "address_line1"
+business_name = "Address line 1"
+meaning = "House number and street. Forty characters at most; the core rejects longer lines."
+transform = "text"
+data_class = "direct_identifier"
+
+[core.fields.ADDR_LN2]
+canonical = "address_line2"
+business_name = "Address line 2"
+meaning = "Colony or locality."
+transform = "text"
+data_class = "direct_identifier"
+
+[core.fields.ADDR_LN3]
+canonical = "address_line3"
+business_name = "Address line 3"
+meaning = "Area, when the first two lines are full."
+transform = "text"
+data_class = "direct_identifier"
+
+[core.fields.CITY_NM]
+canonical = "city"
+business_name = "City or town"
+meaning = "The town in the address, for example Hyderabad, Guntur."
+transform = "text"
+data_class = "quasi_identifier"
+
+[core.fields.DIST_CD]
+ours = false
+business_name = "District code"
+meaning = "Derived by the core from the PIN code at the 18:00 batch. Do not send."
+
+[core.fields.STATE_CD]
+canonical = "state"
+business_name = "State"
+meaning = "Telangana or Andhra Pradesh. Taken from the branch master, not from the address text."
+transform = "code:STATE"
+data_class = "business"
+
+[core.fields.PIN_CD]
+canonical = "pin"
+business_name = "PIN code"
+meaning = "Six digits."
+transform = "pin"
+data_class = "quasi_identifier"
+
+[core.fields.ADDR_PRF_CD]
+canonical = "address_proof_kind"
+business_name = "Address proof submitted"
+meaning = "Which document proves the address. Only kinds on the compliance head's signed list have a code."
+transform = "code:ADDRPRF"
+data_class = "business"
+
+[core.fields.RES_TYP]
+ours = false
+business_name = "Residence type"
+meaning = "Owned, rented or family. Taken by the field verification officer, keyed by the branch."
+
+[core.fields.YRS_AT_ADDR]
+ours = false
+business_name = "Years at this address"
+meaning = "From the field verification report; keyed by the branch."
+
+[core.fields.CUST_FLG_1]
+ours = false
+business_name = "Existing Godavari customer"
+meaning = "Y if the PAN already has a live or closed loan. Set by the core at the 18:00 batch from the customer master. Do not send."
+
+[core.fields.CUST_FLG_2]
+ours = false
+business_name = "Staff or relative of staff"
+meaning = "Y if the applicant is a Godavari employee or declared relative. Keyed by the branch manager only."
+
+[core.fields.CUST_FLG_3]
+canonical = "is_salaried"
+business_name = "Applicant is salaried"
+meaning = "Y when the applicant's main income is a monthly salary from an employer (a salary slip, or regular salary credits); N for business, self-employed or farm income. Drives the income-proof checklist and the scorecard at the 18:00 batch."
+transform = "yn"
+data_class = "business"
+default_by_product = { gold = "N" }
+
+[core.fields.CUST_FLG_4]
+ours = false
+business_name = "Politically exposed person"
+meaning = "Set by the compliance desk only, after screening. Never set by intake."
+
+[core.fields.EMP_NM]
+canonical = "employer_name"
+business_name = "Employer"
+meaning = "The employer on the salary slip, for salaried applicants."
+transform = "upper"
+data_class = "business"
+
+[core.fields.EMP_TYP]
+ours = false
+business_name = "Employment type"
+meaning = "Government, private, self-employed. Keyed by the branch; not reliable before 2015."
+
+[core.fields.MNTH_INC]
+canonical = "monthly_income"
+business_name = "Monthly income (rupees)"
+meaning = "Net monthly income in whole rupees: net pay on the salary slip, or the declared figure. Never annual."
+transform = "rupees"
+data_class = "business"
+default_by_product = { gold = "0" }
+
+[core.fields.INC_PRF_CD]
+canonical = "income_proof_kind"
+business_name = "Income proof submitted"
+meaning = "Which document supports the income. NA for gold loans, which need none."
+transform = "code:INCPRF"
+data_class = "business"
+default_by_product = { gold = "NA" }
+
+[core.fields.BANK_ACC_LST4]
+canonical = "bank_account_last4"
+business_name = "Salary account, last four digits"
+meaning = "The last four digits of the account the salary is credited to."
+transform = "text"
+data_class = "business"
+
+[core.fields.BANK_IFSC]
+ours = false
+business_name = "IFSC of the salary account"
+meaning = "Keyed by the branch from the cancelled cheque."
+
+[core.fields.LOAN_AMT]
+canonical = "requested_amount"
+business_name = "Loan amount requested (rupees)"
+meaning = "What the customer asked for, in whole rupees. The sanctioned amount is set later by the credit manager."
+transform = "rupees"
+data_class = "business"
+
+[core.fields.TENOR_MM]
+canonical = "tenure_months"
+business_name = "Tenure (months)"
+meaning = "Repayment period in months."
+transform = "int"
+data_class = "business"
+
+[core.fields.ROI_PCT]
+ours = false
+business_name = "Rate of interest"
+meaning = "Computed by the core. If sent, it silently overwrites the computed rate. Never send."
+
+[core.fields.EMI_AMT]
+ours = false
+business_name = "EMI"
+meaning = "Computed by the core. Never send."
+
+[core.fields.PURP_CD]
+ours = false
+business_name = "Purpose of loan"
+meaning = "Keyed by the branch."
+
+[core.fields.DLR_CD]
+canonical = "dealer_code"
+business_name = "Empanelled dealer"
+meaning = "The dealer whose quotation the loan pays. The WSDL says optional; production R26.08 rejects a two-wheeler application without it. The July sandbox does not."
+transform = "text"
+data_class = "business"
+
+[core.fields.ONRD_PRC]
+canonical = "on_road_price"
+business_name = "On-road price (rupees)"
+meaning = "From the dealer's quotation."
+transform = "rupees"
+data_class = "business"
+
+[core.fields.QTN_DT]
+canonical = "quotation_date"
+business_name = "Quotation date"
+meaning = "The date on the dealer's quotation."
+transform = "date"
+data_class = "business"
+
+[core.fields.VEH_MAKE]
+ours = false
+business_name = "Vehicle make"
+meaning = "Keyed by the branch at disbursement from the invoice."
+
+[core.fields.VEH_MODEL]
+ours = false
+business_name = "Vehicle model"
+meaning = "Keyed by the branch at disbursement from the invoice."
+
+[core.fields.GOLD_GRS_WT]
+canonical = "gold_gross_weight_g"
+business_name = "Gross weight of gold (grams)"
+meaning = "Weight of the ornaments including stones, from the appraisal certificate."
+transform = "grams"
+data_class = "business"
+
+[core.fields.GOLD_NET_WT]
+canonical = "gold_net_weight_g"
+business_name = "Net weight of gold (grams)"
+meaning = "Weight of the gold alone. The LTV is computed on this, never on gross."
+transform = "grams"
+data_class = "business"
+
+[core.fields.GOLD_PURITY]
+canonical = "gold_purity_carat"
+business_name = "Purity (carat)"
+meaning = "From the appraisal certificate."
+transform = "int"
+data_class = "business"
+
+[core.fields.APPR_DT]
+canonical = "appraisal_date"
+business_name = "Appraisal date"
+meaning = "The date the appraiser weighed the gold."
+transform = "date"
+data_class = "business"
+
+[core.fields.APPR_ID]
+ours = false
+business_name = "Appraiser"
+meaning = "Keyed by the branch."
+
+[core.fields.CO_APPL_FLG]
+canonical = "has_co_applicant"
+business_name = "Has a co-applicant"
+meaning = "Y if a co-applicant signed the application."
+transform = "yn"
+data_class = "business"
+
+[core.fields.CO_APPL_NM]
+ours = false
+business_name = "Co-applicant's name"
+meaning = "Keyed by the analyst until co-applicant extraction is proven on the golden set."
+
+[core.fields.CO_APPL_PAN]
+ours = false
+business_name = "Co-applicant's PAN"
+meaning = "Keyed by the analyst."
+
+[core.fields.CO_APPL_REL]
+ours = false
+business_name = "Co-applicant's relation"
+meaning = "Keyed by the analyst."
+
+[core.fields.KYC_STAT]
+canonical = "kyc_status"
+business_name = "KYC status"
+meaning = "Pending, complete or deficient, against the signed checklist. Changed later with UpdateKYCStatus."
+transform = "code:KYC"
+data_class = "business"
+
+[core.fields.DOC_CNT]
+canonical = "page_count"
+business_name = "Pages in the file"
+meaning = "How many pages the scanned file has. The auditor checks it against the paper file."
+transform = "int"
+data_class = "business"
+
+[core.fields.RMK_TXT]
+canonical = "remarks"
+business_name = "Remarks"
+meaning = "Free text. Kaagaz writes only its mapping version here, never a customer detail."
+transform = "text"
+data_class = "business"
+
+[core.fields.RM_CD]
+ours = false
+business_name = "Branch officer"
+meaning = "The officer who sourced the loan; keyed by the branch."
+
+[core.fields.CNSNT_FLG]
+canonical = "consent_given"
+business_name = "Customer consent recorded"
+meaning = "Y when the signed customer declaration and consent (two-wheeler) or the key fact statement acknowledgement (gold) is in the file."
+transform = "yn"
+data_class = "business"
+
+# What GetApplication returns besides the create fields.
+[core.read_fields.APPL_ID]
+canonical = "core_application_id"
+business_name = "Core application ID"
+meaning = "Generated by the core. The record's identity in Godavari's system."
+transform = "text"
+data_class = "system"
+
+[core.read_fields.APPL_STAT]
+canonical = "core_status"
+business_name = "Where the application is in the core"
+meaning = "Registered shell, keyed, in the 18:00 batch, sent back to the branch, sanctioned, rejected or cancelled."
+transform = "code:APPLSTAT"
+data_class = "business"
+
+[core.read_fields.CR_CHK_RSLT]
+canonical = "credit_check_result"
+business_name = "Credit check result"
+meaning = "From the 18:00 batch. In the sandbox it comes from three-month-old rules: never assert on it there."
+transform = "text"
+data_class = "business"
+
+[core.read_fields.CRT_TS]
+canonical = "created_at"
+business_name = "Created"
+meaning = "When the core created the record, IST, YYYYMMDDHHMISS."
+transform = "text"
+data_class = "system"
+
+[core.read_fields.LST_UPD_TS]
+canonical = "last_updated_at"
+business_name = "Last updated"
+meaning = "When anyone last changed the record, IST."
+transform = "text"
+data_class = "system"
+
+# ---------------------------------------------------------------------------------------------------
+# Codes: canonical value -> core code. Unknown values in either direction fail closed.
+# ---------------------------------------------------------------------------------------------------
+[codes.PROD]
+"two-wheeler" = "TW"
+"gold" = "GL"
+"personal" = "PL"
+"small-business" = "SB"
+
+[codes.CHNL]
+"sftp_scan" = "SC"
+"phone_photo" = "PP"
+"mixed" = "MX"
+
+[codes.STATE]
+"telangana" = "TS"
+"andhra pradesh" = "AP"
+
+[codes.ADDRPRF]
+"aadhaar (masked)" = "AA"
+"voter id" = "VI"
+"driving licence" = "DL"
+"passport" = "PP"
+"electricity bill" = "EB"
+"property tax receipt" = "PT"
+"registered rent agreement" = "RR"
+
+[codes.INCPRF]
+"salary slip" = "SS"
+"self-declaration" = "SD"
+"bank statement" = "BS"
+"not applicable" = "NA"
+
+[codes.KYC]
+"pending" = "P"
+"complete" = "C"
+"deficient" = "D"
+
+[codes.APPLSTAT]
+"shell_registered" = "S"
+"keyed" = "K"
+"in_credit_batch" = "B"
+"sent_back_to_branch" = "Q"
+"sanctioned" = "A"
+"rejected" = "R"
+"cancelled" = "X"
