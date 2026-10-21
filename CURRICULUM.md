@@ -38,7 +38,7 @@ internal. Most engineers have only the first two buckets. Most courses teach onl
 
 - **One engagement, end to end.** You are an FDE at a small AI vendor. Your customer is a mid-sized
   Indian lender with a document-heavy loan-operations workflow, a legacy core system, an RBI
-  auditor and a nervous security team. You meet them on Day 4 and hand off on Day 44. Every chapter
+  auditor and a nervous security team. You meet them on Day 4 and hand off on Day 28, then prove the method transfers in the Day 42 capstone. Every chapter
   moves that engagement forward. The capstone gives you a second, different customer to prove the
   skills transfer.
 - **Discovery and decomposition are taught as engineering.** The open-ended "decomposition" round

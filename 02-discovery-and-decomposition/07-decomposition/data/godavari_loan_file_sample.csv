@@ -1,0 +1,201 @@
+file_id,branch,product,channel,pages,language_mix,has_pan,has_address_proof,has_income_proof,has_photo,turnaround_days,sent_back,analyst_hours
+GF-25000,Vijayawada-Benz Circle,personal,sftp_scan,11,english,True,True,False,True,8.1,False,4.0
+GF-25001,Kukatpally,gold,sftp_scan,7,mixed,True,True,True,True,9.6,False,3.9
+GF-25002,Warangal,personal,sftp_scan,17,telugu,True,True,True,True,7.7,False,3.9
+GF-25003,Kukatpally,gold,sftp_scan,6,mixed,True,True,True,True,9.9,False,3.3
+GF-25004,Dilsukhnagar,small-business,phone_photo,23,english,True,True,True,True,8.1,False,4.1
+GF-25005,Warangal,gold,mixed,8,mixed,True,True,True,True,9.3,False,2.3
+GF-25006,Vijayawada-Benz Circle,small-business,sftp_scan,37,english,True,True,True,True,8.4,False,4.2
+GF-25007,Warangal,personal,mixed,26,mixed,True,True,True,True,7.3,False,3.8
+GF-25008,Dilsukhnagar,small-business,sftp_scan,23,telugu,True,True,True,True,8.5,False,4.7
+GF-25009,Guntur,personal,sftp_scan,34,mixed,True,True,True,True,9.9,False,5.7
+GF-25010,Kukatpally,gold,sftp_scan,10,english,True,True,True,True,10.7,False,4.9
+GF-25011,Warangal,small-business,phone_photo,37,mixed,True,True,True,True,8.0,False,5.1
+GF-25012,Rajahmundry,gold,sftp_scan,9,telugu,True,True,True,True,5.0,False,3.3
+GF-25013,Warangal,two-wheeler,mixed,32,english,True,True,True,True,11.4,False,2.6
+GF-25014,Guntur,gold,sftp_scan,8,english,True,True,True,True,12.2,False,4.0
+GF-25015,Warangal,two-wheeler,phone_photo,9,mixed,True,True,False,True,13.6,True,4.4
+GF-25016,Dilsukhnagar,gold,mixed,11,mixed,True,True,True,True,8.7,False,4.6
+GF-25017,Dilsukhnagar,two-wheeler,sftp_scan,9,mixed,True,True,True,True,7.1,False,5.0
+GF-25018,Rajahmundry,personal,mixed,31,english,False,True,True,True,12.3,True,5.6
+GF-25019,Rajahmundry,two-wheeler,phone_photo,15,mixed,True,True,True,True,8.9,False,3.3
+GF-25020,Rajahmundry,two-wheeler,sftp_scan,13,mixed,True,True,True,True,8.9,False,3.5
+GF-25021,Warangal,personal,phone_photo,30,english,True,False,True,True,12.4,True,5.2
+GF-25022,Dilsukhnagar,small-business,sftp_scan,24,english,True,True,True,True,8.9,False,4.1
+GF-25023,Rajahmundry,two-wheeler,sftp_scan,34,mixed,True,True,True,True,10.4,False,3.8
+GF-25024,Warangal,two-wheeler,mixed,19,english,True,False,False,True,9.8,True,5.3
+GF-25025,Warangal,two-wheeler,sftp_scan,10,mixed,True,True,True,True,6.7,False,4.2
+GF-25026,Warangal,gold,sftp_scan,10,telugu,True,True,True,True,11.2,False,2.5
+GF-25027,Vijayawada-Benz Circle,personal,mixed,20,mixed,True,False,True,True,14.4,True,5.7
+GF-25028,Kukatpally,personal,sftp_scan,31,english,True,True,True,True,7.2,False,5.2
+GF-25029,Rajahmundry,small-business,sftp_scan,35,mixed,True,True,True,True,7.7,False,5.3
+GF-25030,Guntur,gold,sftp_scan,11,telugu,True,True,True,True,9.0,False,5.5
+GF-25031,Kukatpally,two-wheeler,sftp_scan,19,english,True,True,True,True,8.6,False,4.6
+GF-25032,Warangal,gold,phone_photo,7,english,True,False,True,True,9.6,False,4.0
+GF-25033,Warangal,personal,sftp_scan,15,telugu,True,True,True,True,9.9,False,4.7
+GF-25034,Dilsukhnagar,personal,mixed,24,english,True,True,True,True,8.2,False,5.3
+GF-25035,Dilsukhnagar,two-wheeler,mixed,24,english,False,True,True,True,10.3,True,5.7
+GF-25036,Rajahmundry,gold,sftp_scan,12,mixed,True,True,True,True,10.4,False,3.0
+GF-25037,Dilsukhnagar,gold,sftp_scan,6,mixed,False,True,True,True,7.9,False,3.0
+GF-25038,Warangal,small-business,sftp_scan,23,mixed,False,True,True,False,10.3,True,7.4
+GF-25039,Vijayawada-Benz Circle,two-wheeler,mixed,27,english,True,True,False,True,12.4,True,6.9
+GF-25040,Kukatpally,two-wheeler,sftp_scan,33,telugu,True,True,True,True,11.4,False,4.3
+GF-25041,Dilsukhnagar,small-business,phone_photo,32,mixed,True,True,False,True,13.5,True,4.6
+GF-25042,Warangal,gold,phone_photo,14,english,True,True,True,True,9.5,False,3.0
+GF-25043,Rajahmundry,small-business,phone_photo,22,english,False,True,True,True,12.7,True,5.3
+GF-25044,Warangal,small-business,sftp_scan,8,telugu,True,True,True,True,6.2,False,3.5
+GF-25045,Guntur,two-wheeler,sftp_scan,24,english,True,True,True,True,8.9,False,4.1
+GF-25046,Rajahmundry,two-wheeler,sftp_scan,20,english,True,True,True,True,8.4,False,4.1
+GF-25047,Kukatpally,gold,mixed,7,mixed,True,True,True,True,7.9,False,3.8
+GF-25048,Warangal,two-wheeler,mixed,38,english,True,True,True,True,8.5,False,5.5
+GF-25049,Dilsukhnagar,two-wheeler,sftp_scan,24,mixed,True,True,True,True,8.3,False,3.8
+GF-25050,Guntur,two-wheeler,sftp_scan,39,mixed,True,True,True,True,9.6,False,5.5
+GF-25051,Vijayawada-Benz Circle,small-business,mixed,15,mixed,True,False,True,True,6.3,False,5.0
+GF-25052,Kukatpally,two-wheeler,sftp_scan,25,mixed,True,False,True,True,14.0,True,5.2
+GF-25053,Vijayawada-Benz Circle,two-wheeler,sftp_scan,35,mixed,True,True,True,True,6.3,False,4.4
+GF-25054,Kukatpally,personal,sftp_scan,16,mixed,True,False,True,True,11.7,True,5.6
+GF-25055,Rajahmundry,small-business,phone_photo,33,mixed,True,True,True,True,9.1,False,5.2
+GF-25056,Guntur,gold,sftp_scan,11,mixed,True,True,True,True,8.2,False,4.1
+GF-25057,Dilsukhnagar,two-wheeler,mixed,20,mixed,True,True,True,True,7.6,False,4.7
+GF-25058,Kukatpally,gold,sftp_scan,11,english,True,True,True,True,8.5,False,4.4
+GF-25059,Guntur,gold,sftp_scan,10,mixed,True,False,False,True,10.4,True,5.0
+GF-25060,Kukatpally,two-wheeler,mixed,37,mixed,True,False,False,True,14.6,True,5.4
+GF-25061,Rajahmundry,small-business,mixed,13,telugu,False,True,True,True,12.1,True,5.3
+GF-25062,Vijayawada-Benz Circle,gold,sftp_scan,7,english,True,True,True,True,8.6,False,3.6
+GF-25063,Warangal,two-wheeler,sftp_scan,28,mixed,True,True,True,True,10.9,False,4.2
+GF-25064,Vijayawada-Benz Circle,two-wheeler,sftp_scan,34,english,True,True,True,True,7.8,False,3.6
+GF-25065,Vijayawada-Benz Circle,small-business,sftp_scan,26,mixed,True,True,True,True,9.1,False,3.9
+GF-25066,Dilsukhnagar,two-wheeler,mixed,14,mixed,True,False,True,True,13.2,True,4.8
+GF-25067,Guntur,two-wheeler,sftp_scan,17,telugu,True,True,True,True,8.3,False,4.4
+GF-25068,Kukatpally,personal,sftp_scan,19,mixed,True,True,True,True,10.9,False,2.2
+GF-25069,Guntur,two-wheeler,sftp_scan,25,english,True,True,True,True,6.7,False,5.3
+GF-25070,Vijayawada-Benz Circle,small-business,sftp_scan,11,mixed,True,True,True,True,8.5,False,2.9
+GF-25071,Rajahmundry,gold,mixed,12,english,False,False,True,True,13.5,True,4.4
+GF-25072,Vijayawada-Benz Circle,two-wheeler,mixed,10,english,True,True,True,False,14.2,True,4.2
+GF-25073,Kukatpally,two-wheeler,sftp_scan,38,mixed,True,True,True,True,8.9,False,4.5
+GF-25074,Guntur,two-wheeler,mixed,27,mixed,True,True,True,True,6.9,False,5.5
+GF-25075,Kukatpally,gold,sftp_scan,8,english,True,False,True,True,15.7,True,3.1
+GF-25076,Vijayawada-Benz Circle,gold,sftp_scan,12,telugu,True,True,True,True,7.0,False,3.1
+GF-25077,Rajahmundry,gold,mixed,7,mixed,True,True,True,True,8.5,False,4.5
+GF-25078,Dilsukhnagar,two-wheeler,sftp_scan,20,english,True,True,True,True,9.4,False,3.1
+GF-25079,Kukatpally,two-wheeler,sftp_scan,22,mixed,True,False,True,True,14.4,True,5.1
+GF-25080,Kukatpally,two-wheeler,mixed,36,mixed,True,True,False,True,12.2,True,6.0
+GF-25081,Vijayawada-Benz Circle,two-wheeler,sftp_scan,24,english,True,True,True,True,7.4,False,4.8
+GF-25082,Warangal,two-wheeler,sftp_scan,39,telugu,True,True,True,True,8.2,False,4.7
+GF-25083,Dilsukhnagar,two-wheeler,sftp_scan,26,mixed,True,False,True,True,14.9,True,5.6
+GF-25084,Vijayawada-Benz Circle,gold,sftp_scan,12,english,False,True,True,True,13.6,True,4.3
+GF-25085,Dilsukhnagar,two-wheeler,sftp_scan,17,mixed,True,False,True,True,13.1,True,5.6
+GF-25086,Warangal,two-wheeler,sftp_scan,32,telugu,True,True,True,True,12.4,False,3.9
+GF-25087,Guntur,two-wheeler,phone_photo,32,english,True,True,True,True,9.9,False,3.8
+GF-25088,Warangal,small-business,mixed,19,telugu,False,True,False,True,15.1,True,4.9
+GF-25089,Dilsukhnagar,two-wheeler,sftp_scan,10,mixed,True,True,True,True,9.0,False,2.7
+GF-25090,Vijayawada-Benz Circle,gold,sftp_scan,11,telugu,True,False,True,True,12.6,True,3.5
+GF-25091,Guntur,small-business,mixed,33,english,True,True,False,True,14.5,True,6.0
+GF-25092,Kukatpally,personal,sftp_scan,40,english,True,True,True,True,9.1,False,5.0
+GF-25093,Warangal,small-business,mixed,20,english,True,True,True,True,7.7,False,3.0
+GF-25094,Dilsukhnagar,two-wheeler,sftp_scan,24,english,True,True,True,True,5.2,False,4.3
+GF-25095,Dilsukhnagar,gold,phone_photo,9,english,False,False,True,True,13.1,True,4.5
+GF-25096,Vijayawada-Benz Circle,two-wheeler,sftp_scan,31,mixed,True,True,True,True,8.6,False,5.6
+GF-25097,Guntur,small-business,sftp_scan,32,mixed,True,True,True,True,9.7,False,5.9
+GF-25098,Kukatpally,two-wheeler,sftp_scan,27,mixed,True,True,True,True,9.0,False,4.5
+GF-25099,Dilsukhnagar,two-wheeler,phone_photo,34,telugu,True,False,False,True,10.0,False,4.8
+GF-25100,Kukatpally,gold,sftp_scan,12,telugu,True,True,True,True,10.9,False,5.3
+GF-25101,Dilsukhnagar,small-business,sftp_scan,12,mixed,True,True,True,True,10.8,False,4.0
+GF-25102,Warangal,personal,sftp_scan,36,mixed,True,True,True,False,9.5,False,4.9
+GF-25103,Dilsukhnagar,two-wheeler,mixed,8,mixed,True,False,True,True,11.5,True,4.1
+GF-25104,Warangal,two-wheeler,sftp_scan,27,mixed,True,True,True,True,7.5,False,5.1
+GF-25105,Guntur,two-wheeler,phone_photo,19,english,False,False,False,True,11.4,True,3.7
+GF-25106,Rajahmundry,two-wheeler,phone_photo,35,mixed,True,True,False,True,13.9,True,6.3
+GF-25107,Dilsukhnagar,two-wheeler,sftp_scan,20,mixed,True,True,True,True,8.8,False,5.9
+GF-25108,Rajahmundry,personal,mixed,38,telugu,True,False,False,True,14.4,True,5.0
+GF-25109,Guntur,gold,sftp_scan,8,english,False,True,True,True,12.8,True,4.8
+GF-25110,Rajahmundry,gold,sftp_scan,7,mixed,True,True,True,True,9.9,False,2.2
+GF-25111,Kukatpally,personal,mixed,32,english,True,False,False,True,10.5,True,4.6
+GF-25112,Rajahmundry,gold,sftp_scan,8,english,True,True,True,True,9.7,False,3.8
+GF-25113,Vijayawada-Benz Circle,two-wheeler,mixed,28,mixed,True,True,True,True,8.7,False,4.3
+GF-25114,Warangal,small-business,sftp_scan,11,telugu,True,True,False,True,13.4,True,4.8
+GF-25115,Kukatpally,two-wheeler,sftp_scan,39,mixed,True,True,True,True,6.6,False,4.9
+GF-25116,Dilsukhnagar,two-wheeler,sftp_scan,22,telugu,True,True,False,True,12.9,True,4.2
+GF-25117,Vijayawada-Benz Circle,two-wheeler,mixed,13,telugu,True,True,True,True,7.7,False,3.8
+GF-25118,Rajahmundry,two-wheeler,sftp_scan,10,english,True,True,True,True,8.6,False,3.3
+GF-25119,Guntur,small-business,sftp_scan,22,english,True,True,True,True,7.9,False,5.5
+GF-25120,Warangal,two-wheeler,sftp_scan,23,mixed,True,True,True,True,8.4,False,6.3
+GF-25121,Kukatpally,two-wheeler,phone_photo,20,telugu,True,True,True,True,9.3,False,5.3
+GF-25122,Kukatpally,two-wheeler,mixed,37,english,True,True,True,True,7.5,False,4.2
+GF-25123,Dilsukhnagar,two-wheeler,phone_photo,8,mixed,True,True,True,True,7.6,False,4.0
+GF-25124,Rajahmundry,small-business,mixed,22,mixed,True,True,True,True,9.9,False,4.8
+GF-25125,Guntur,small-business,phone_photo,24,mixed,True,False,True,True,14.6,True,4.1
+GF-25126,Vijayawada-Benz Circle,small-business,sftp_scan,39,mixed,True,True,True,True,9.6,False,4.8
+GF-25127,Vijayawada-Benz Circle,two-wheeler,sftp_scan,21,mixed,True,True,True,True,5.5,False,5.3
+GF-25128,Dilsukhnagar,personal,sftp_scan,40,mixed,True,True,True,True,8.4,False,5.8
+GF-25129,Kukatpally,two-wheeler,mixed,30,telugu,True,True,True,True,13.3,False,4.1
+GF-25130,Guntur,gold,sftp_scan,7,mixed,True,True,True,True,10.0,False,3.5
+GF-25131,Rajahmundry,small-business,mixed,34,telugu,True,True,False,True,13.1,True,5.3
+GF-25132,Guntur,small-business,mixed,19,telugu,True,True,True,True,7.9,False,5.0
+GF-25133,Warangal,gold,phone_photo,11,english,True,True,True,True,7.0,False,5.5
+GF-25134,Warangal,small-business,phone_photo,8,mixed,True,False,False,True,13.0,True,4.3
+GF-25135,Guntur,two-wheeler,sftp_scan,33,mixed,True,True,True,True,7.0,False,3.2
+GF-25136,Rajahmundry,small-business,sftp_scan,21,telugu,True,True,True,True,8.5,False,4.8
+GF-25137,Dilsukhnagar,gold,sftp_scan,13,telugu,True,True,True,True,8.7,False,3.9
+GF-25138,Vijayawada-Benz Circle,gold,sftp_scan,10,mixed,True,True,True,True,7.2,False,2.9
+GF-25139,Kukatpally,two-wheeler,sftp_scan,29,mixed,True,True,True,True,9.0,False,5.4
+GF-25140,Dilsukhnagar,two-wheeler,mixed,31,english,True,True,True,True,8.0,False,5.2
+GF-25141,Kukatpally,small-business,sftp_scan,39,telugu,True,True,True,True,7.1,False,3.8
+GF-25142,Vijayawada-Benz Circle,two-wheeler,phone_photo,16,telugu,True,True,False,True,11.9,True,5.0
+GF-25143,Vijayawada-Benz Circle,two-wheeler,sftp_scan,38,mixed,True,True,True,True,7.0,False,4.2
+GF-25144,Rajahmundry,small-business,mixed,13,english,True,True,True,True,8.8,False,4.1
+GF-25145,Kukatpally,personal,phone_photo,31,mixed,False,False,True,True,12.7,True,5.7
+GF-25146,Warangal,gold,mixed,6,telugu,True,True,True,True,8.1,False,2.9
+GF-25147,Kukatpally,two-wheeler,sftp_scan,17,telugu,True,True,True,True,8.8,False,4.2
+GF-25148,Kukatpally,two-wheeler,phone_photo,13,english,False,True,False,True,12.3,True,3.1
+GF-25149,Vijayawada-Benz Circle,small-business,phone_photo,17,mixed,False,True,True,True,12.3,True,7.1
+GF-25150,Rajahmundry,two-wheeler,sftp_scan,13,telugu,True,True,True,True,7.6,False,3.5
+GF-25151,Warangal,small-business,sftp_scan,18,english,True,True,True,True,7.3,False,4.5
+GF-25152,Guntur,personal,mixed,29,english,False,True,True,True,9.1,True,4.2
+GF-25153,Dilsukhnagar,gold,sftp_scan,12,mixed,True,True,True,True,8.8,False,4.8
+GF-25154,Rajahmundry,two-wheeler,sftp_scan,35,english,True,True,True,True,10.6,False,6.1
+GF-25155,Warangal,two-wheeler,mixed,39,english,False,True,True,True,13.4,True,5.7
+GF-25156,Warangal,two-wheeler,sftp_scan,21,mixed,True,False,True,True,12.1,True,5.5
+GF-25157,Guntur,gold,mixed,14,english,True,False,True,True,11.9,True,6.0
+GF-25158,Vijayawada-Benz Circle,gold,sftp_scan,8,english,True,True,True,True,8.0,False,3.8
+GF-25159,Vijayawada-Benz Circle,gold,sftp_scan,14,mixed,True,True,True,True,7.7,False,3.7
+GF-25160,Vijayawada-Benz Circle,gold,mixed,8,english,False,False,True,True,5.8,False,3.1
+GF-25161,Guntur,gold,mixed,7,mixed,True,True,True,True,8.1,False,4.2
+GF-25162,Kukatpally,personal,phone_photo,33,english,True,True,False,True,15.7,True,5.0
+GF-25163,Kukatpally,personal,mixed,11,english,True,True,True,True,9.7,False,4.3
+GF-25164,Kukatpally,personal,phone_photo,27,telugu,True,True,True,True,7.5,False,5.0
+GF-25165,Guntur,two-wheeler,sftp_scan,17,mixed,True,True,True,True,10.2,False,5.3
+GF-25166,Kukatpally,personal,mixed,16,mixed,True,True,True,False,9.9,False,3.9
+GF-25167,Dilsukhnagar,gold,phone_photo,8,english,True,False,True,True,13.3,True,5.4
+GF-25168,Dilsukhnagar,two-wheeler,sftp_scan,26,english,True,True,True,True,11.7,False,5.9
+GF-25169,Kukatpally,gold,mixed,9,telugu,True,False,True,True,12.3,True,5.3
+GF-25170,Dilsukhnagar,two-wheeler,sftp_scan,18,english,True,True,True,False,12.0,True,5.5
+GF-25171,Kukatpally,small-business,mixed,26,english,True,True,True,True,9.2,False,4.8
+GF-25172,Dilsukhnagar,small-business,sftp_scan,13,mixed,True,True,True,True,10.1,False,4.8
+GF-25173,Rajahmundry,small-business,sftp_scan,20,english,True,True,True,True,7.2,False,4.1
+GF-25174,Vijayawada-Benz Circle,small-business,mixed,39,english,True,True,False,True,8.4,True,5.1
+GF-25175,Kukatpally,two-wheeler,sftp_scan,8,telugu,True,True,False,True,14.0,True,3.2
+GF-25176,Rajahmundry,personal,sftp_scan,11,english,True,True,True,False,13.1,True,5.3
+GF-25177,Kukatpally,two-wheeler,sftp_scan,14,english,True,True,False,True,12.2,True,6.5
+GF-25178,Rajahmundry,gold,sftp_scan,13,english,True,True,False,True,11.2,True,4.9
+GF-25179,Kukatpally,two-wheeler,mixed,22,mixed,True,True,True,True,10.2,False,2.6
+GF-25180,Guntur,small-business,sftp_scan,10,telugu,True,True,True,True,7.8,False,4.5
+GF-25181,Warangal,small-business,mixed,33,mixed,False,True,True,True,10.5,True,6.3
+GF-25182,Vijayawada-Benz Circle,two-wheeler,sftp_scan,28,telugu,True,False,True,True,14.4,True,5.1
+GF-25183,Kukatpally,two-wheeler,phone_photo,25,mixed,True,True,True,False,12.6,True,5.5
+GF-25184,Dilsukhnagar,personal,sftp_scan,27,english,True,False,True,True,14.1,True,6.0
+GF-25185,Dilsukhnagar,gold,sftp_scan,10,mixed,True,True,True,True,8.2,False,4.7
+GF-25186,Rajahmundry,gold,phone_photo,9,telugu,True,True,True,True,8.8,False,3.6
+GF-25187,Vijayawada-Benz Circle,two-wheeler,sftp_scan,32,mixed,True,True,True,True,8.0,False,5.3
+GF-25188,Vijayawada-Benz Circle,two-wheeler,mixed,26,english,False,True,True,True,9.6,True,5.3
+GF-25189,Vijayawada-Benz Circle,small-business,sftp_scan,22,mixed,True,True,True,True,9.2,False,4.7
+GF-25190,Warangal,small-business,mixed,14,mixed,True,True,True,True,7.7,False,2.2
+GF-25191,Dilsukhnagar,gold,sftp_scan,12,mixed,True,True,True,True,6.3,False,4.6
+GF-25192,Warangal,gold,sftp_scan,13,mixed,True,True,True,True,6.8,False,3.3
+GF-25193,Kukatpally,small-business,mixed,39,telugu,True,True,True,True,7.8,False,5.4
+GF-25194,Vijayawada-Benz Circle,two-wheeler,mixed,23,mixed,True,True,True,False,7.0,False,3.9
+GF-25195,Warangal,small-business,sftp_scan,35,telugu,True,True,True,True,7.4,False,4.4
+GF-25196,Kukatpally,small-business,sftp_scan,14,telugu,True,True,True,True,9.2,False,4.7
+GF-25197,Guntur,gold,phone_photo,11,mixed,True,False,True,True,8.3,False,4.3
+GF-25198,Rajahmundry,personal,phone_photo,40,mixed,True,False,False,True,12.8,True,6.5
+GF-25199,Rajahmundry,gold,sftp_scan,6,mixed,False,False,True,True,11.9,True,4.9

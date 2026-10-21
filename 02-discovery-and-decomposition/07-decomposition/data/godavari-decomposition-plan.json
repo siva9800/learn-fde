@@ -1,0 +1,97 @@
+[
+  {
+    "code": "W4",
+    "name": "Integration: SFTP, tracker, SOAP create with idempotency",
+    "value": 4,
+    "risk": 5,
+    "depends_on": [],
+    "weeks": 5,
+    "owner": "Kaagaz FDE with core-system owner",
+    "why": "duplicate records on retry and a quarterly sandbox are the biggest technical unknowns",
+    "priority": 14.0,
+    "start_week": 1,
+    "end_week": 5,
+    "rank": 1,
+    "warnings": []
+  },
+  {
+    "code": "W5",
+    "name": "Security review and VPC path",
+    "value": 2,
+    "risk": 5,
+    "depends_on": [],
+    "weeks": 8,
+    "owner": "Kaagaz security lead with CISO",
+    "why": "long and outside our control; starting late is the usual way engagements die",
+    "priority": 12.0,
+    "start_week": 1,
+    "end_week": 8,
+    "rank": 2,
+    "warnings": []
+  },
+  {
+    "code": "W3",
+    "name": "Evals: golden set of 100 to 200 labelled files",
+    "value": 3,
+    "risk": 4,
+    "depends_on": [],
+    "weeks": 4,
+    "owner": "Kaagaz FDE with two senior analysts",
+    "why": "no ground truth exists; without it nobody can say extraction works",
+    "priority": 11.0,
+    "start_week": 1,
+    "end_week": 4,
+    "rank": 3,
+    "warnings": []
+  },
+  {
+    "code": "W1",
+    "name": "Extraction: pages and fields from scanned PDFs",
+    "value": 5,
+    "risk": 4,
+    "depends_on": [
+      "W3"
+    ],
+    "weeks": 6,
+    "owner": "Kaagaz FDE",
+    "why": "the core of the value; Telugu forms and phone photos make accuracy the big unknown",
+    "priority": 13.0,
+    "start_week": 2,
+    "end_week": 7,
+    "rank": 4,
+    "warnings": []
+  },
+  {
+    "code": "W2",
+    "name": "Completeness checks: deterministic rules per product",
+    "value": 4,
+    "risk": 2,
+    "depends_on": [],
+    "weeks": 3,
+    "owner": "Kaagaz FDE with compliance head",
+    "why": "catches the 31 percent send-backs on day one; rules are knowable, so low risk",
+    "priority": 8.0,
+    "start_week": 5,
+    "end_week": 7,
+    "rank": 5,
+    "warnings": []
+  },
+  {
+    "code": "W6",
+    "name": "Enablement: review queue, tracker migration, resubmission",
+    "value": 3,
+    "risk": 3,
+    "depends_on": [
+      "W2",
+      "W4"
+    ],
+    "weeks": 4,
+    "owner": "credit-ops team lead with FDE",
+    "why": "adoption risk: analysts keep the tracker if the tool adds a step",
+    "priority": 9.0,
+    "start_week": 6,
+    "end_week": 9,
+    "rank": 6,
+    "warnings": []
+  }
+]
