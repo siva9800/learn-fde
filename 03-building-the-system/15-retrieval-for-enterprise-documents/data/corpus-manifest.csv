@@ -1,0 +1,371 @@
+doc_id,doc_type,title,product,language,effective_from,effective_to,superseded_by,approval_status,branch,pages,scanned
+GFL/CO/2024/007,circular,Masking of Aadhaar numbers in KYC copies,all,en,2024-02-01,2025-06-01,GFL/CO/2025/012,approved,,1,True
+GFL/CO/2025/012,circular,Masking of Aadhaar numbers in KYC copies (revised),all,mixed,2025-06-01,,,approved,,2,False
+GFL/CO/2024/015,circular,Income proof for two-wheeler loans,two-wheeler,en,2024-04-01,2025-04-01,GFL/CO/2025/027,approved,,1,True
+GFL/CO/2025/027,circular,Income proof for two-wheeler loans by applicant type,two-wheeler,mixed,2025-04-01,,,approved,,3,False
+GFL/CO/2024/021,circular,Bank statement period for salaried applicants,all,en,2024-05-15,2025-07-15,GFL/CO/2025/033,approved,,1,True
+GFL/CO/2025/033,circular,Bank statement period for salaried applicants (revised),all,en,2025-07-15,,,approved,,1,False
+GFL/CO/2024/018,circular,Validity of dealer quotations,two-wheeler,en,2024-04-15,2025-03-01,GFL/CO/2025/019,approved,,1,False
+GFL/CO/2025/019,circular,Validity of dealer quotations (revised),two-wheeler,en,2025-03-01,,,approved,,1,False
+GFL/CO/2024/011,circular,Loan to value for gold loans,gold,en,2024-03-01,2026-04-01,GFL/CO/2026/009,approved,,1,True
+GFL/CO/2026/009,circular,Loan to value for gold loans (tiered caps),gold,en,2026-04-01,,,approved,,2,False
+GFL/CO/2025/046,circular,Gold appraisal and purity,gold,en,2025-08-11,,,approved,,1,False
+GFL/CO/2024/026,circular,Co-applicants on two-wheeler loans,two-wheeler,en,2024-06-10,2025-09-15,GFL/CO/2025/038,approved,,1,False
+GFL/CO/2025/038,circular,Co-applicants on two-wheeler loans (revised),two-wheeler,en,2025-09-15,,,approved,,1,False
+GFL/CO/2024/004,circular,PAN or Form 60,all,en,2024-01-15,2025-10-13,GFL/CO/2025/041,approved,,1,False
+GFL/CO/2025/041,circular,PAN or Form 60 (revised),all,en,2025-10-13,,,approved,,1,False
+GFL/CO/2024/031,circular,Age and tenure limits for two-wheeler loans,two-wheeler,en,2024-07-08,2025-11-10,GFL/CO/2025/049,approved,,1,False
+GFL/CO/2025/049,circular,Age and tenure limits for two-wheeler loans (revised),two-wheeler,en,2025-11-10,,,approved,,1,False
+GFL/CO/2025/029,circular,Field verification for self-employed applicants,two-wheeler,en,2025-05-01,,,approved,,1,False
+GFL/CO/2025/050,circular,Documents for small-business loans,small-business,en,2025-11-24,,,approved,,1,False
+GFL/CO/2025/052,circular,Documents received on personal phones,all,mixed,2025-12-08,,,approved,,1,False
+GFL/CO/2024/056,circular,Grievance redressal at branches,all,en,2024-02-19,2025-08-25,GFL/CO/2025/056,approved,,1,True
+GFL/CO/2025/056,circular,Grievance redressal at branches (revised),all,en,2025-08-25,,,approved,,1,False
+GFL/CO/2024/057,circular,Fair practices code: communication in the customer's language,all,en,2024-09-09,,,approved,,1,False
+GFL/CO/2024/058,circular,Display of interest rates and charges,all,en,2024-04-08,2025-04-08,GFL/CO/2025/057,approved,,1,True
+GFL/CO/2025/057,circular,Display of interest rates and charges (revised),all,en,2025-04-08,,,approved,,1,False
+GFL/CO/2024/059,circular,Foreclosure of loans,all,en,2024-05-27,2025-06-23,GFL/CO/2025/058,approved,,1,False
+GFL/CO/2025/058,circular,Foreclosure of loans (revised),all,en,2025-06-23,,,approved,,1,False
+GFL/CO/2024/060,circular,Conduct of recovery agents,all,en,2024-03-18,2025-03-17,GFL/CO/2025/059,approved,,1,False
+GFL/CO/2025/059,circular,Conduct of recovery agents (revised),all,en,2025-03-17,,,approved,,1,False
+GFL/CO/2024/061,circular,Cash handling at branches,all,en,2024-02-05,2025-02-03,GFL/CO/2025/060,approved,,1,True
+GFL/CO/2025/060,circular,Cash handling at branches (revised),all,en,2025-02-03,,,approved,,1,False
+GFL/CO/2024/062,circular,Reporting suspected fraud,all,en,2024-06-24,2025-07-28,GFL/CO/2025/061,approved,,1,False
+GFL/CO/2025/061,circular,Reporting suspected fraud (revised),all,en,2025-07-28,,,approved,,1,False
+GFL/CO/2024/063,circular,Registration of security interest,all,en,2024-08-12,,,approved,,1,False
+GFL/CO/2024/064,circular,Insurance offered with loans,all,en,2024-03-04,2025-03-03,GFL/CO/2025/062,approved,,1,False
+GFL/CO/2025/062,circular,Insurance offered with loans (revised),all,en,2025-03-03,,,approved,,1,False
+GFL/CO/2024/065,circular,Overdue follow-up and NPA classification,all,en,2024-04-29,,,approved,,1,False
+GFL/CO/2024/066,circular,Turnaround time and accountability,all,en,2024-10-14,,,approved,,1,False
+GFL/CO/2024/067,circular,Retention of loan records,all,en,2024-01-22,2025-05-12,GFL/CO/2025/063,approved,,1,True
+GFL/CO/2025/063,circular,Retention of loan records (revised),all,en,2025-05-12,,,approved,,1,False
+GFL/CO/2024/068,circular,Customer data on personal devices,all,en,2024-11-18,2025-10-06,GFL/CO/2025/064,approved,,1,False
+GFL/CO/2025/064,circular,Customer data on personal devices (revised),all,en,2025-10-06,,,approved,,1,False
+GFL/CO/2024/069,circular,Branch audit checklist,all,en,2024-07-22,,,approved,,1,False
+GFL/CO/2024/070,circular,Disbursement to dealers,two-wheeler,en,2024-09-30,,,approved,,1,False
+GFL/CO/2024/071,circular,Sanction before disbursement,all,en,2024-05-20,,,approved,,1,False
+GFL/CO/2024/072,circular,Credit bureau checks,all,en,2024-04-01,2025-10-27,GFL/CO/2025/065,approved,,1,False
+GFL/CO/2025/065,circular,Credit bureau checks (revised),all,en,2025-10-27,,,approved,,1,False
+GFL/CO/2024/073,circular,Hypothecation endorsement on vehicle registration,two-wheeler,en,2024-12-09,,,approved,,1,False
+GFL/CO/2024/074,circular,Gold packet sealing and vault custody,gold,en,2024-07-01,,,approved,,1,False
+GFL/CO/2024/075,circular,Auction of pledged gold,gold,en,2024-10-21,2025-10-20,GFL/CO/2025/066,approved,,1,False
+GFL/CO/2025/066,circular,Auction of pledged gold (revised),gold,en,2025-10-20,,,approved,,1,False
+GFL/CO/2024/076,circular,Customer communication in Telugu,all,en,2024-09-02,,,approved,,1,False
+GFL/CO/2024/077,circular,Branch working on festival holidays,all,en,2024-12-23,,,approved,,1,False
+GFL/CO/2025/067,circular,GST verification for small-business loans,small-business,en,2025-01-20,,,approved,,1,False
+GFL/CO/2024/078,circular,Screening for politically exposed persons,all,en,2024-02-12,,,approved,,1,False
+GFL/CO/2024/079,circular,Access to loan files by branch,all,en,2024-04-15,2025-08-18,GFL/CO/2025/068,approved,,1,False
+GFL/CO/2025/068,circular,Access to loan files by branch (revised),all,en,2025-08-18,,,approved,,1,False
+GFL/CO/2024/080,circular,Distribution of circulars,all,en,2024-01-09,2025-01-13,GFL/CO/2025/069,approved,,1,False
+GFL/CO/2025/069,circular,Distribution of circulars (revised),all,en,2025-01-13,,,approved,,1,False
+GFL/CO/2024/081,circular,Video-based customer identification,all,en,2024-09-16,,,approved,,1,False
+GFL/CO/2025/070,circular,Duplicate applications,all,en,2025-06-09,,,approved,,1,False
+GFL/RB/2024/001,rulebook,Two-wheeler loan product rulebook (2024),two-wheeler,en,2024-04-01,2026-01-19,GFL/RB/2026/001,approved,,1,True
+GFL/RB/2026/001,rulebook,Two-wheeler loan product rulebook (2026),two-wheeler,en,2026-01-19,,,approved,,2,False
+GFL/RB/2026/002,rulebook,Gold loan product rulebook (2026),gold,en,2026-04-01,,,approved,,1,False
+GFL/RB/2025/003,rulebook,Small-business loan product rulebook (2025),small-business,en,2025-11-24,,,approved,,1,False
+GFL/CMP/2026/004,annex,Acceptable alternatives for proof of address,all,mixed,2026-11-23,,,approved,,2,False
+GFL/RBI/2025/001,rbi_digest,Digest: RBI Master Direction on KYC (approved for analysts),all,en,2025-02-10,,,approved,,2,False
+GFL/RBI/2026/002,rbi_digest,Digest: RBI directions on lending against gold collateral (approved for analysts),gold,en,2026-03-16,,,approved,,1,False
+GFL/RBI/2024/003,rbi_digest,Digest: RBI fair practices code for NBFCs (approved for analysts),all,en,2024-06-10,,,approved,,1,False
+GFL/CO/2026/041,circular,Video-based KYC for repeat customers (draft),all,en,2026-11-16,,,draft,,1,False
+GF-23562,loan_decision,Decision summary GF-23562,two-wheeler,en,2025-09-02,,,approved,Kukatpally,1,False
+GF-21069,loan_decision,Decision summary GF-21069,two-wheeler,en,2025-01-31,,,approved,Kukatpally,1,False
+GF-21947,loan_decision,Decision summary GF-21947,two-wheeler,en,2025-08-05,,,approved,Kukatpally,1,False
+GF-24457,loan_decision,Decision summary GF-24457,two-wheeler,en,2026-05-09,,,approved,Kukatpally,1,False
+GF-24378,loan_decision,Decision summary GF-24378,two-wheeler,en,2024-11-16,,,approved,Kukatpally,1,False
+GF-21169,loan_decision,Decision summary GF-21169,small-business,en,2024-08-05,,,approved,Kukatpally,1,False
+GF-21347,loan_decision,Decision summary GF-21347,two-wheeler,en,2026-04-26,,,approved,Kukatpally,1,False
+GF-21011,loan_decision,Decision summary GF-21011,gold,en,2025-11-13,,,approved,Kukatpally,1,False
+GF-23985,loan_decision,Decision summary GF-23985,small-business,en,2025-10-31,,,approved,Kukatpally,1,False
+GF-23901,loan_decision,Decision summary GF-23901,two-wheeler,en,2024-11-07,,,approved,Kukatpally,1,False
+GF-23712,loan_decision,Decision summary GF-23712,small-business,en,2026-01-02,,,approved,Kukatpally,1,False
+GF-23192,loan_decision,Decision summary GF-23192,gold,en,2025-08-29,,,approved,Kukatpally,1,False
+GF-21280,loan_decision,Decision summary GF-21280,small-business,en,2025-08-17,,,approved,Kukatpally,1,False
+GF-22598,loan_decision,Decision summary GF-22598,two-wheeler,en,2025-02-24,,,approved,Kukatpally,1,False
+GF-23794,loan_decision,Decision summary GF-23794,two-wheeler,en,2025-07-14,,,approved,Kukatpally,1,False
+GF-21493,loan_decision,Decision summary GF-21493,two-wheeler,en,2025-11-13,,,approved,Kukatpally,1,False
+GF-23722,loan_decision,Decision summary GF-23722,two-wheeler,en,2025-05-03,,,approved,Kukatpally,1,False
+GF-24447,loan_decision,Decision summary GF-24447,small-business,en,2025-01-27,,,approved,Kukatpally,1,False
+GF-22478,loan_decision,Decision summary GF-22478,two-wheeler,en,2025-04-27,,,approved,Kukatpally,1,False
+GF-22470,loan_decision,Decision summary GF-22470,two-wheeler,en,2025-08-19,,,approved,Kukatpally,1,False
+GF-23790,loan_decision,Decision summary GF-23790,gold,en,2024-10-26,,,approved,Kukatpally,1,False
+GF-21444,loan_decision,Decision summary GF-21444,small-business,en,2026-03-06,,,approved,Kukatpally,1,False
+GF-21418,loan_decision,Decision summary GF-21418,gold,en,2024-09-24,,,approved,Kukatpally,1,False
+GF-22745,loan_decision,Decision summary GF-22745,two-wheeler,en,2025-06-18,,,approved,Kukatpally,1,False
+GF-22135,loan_decision,Decision summary GF-22135,gold,en,2024-10-26,,,approved,Kukatpally,1,False
+GF-23327,loan_decision,Decision summary GF-23327,two-wheeler,en,2024-06-19,,,approved,Kukatpally,1,False
+GF-23020,loan_decision,Decision summary GF-23020,two-wheeler,en,2024-10-10,,,approved,Kukatpally,1,False
+GF-21021,loan_decision,Decision summary GF-21021,two-wheeler,en,2025-01-11,,,approved,Kukatpally,1,False
+GF-21248,loan_decision,Decision summary GF-21248,gold,en,2024-10-15,,,approved,Kukatpally,1,False
+GF-21785,loan_decision,Decision summary GF-21785,gold,en,2026-06-01,,,approved,Kukatpally,1,False
+GF-21540,loan_decision,Decision summary GF-21540,two-wheeler,en,2026-01-23,,,approved,Kukatpally,1,False
+GF-22722,loan_decision,Decision summary GF-22722,two-wheeler,en,2024-08-03,,,approved,Kukatpally,1,False
+GF-24787,loan_decision,Decision summary GF-24787,gold,en,2025-06-06,,,approved,Kukatpally,1,False
+GF-24698,loan_decision,Decision summary GF-24698,two-wheeler,en,2026-02-09,,,approved,Kukatpally,1,False
+GF-21330,loan_decision,Decision summary GF-21330,two-wheeler,en,2026-10-02,,,approved,Kukatpally,1,False
+GF-24450,loan_decision,Decision summary GF-24450,two-wheeler,en,2025-02-02,,,approved,Kukatpally,1,False
+GF-24780,loan_decision,Decision summary GF-24780,gold,en,2024-07-25,,,approved,Kukatpally,1,False
+GF-24814,loan_decision,Decision summary GF-24814,gold,en,2025-12-13,,,approved,Kukatpally,1,False
+GF-21563,loan_decision,Decision summary GF-21563,gold,en,2025-10-31,,,approved,Kukatpally,1,False
+GF-22790,loan_decision,Decision summary GF-22790,two-wheeler,en,2024-09-07,,,approved,Kukatpally,1,False
+GF-23081,loan_decision,Decision summary GF-23081,two-wheeler,en,2025-09-13,,,approved,Kukatpally,1,False
+GF-22963,loan_decision,Decision summary GF-22963,gold,en,2026-09-05,,,approved,Kukatpally,1,False
+GF-22132,loan_decision,Decision summary GF-22132,gold,en,2024-12-19,,,approved,Kukatpally,1,False
+GF-23066,loan_decision,Decision summary GF-23066,two-wheeler,en,2025-06-08,,,approved,Kukatpally,1,False
+GF-22463,loan_decision,Decision summary GF-22463,small-business,en,2026-08-03,,,approved,Kukatpally,1,False
+GF-21506,loan_decision,Decision summary GF-21506,two-wheeler,en,2025-06-25,,,approved,Kukatpally,1,False
+GF-22474,loan_decision,Decision summary GF-22474,gold,en,2025-10-01,,,approved,Kukatpally,1,False
+GF-22818,loan_decision,Decision summary GF-22818,small-business,en,2024-11-11,,,approved,Kukatpally,1,False
+GF-23212,loan_decision,Decision summary GF-23212,two-wheeler,en,2026-10-06,,,approved,Kukatpally,1,False
+GF-24836,loan_decision,Decision summary GF-24836,gold,en,2024-12-01,,,approved,Kukatpally,1,False
+GF-24415,loan_decision,Decision summary GF-24415,gold,en,2026-03-10,,,approved,Dilsukhnagar,1,False
+GF-24809,loan_decision,Decision summary GF-24809,two-wheeler,en,2024-09-29,,,approved,Dilsukhnagar,1,False
+GF-24315,loan_decision,Decision summary GF-24315,gold,te-latn,2025-03-19,,,approved,Dilsukhnagar,1,False
+GF-22892,loan_decision,Decision summary GF-22892,two-wheeler,en,2025-05-13,,,approved,Dilsukhnagar,1,False
+GF-22113,loan_decision,Decision summary GF-22113,gold,te-latn,2024-09-13,,,approved,Dilsukhnagar,1,False
+GF-22974,loan_decision,Decision summary GF-22974,small-business,en,2026-01-24,,,approved,Dilsukhnagar,1,False
+GF-21805,loan_decision,Decision summary GF-21805,two-wheeler,en,2026-02-22,,,approved,Dilsukhnagar,1,False
+GF-23773,loan_decision,Decision summary GF-23773,gold,te-latn,2024-12-24,,,approved,Dilsukhnagar,1,False
+GF-23376,loan_decision,Decision summary GF-23376,two-wheeler,en,2026-10-16,,,approved,Dilsukhnagar,1,False
+GF-22092,loan_decision,Decision summary GF-22092,two-wheeler,en,2025-11-03,,,approved,Dilsukhnagar,1,False
+GF-21147,loan_decision,Decision summary GF-21147,two-wheeler,te-latn,2024-11-12,,,approved,Dilsukhnagar,1,False
+GF-22325,loan_decision,Decision summary GF-22325,two-wheeler,te-latn,2025-11-07,,,approved,Dilsukhnagar,1,False
+GF-21875,loan_decision,Decision summary GF-21875,gold,en,2024-07-17,,,approved,Dilsukhnagar,1,False
+GF-22324,loan_decision,Decision summary GF-22324,gold,en,2025-09-17,,,approved,Dilsukhnagar,1,False
+GF-21025,loan_decision,Decision summary GF-21025,two-wheeler,te-latn,2026-03-25,,,approved,Dilsukhnagar,1,False
+GF-22462,loan_decision,Decision summary GF-22462,gold,te-latn,2026-04-17,,,approved,Dilsukhnagar,1,False
+GF-21865,loan_decision,Decision summary GF-21865,two-wheeler,en,2025-10-25,,,approved,Dilsukhnagar,1,False
+GF-22018,loan_decision,Decision summary GF-22018,two-wheeler,te-latn,2025-09-02,,,approved,Dilsukhnagar,1,False
+GF-22537,loan_decision,Decision summary GF-22537,two-wheeler,en,2025-08-29,,,approved,Dilsukhnagar,1,False
+GF-21381,loan_decision,Decision summary GF-21381,gold,en,2026-06-01,,,approved,Dilsukhnagar,1,False
+GF-24390,loan_decision,Decision summary GF-24390,two-wheeler,te-latn,2024-08-23,,,approved,Dilsukhnagar,1,False
+GF-23243,loan_decision,Decision summary GF-23243,two-wheeler,en,2025-07-26,,,approved,Dilsukhnagar,1,False
+GF-24790,loan_decision,Decision summary GF-24790,gold,te-latn,2026-07-12,,,approved,Dilsukhnagar,1,False
+GF-21733,loan_decision,Decision summary GF-21733,small-business,en,2024-09-17,,,approved,Dilsukhnagar,1,False
+GF-22573,loan_decision,Decision summary GF-22573,two-wheeler,en,2026-01-12,,,approved,Dilsukhnagar,1,False
+GF-22997,loan_decision,Decision summary GF-22997,two-wheeler,te-latn,2026-10-16,,,approved,Dilsukhnagar,1,False
+GF-23711,loan_decision,Decision summary GF-23711,gold,en,2025-08-24,,,approved,Dilsukhnagar,1,False
+GF-22934,loan_decision,Decision summary GF-22934,small-business,te-latn,2026-10-10,,,approved,Dilsukhnagar,1,False
+GF-23401,loan_decision,Decision summary GF-23401,gold,en,2026-04-24,,,approved,Dilsukhnagar,1,False
+GF-23071,loan_decision,Decision summary GF-23071,two-wheeler,en,2026-08-29,,,approved,Dilsukhnagar,1,False
+GF-23627,loan_decision,Decision summary GF-23627,two-wheeler,en,2026-05-27,,,approved,Dilsukhnagar,1,False
+GF-23012,loan_decision,Decision summary GF-23012,small-business,te-latn,2024-12-05,,,approved,Dilsukhnagar,1,False
+GF-21938,loan_decision,Decision summary GF-21938,two-wheeler,en,2024-11-16,,,approved,Dilsukhnagar,1,False
+GF-22816,loan_decision,Decision summary GF-22816,two-wheeler,en,2026-08-06,,,approved,Dilsukhnagar,1,False
+GF-22607,loan_decision,Decision summary GF-22607,two-wheeler,te-latn,2026-05-12,,,approved,Dilsukhnagar,1,False
+GF-21668,loan_decision,Decision summary GF-21668,small-business,te-latn,2025-07-16,,,approved,Dilsukhnagar,1,False
+GF-21872,loan_decision,Decision summary GF-21872,gold,te-latn,2024-12-17,,,approved,Dilsukhnagar,1,False
+GF-23962,loan_decision,Decision summary GF-23962,two-wheeler,te-latn,2026-10-19,,,approved,Dilsukhnagar,1,False
+GF-24291,loan_decision,Decision summary GF-24291,two-wheeler,te-latn,2025-08-31,,,approved,Dilsukhnagar,1,False
+GF-22760,loan_decision,Decision summary GF-22760,two-wheeler,en,2025-10-12,,,approved,Dilsukhnagar,1,False
+GF-23876,loan_decision,Decision summary GF-23876,two-wheeler,te-latn,2025-11-11,,,approved,Dilsukhnagar,1,False
+GF-21378,loan_decision,Decision summary GF-21378,two-wheeler,en,2025-07-22,,,approved,Dilsukhnagar,1,False
+GF-21060,loan_decision,Decision summary GF-21060,two-wheeler,te-latn,2026-09-18,,,approved,Dilsukhnagar,1,False
+GF-22398,loan_decision,Decision summary GF-22398,gold,en,2025-03-10,,,approved,Dilsukhnagar,1,False
+GF-22133,loan_decision,Decision summary GF-22133,two-wheeler,en,2024-06-17,,,approved,Dilsukhnagar,1,False
+GF-24889,loan_decision,Decision summary GF-24889,two-wheeler,te-latn,2025-05-07,,,approved,Dilsukhnagar,1,False
+GF-24364,loan_decision,Decision summary GF-24364,two-wheeler,te-latn,2024-09-15,,,approved,Dilsukhnagar,1,False
+GF-21889,loan_decision,Decision summary GF-21889,two-wheeler,te-latn,2025-06-25,,,approved,Dilsukhnagar,1,False
+GF-24414,loan_decision,Decision summary GF-24414,two-wheeler,te-latn,2025-09-17,,,approved,Dilsukhnagar,1,False
+GF-23491,loan_decision,Decision summary GF-23491,two-wheeler,en,2025-01-05,,,approved,Dilsukhnagar,1,False
+GF-24388,loan_decision,Decision summary GF-24388,two-wheeler,te-latn,2026-05-19,,,approved,Vijayawada-Benz Circle,1,False
+GF-24620,loan_decision,Decision summary GF-24620,two-wheeler,en,2026-07-08,,,approved,Vijayawada-Benz Circle,1,False
+GF-21458,loan_decision,Decision summary GF-21458,gold,en,2025-10-31,,,approved,Vijayawada-Benz Circle,1,False
+GF-22291,loan_decision,Decision summary GF-22291,two-wheeler,te-latn,2025-02-14,,,approved,Vijayawada-Benz Circle,1,False
+GF-21904,loan_decision,Decision summary GF-21904,two-wheeler,en,2025-03-24,,,approved,Vijayawada-Benz Circle,1,False
+GF-22047,loan_decision,Decision summary GF-22047,gold,en,2025-02-19,,,approved,Vijayawada-Benz Circle,1,False
+GF-23390,loan_decision,Decision summary GF-23390,two-wheeler,en,2025-10-30,,,approved,Vijayawada-Benz Circle,1,False
+GF-22458,loan_decision,Decision summary GF-22458,small-business,te-latn,2025-08-10,,,approved,Vijayawada-Benz Circle,1,False
+GF-22450,loan_decision,Decision summary GF-22450,two-wheeler,en,2026-07-18,,,approved,Vijayawada-Benz Circle,1,False
+GF-23890,loan_decision,Decision summary GF-23890,two-wheeler,en,2026-10-16,,,approved,Vijayawada-Benz Circle,1,False
+GF-24228,loan_decision,Decision summary GF-24228,two-wheeler,en,2024-07-04,,,approved,Vijayawada-Benz Circle,1,False
+GF-24552,loan_decision,Decision summary GF-24552,two-wheeler,en,2024-08-09,,,approved,Vijayawada-Benz Circle,1,False
+GF-21577,loan_decision,Decision summary GF-21577,two-wheeler,en,2026-04-18,,,approved,Vijayawada-Benz Circle,1,False
+GF-22917,loan_decision,Decision summary GF-22917,two-wheeler,te-latn,2024-06-03,,,approved,Vijayawada-Benz Circle,1,False
+GF-22982,loan_decision,Decision summary GF-22982,two-wheeler,en,2024-09-07,,,approved,Vijayawada-Benz Circle,1,False
+GF-22002,loan_decision,Decision summary GF-22002,two-wheeler,te-latn,2025-11-05,,,approved,Vijayawada-Benz Circle,1,False
+GF-24193,loan_decision,Decision summary GF-24193,two-wheeler,en,2026-01-17,,,approved,Vijayawada-Benz Circle,1,False
+GF-22747,loan_decision,Decision summary GF-22747,two-wheeler,en,2024-09-06,,,approved,Vijayawada-Benz Circle,1,False
+GF-21221,loan_decision,Decision summary GF-21221,two-wheeler,en,2026-08-01,,,approved,Vijayawada-Benz Circle,1,False
+GF-23537,loan_decision,Decision summary GF-23537,two-wheeler,te-latn,2025-01-26,,,approved,Vijayawada-Benz Circle,1,False
+GF-23455,loan_decision,Decision summary GF-23455,two-wheeler,en,2025-05-18,,,approved,Vijayawada-Benz Circle,1,False
+GF-22521,loan_decision,Decision summary GF-22521,small-business,en,2024-08-23,,,approved,Vijayawada-Benz Circle,1,False
+GF-22258,loan_decision,Decision summary GF-22258,two-wheeler,en,2026-08-19,,,approved,Vijayawada-Benz Circle,1,False
+GF-23697,loan_decision,Decision summary GF-23697,two-wheeler,te-latn,2026-02-03,,,approved,Vijayawada-Benz Circle,1,False
+GF-24473,loan_decision,Decision summary GF-24473,gold,en,2026-05-30,,,approved,Vijayawada-Benz Circle,1,False
+GF-24020,loan_decision,Decision summary GF-24020,two-wheeler,en,2026-03-13,,,approved,Vijayawada-Benz Circle,1,False
+GF-23088,loan_decision,Decision summary GF-23088,two-wheeler,en,2025-03-15,,,approved,Vijayawada-Benz Circle,1,False
+GF-23599,loan_decision,Decision summary GF-23599,small-business,en,2026-10-14,,,approved,Vijayawada-Benz Circle,1,False
+GF-22869,loan_decision,Decision summary GF-22869,small-business,en,2024-12-02,,,approved,Vijayawada-Benz Circle,1,False
+GF-22660,loan_decision,Decision summary GF-22660,two-wheeler,en,2025-10-17,,,approved,Vijayawada-Benz Circle,1,False
+GF-22606,loan_decision,Decision summary GF-22606,two-wheeler,te-latn,2026-03-18,,,approved,Vijayawada-Benz Circle,1,False
+GF-21175,loan_decision,Decision summary GF-21175,two-wheeler,te-latn,2025-06-29,,,approved,Vijayawada-Benz Circle,1,False
+GF-22403,loan_decision,Decision summary GF-22403,gold,en,2026-04-24,,,approved,Vijayawada-Benz Circle,1,False
+GF-23781,loan_decision,Decision summary GF-23781,gold,te-latn,2024-11-21,,,approved,Vijayawada-Benz Circle,1,False
+GF-24143,loan_decision,Decision summary GF-24143,two-wheeler,te-latn,2026-07-22,,,approved,Vijayawada-Benz Circle,1,False
+GF-24505,loan_decision,Decision summary GF-24505,two-wheeler,en,2024-11-20,,,approved,Vijayawada-Benz Circle,1,False
+GF-21542,loan_decision,Decision summary GF-21542,two-wheeler,en,2026-09-05,,,approved,Vijayawada-Benz Circle,1,False
+GF-22193,loan_decision,Decision summary GF-22193,small-business,en,2024-12-18,,,approved,Vijayawada-Benz Circle,1,False
+GF-21128,loan_decision,Decision summary GF-21128,small-business,te-latn,2026-06-17,,,approved,Vijayawada-Benz Circle,1,False
+GF-24006,loan_decision,Decision summary GF-24006,two-wheeler,en,2026-07-17,,,approved,Vijayawada-Benz Circle,1,False
+GF-24200,loan_decision,Decision summary GF-24200,two-wheeler,te-latn,2026-08-23,,,approved,Vijayawada-Benz Circle,1,False
+GF-21956,loan_decision,Decision summary GF-21956,small-business,en,2024-10-14,,,approved,Vijayawada-Benz Circle,1,False
+GF-22429,loan_decision,Decision summary GF-22429,two-wheeler,te-latn,2025-04-04,,,approved,Vijayawada-Benz Circle,1,False
+GF-21759,loan_decision,Decision summary GF-21759,two-wheeler,te-latn,2026-07-20,,,approved,Vijayawada-Benz Circle,1,False
+GF-24527,loan_decision,Decision summary GF-24527,two-wheeler,en,2026-01-29,,,approved,Vijayawada-Benz Circle,1,False
+GF-22091,loan_decision,Decision summary GF-22091,gold,te-latn,2026-03-05,,,approved,Vijayawada-Benz Circle,1,False
+GF-21776,loan_decision,Decision summary GF-21776,small-business,te-latn,2026-02-24,,,approved,Vijayawada-Benz Circle,1,False
+GF-21838,loan_decision,Decision summary GF-21838,gold,te-latn,2024-08-25,,,approved,Vijayawada-Benz Circle,1,False
+GF-21603,loan_decision,Decision summary GF-21603,two-wheeler,en,2026-05-30,,,approved,Vijayawada-Benz Circle,1,False
+GF-21672,loan_decision,Decision summary GF-21672,two-wheeler,te-latn,2024-08-15,,,approved,Vijayawada-Benz Circle,1,False
+GF-23417,loan_decision,Decision summary GF-23417,two-wheeler,te-latn,2025-08-14,,,approved,Guntur,1,False
+GF-22730,loan_decision,Decision summary GF-22730,two-wheeler,te-latn,2025-06-30,,,approved,Guntur,1,False
+GF-22015,loan_decision,Decision summary GF-22015,gold,te-latn,2025-01-21,,,approved,Guntur,1,False
+GF-23301,loan_decision,Decision summary GF-23301,two-wheeler,te-latn,2025-08-11,,,approved,Guntur,1,False
+GF-22182,loan_decision,Decision summary GF-22182,two-wheeler,te-latn,2025-01-17,,,approved,Guntur,1,False
+GF-21035,loan_decision,Decision summary GF-21035,two-wheeler,te-latn,2025-08-20,,,approved,Guntur,1,False
+GF-23956,loan_decision,Decision summary GF-23956,two-wheeler,en,2024-07-03,,,approved,Guntur,1,False
+GF-22519,loan_decision,Decision summary GF-22519,two-wheeler,en,2025-02-01,,,approved,Guntur,1,False
+GF-22282,loan_decision,Decision summary GF-22282,gold,en,2024-09-05,,,approved,Guntur,1,False
+GF-23765,loan_decision,Decision summary GF-23765,two-wheeler,en,2026-06-25,,,approved,Guntur,1,False
+GF-23420,loan_decision,Decision summary GF-23420,two-wheeler,en,2026-05-31,,,approved,Guntur,1,False
+GF-22155,loan_decision,Decision summary GF-22155,two-wheeler,te-latn,2026-03-19,,,approved,Guntur,1,False
+GF-23165,loan_decision,Decision summary GF-23165,two-wheeler,te-latn,2026-08-19,,,approved,Guntur,1,False
+GF-23612,loan_decision,Decision summary GF-23612,gold,en,2025-03-04,,,approved,Guntur,1,False
+GF-21937,loan_decision,Decision summary GF-21937,small-business,en,2025-02-15,,,approved,Guntur,1,False
+GF-24474,loan_decision,Decision summary GF-24474,two-wheeler,en,2025-11-20,,,approved,Guntur,1,False
+GF-22151,loan_decision,Decision summary GF-22151,two-wheeler,en,2025-06-18,,,approved,Guntur,1,False
+GF-22725,loan_decision,Decision summary GF-22725,gold,en,2026-06-06,,,approved,Guntur,1,False
+GF-23334,loan_decision,Decision summary GF-23334,two-wheeler,en,2024-09-13,,,approved,Guntur,1,False
+GF-23729,loan_decision,Decision summary GF-23729,gold,en,2024-07-29,,,approved,Guntur,1,False
+GF-23595,loan_decision,Decision summary GF-23595,two-wheeler,en,2025-03-15,,,approved,Guntur,1,False
+GF-21722,loan_decision,Decision summary GF-21722,two-wheeler,en,2025-06-08,,,approved,Guntur,1,False
+GF-22786,loan_decision,Decision summary GF-22786,two-wheeler,te-latn,2024-12-19,,,approved,Guntur,1,False
+GF-23130,loan_decision,Decision summary GF-23130,two-wheeler,en,2026-05-20,,,approved,Guntur,1,False
+GF-23555,loan_decision,Decision summary GF-23555,two-wheeler,en,2026-01-29,,,approved,Guntur,1,False
+GF-24708,loan_decision,Decision summary GF-24708,two-wheeler,te-latn,2024-10-08,,,approved,Guntur,1,False
+GF-24151,loan_decision,Decision summary GF-24151,two-wheeler,en,2026-06-11,,,approved,Guntur,1,False
+GF-23185,loan_decision,Decision summary GF-23185,gold,en,2024-11-26,,,approved,Guntur,1,False
+GF-21318,loan_decision,Decision summary GF-21318,two-wheeler,en,2024-12-10,,,approved,Guntur,1,False
+GF-22710,loan_decision,Decision summary GF-22710,two-wheeler,te-latn,2025-02-25,,,approved,Guntur,1,False
+GF-24772,loan_decision,Decision summary GF-24772,two-wheeler,en,2024-11-19,,,approved,Guntur,1,False
+GF-21334,loan_decision,Decision summary GF-21334,two-wheeler,en,2025-12-25,,,approved,Guntur,1,False
+GF-24805,loan_decision,Decision summary GF-24805,two-wheeler,en,2024-12-14,,,approved,Guntur,1,False
+GF-21699,loan_decision,Decision summary GF-21699,two-wheeler,te-latn,2025-07-22,,,approved,Guntur,1,False
+GF-22787,loan_decision,Decision summary GF-22787,two-wheeler,en,2025-08-29,,,approved,Guntur,1,False
+GF-23018,loan_decision,Decision summary GF-23018,two-wheeler,en,2024-07-12,,,approved,Guntur,1,False
+GF-21467,loan_decision,Decision summary GF-21467,gold,te-latn,2026-06-30,,,approved,Guntur,1,False
+GF-21845,loan_decision,Decision summary GF-21845,two-wheeler,te-latn,2025-08-31,,,approved,Guntur,1,False
+GF-22858,loan_decision,Decision summary GF-22858,two-wheeler,en,2026-07-25,,,approved,Guntur,1,False
+GF-23019,loan_decision,Decision summary GF-23019,gold,en,2025-03-05,,,approved,Guntur,1,False
+GF-24086,loan_decision,Decision summary GF-24086,two-wheeler,te-latn,2025-07-18,,,approved,Guntur,1,False
+GF-23871,loan_decision,Decision summary GF-23871,gold,en,2025-08-20,,,approved,Guntur,1,False
+GF-24837,loan_decision,Decision summary GF-24837,gold,te-latn,2025-06-06,,,approved,Guntur,1,False
+GF-24866,loan_decision,Decision summary GF-24866,two-wheeler,en,2025-11-02,,,approved,Guntur,1,False
+GF-22525,loan_decision,Decision summary GF-22525,two-wheeler,en,2025-05-06,,,approved,Guntur,1,False
+GF-24652,loan_decision,Decision summary GF-24652,two-wheeler,en,2025-04-26,,,approved,Guntur,1,False
+GF-23457,loan_decision,Decision summary GF-23457,two-wheeler,en,2024-10-04,,,approved,Guntur,1,False
+GF-22530,loan_decision,Decision summary GF-22530,small-business,en,2026-07-14,,,approved,Guntur,1,False
+GF-23732,loan_decision,Decision summary GF-23732,gold,en,2025-04-15,,,approved,Guntur,1,False
+GF-22460,loan_decision,Decision summary GF-22460,two-wheeler,en,2026-03-16,,,approved,Guntur,1,False
+GF-23911,loan_decision,Decision summary GF-23911,two-wheeler,en,2025-12-03,,,approved,Warangal,1,False
+GF-21250,loan_decision,Decision summary GF-21250,two-wheeler,te-latn,2026-07-16,,,approved,Warangal,1,False
+GF-24582,loan_decision,Decision summary GF-24582,gold,te-latn,2026-01-08,,,approved,Warangal,1,False
+GF-22536,loan_decision,Decision summary GF-22536,small-business,en,2025-07-25,,,approved,Warangal,1,False
+GF-21442,loan_decision,Decision summary GF-21442,two-wheeler,en,2026-10-12,,,approved,Warangal,1,False
+GF-21930,loan_decision,Decision summary GF-21930,gold,te-latn,2025-05-17,,,approved,Warangal,1,False
+GF-21646,loan_decision,Decision summary GF-21646,two-wheeler,en,2026-01-13,,,approved,Warangal,1,False
+GF-22311,loan_decision,Decision summary GF-22311,two-wheeler,te-latn,2026-09-11,,,approved,Warangal,1,False
+GF-23432,loan_decision,Decision summary GF-23432,two-wheeler,en,2025-07-20,,,approved,Warangal,1,False
+GF-22876,loan_decision,Decision summary GF-22876,two-wheeler,en,2026-02-11,,,approved,Warangal,1,False
+GF-21156,loan_decision,Decision summary GF-21156,two-wheeler,en,2024-12-05,,,approved,Warangal,1,False
+GF-23889,loan_decision,Decision summary GF-23889,two-wheeler,en,2025-01-28,,,approved,Warangal,1,False
+GF-24279,loan_decision,Decision summary GF-24279,two-wheeler,te-latn,2024-12-02,,,approved,Warangal,1,False
+GF-23966,loan_decision,Decision summary GF-23966,gold,te-latn,2024-09-22,,,approved,Warangal,1,False
+GF-22202,loan_decision,Decision summary GF-22202,two-wheeler,en,2024-08-14,,,approved,Warangal,1,False
+GF-21013,loan_decision,Decision summary GF-21013,two-wheeler,en,2025-07-22,,,approved,Warangal,1,False
+GF-22845,loan_decision,Decision summary GF-22845,two-wheeler,te-latn,2026-03-17,,,approved,Warangal,1,False
+GF-23132,loan_decision,Decision summary GF-23132,two-wheeler,en,2026-01-30,,,approved,Warangal,1,False
+GF-21167,loan_decision,Decision summary GF-21167,gold,en,2025-07-17,,,approved,Warangal,1,False
+GF-22909,loan_decision,Decision summary GF-22909,small-business,en,2026-06-16,,,approved,Warangal,1,False
+GF-22860,loan_decision,Decision summary GF-22860,two-wheeler,te-latn,2026-01-15,,,approved,Warangal,1,False
+GF-21344,loan_decision,Decision summary GF-21344,two-wheeler,te-latn,2024-06-13,,,approved,Warangal,1,False
+GF-21896,loan_decision,Decision summary GF-21896,gold,en,2025-04-19,,,approved,Warangal,1,False
+GF-21289,loan_decision,Decision summary GF-21289,two-wheeler,en,2025-12-26,,,approved,Warangal,1,False
+GF-24406,loan_decision,Decision summary GF-24406,two-wheeler,en,2026-04-22,,,approved,Warangal,1,False
+GF-23234,loan_decision,Decision summary GF-23234,two-wheeler,te-latn,2026-09-26,,,approved,Warangal,1,False
+GF-23717,loan_decision,Decision summary GF-23717,gold,en,2025-07-01,,,approved,Warangal,1,False
+GF-23099,loan_decision,Decision summary GF-23099,gold,en,2024-08-20,,,approved,Warangal,1,False
+GF-22104,loan_decision,Decision summary GF-22104,gold,en,2024-07-04,,,approved,Warangal,1,False
+GF-24362,loan_decision,Decision summary GF-24362,gold,en,2026-01-20,,,approved,Warangal,1,False
+GF-22701,loan_decision,Decision summary GF-22701,two-wheeler,en,2025-06-07,,,approved,Warangal,1,False
+GF-24376,loan_decision,Decision summary GF-24376,two-wheeler,en,2025-05-26,,,approved,Warangal,1,False
+GF-24551,loan_decision,Decision summary GF-24551,two-wheeler,en,2025-10-09,,,approved,Warangal,1,False
+GF-22422,loan_decision,Decision summary GF-22422,gold,en,2025-10-18,,,approved,Warangal,1,False
+GF-24407,loan_decision,Decision summary GF-24407,two-wheeler,en,2026-03-02,,,approved,Warangal,1,False
+GF-22126,loan_decision,Decision summary GF-22126,gold,te-latn,2025-03-24,,,approved,Warangal,1,False
+GF-22798,loan_decision,Decision summary GF-22798,gold,en,2025-10-31,,,approved,Warangal,1,False
+GF-21210,loan_decision,Decision summary GF-21210,two-wheeler,te-latn,2025-11-12,,,approved,Warangal,1,False
+GF-22600,loan_decision,Decision summary GF-22600,gold,en,2025-06-08,,,approved,Warangal,1,False
+GF-22636,loan_decision,Decision summary GF-22636,gold,te-latn,2026-07-27,,,approved,Warangal,1,False
+GF-23141,loan_decision,Decision summary GF-23141,small-business,en,2026-04-24,,,approved,Warangal,1,False
+GF-21226,loan_decision,Decision summary GF-21226,two-wheeler,en,2026-07-02,,,approved,Warangal,1,False
+GF-23489,loan_decision,Decision summary GF-23489,two-wheeler,en,2024-11-22,,,approved,Warangal,1,False
+GF-22003,loan_decision,Decision summary GF-22003,two-wheeler,en,2024-09-24,,,approved,Warangal,1,False
+GF-22356,loan_decision,Decision summary GF-22356,gold,te-latn,2026-06-22,,,approved,Warangal,1,False
+GF-21578,loan_decision,Decision summary GF-21578,gold,te-latn,2024-12-24,,,approved,Warangal,1,False
+GF-23609,loan_decision,Decision summary GF-23609,two-wheeler,te-latn,2026-05-16,,,approved,Warangal,1,False
+GF-22489,loan_decision,Decision summary GF-22489,two-wheeler,en,2025-05-23,,,approved,Warangal,1,False
+GF-21338,loan_decision,Decision summary GF-21338,two-wheeler,en,2025-05-24,,,approved,Warangal,1,False
+GF-24201,loan_decision,Decision summary GF-24201,two-wheeler,en,2025-08-20,,,approved,Warangal,1,False
+GF-24105,loan_decision,Decision summary GF-24105,two-wheeler,te-latn,2026-02-10,,,approved,Rajahmundry,1,False
+GF-23290,loan_decision,Decision summary GF-23290,gold,te-latn,2025-08-06,,,approved,Rajahmundry,1,False
+GF-23436,loan_decision,Decision summary GF-23436,two-wheeler,te-latn,2025-10-25,,,approved,Rajahmundry,1,False
+GF-21970,loan_decision,Decision summary GF-21970,gold,en,2026-05-29,,,approved,Rajahmundry,1,False
+GF-22343,loan_decision,Decision summary GF-22343,two-wheeler,en,2026-02-01,,,approved,Rajahmundry,1,False
+GF-23069,loan_decision,Decision summary GF-23069,gold,en,2024-10-17,,,approved,Rajahmundry,1,False
+GF-22769,loan_decision,Decision summary GF-22769,two-wheeler,en,2024-09-25,,,approved,Rajahmundry,1,False
+GF-22803,loan_decision,Decision summary GF-22803,small-business,te-latn,2026-01-22,,,approved,Rajahmundry,1,False
+GF-21503,loan_decision,Decision summary GF-21503,gold,en,2026-06-09,,,approved,Rajahmundry,1,False
+GF-23382,loan_decision,Decision summary GF-23382,two-wheeler,te-latn,2024-10-14,,,approved,Rajahmundry,1,False
+GF-23990,loan_decision,Decision summary GF-23990,two-wheeler,en,2026-07-22,,,approved,Rajahmundry,1,False
+GF-21349,loan_decision,Decision summary GF-21349,two-wheeler,en,2024-09-29,,,approved,Rajahmundry,1,False
+GF-24062,loan_decision,Decision summary GF-24062,two-wheeler,en,2025-12-10,,,approved,Rajahmundry,1,False
+GF-24521,loan_decision,Decision summary GF-24521,gold,en,2025-12-28,,,approved,Rajahmundry,1,False
+GF-23917,loan_decision,Decision summary GF-23917,two-wheeler,en,2026-05-21,,,approved,Rajahmundry,1,False
+GF-24590,loan_decision,Decision summary GF-24590,two-wheeler,en,2024-07-21,,,approved,Rajahmundry,1,False
+GF-23726,loan_decision,Decision summary GF-23726,two-wheeler,te-latn,2025-06-29,,,approved,Rajahmundry,1,False
+GF-21616,loan_decision,Decision summary GF-21616,two-wheeler,en,2025-11-04,,,approved,Rajahmundry,1,False
+GF-23938,loan_decision,Decision summary GF-23938,two-wheeler,te-latn,2026-09-24,,,approved,Rajahmundry,1,False
+GF-21111,loan_decision,Decision summary GF-21111,two-wheeler,en,2026-08-24,,,approved,Rajahmundry,1,False
+GF-24379,loan_decision,Decision summary GF-24379,two-wheeler,te-latn,2026-10-01,,,approved,Rajahmundry,1,False
+GF-22990,loan_decision,Decision summary GF-22990,two-wheeler,en,2025-07-05,,,approved,Rajahmundry,1,False
+GF-24576,loan_decision,Decision summary GF-24576,two-wheeler,te-latn,2025-01-25,,,approved,Rajahmundry,1,False
+GF-24072,loan_decision,Decision summary GF-24072,gold,te-latn,2025-01-26,,,approved,Rajahmundry,1,False
+GF-21038,loan_decision,Decision summary GF-21038,two-wheeler,te-latn,2025-11-11,,,approved,Rajahmundry,1,False
+GF-23146,loan_decision,Decision summary GF-23146,two-wheeler,te-latn,2024-11-20,,,approved,Rajahmundry,1,False
+GF-22228,loan_decision,Decision summary GF-22228,two-wheeler,en,2026-02-18,,,approved,Rajahmundry,1,False
+GF-23233,loan_decision,Decision summary GF-23233,gold,en,2026-05-01,,,approved,Rajahmundry,1,False
+GF-23248,loan_decision,Decision summary GF-23248,two-wheeler,te-latn,2025-07-30,,,approved,Rajahmundry,1,False
+GF-22776,loan_decision,Decision summary GF-22776,small-business,en,2025-10-20,,,approved,Rajahmundry,1,False
+GF-24464,loan_decision,Decision summary GF-24464,two-wheeler,en,2024-09-05,,,approved,Rajahmundry,1,False
+GF-21570,loan_decision,Decision summary GF-21570,two-wheeler,te-latn,2024-09-24,,,approved,Rajahmundry,1,False
+GF-23902,loan_decision,Decision summary GF-23902,two-wheeler,en,2024-06-19,,,approved,Rajahmundry,1,False
+GF-21588,loan_decision,Decision summary GF-21588,two-wheeler,en,2026-06-09,,,approved,Rajahmundry,1,False
+GF-21073,loan_decision,Decision summary GF-21073,gold,en,2026-02-13,,,approved,Rajahmundry,1,False
+GF-21084,loan_decision,Decision summary GF-21084,two-wheeler,en,2025-08-09,,,approved,Rajahmundry,1,False
+GF-24025,loan_decision,Decision summary GF-24025,two-wheeler,en,2025-12-04,,,approved,Rajahmundry,1,False
+GF-22388,loan_decision,Decision summary GF-22388,two-wheeler,te-latn,2025-03-15,,,approved,Rajahmundry,1,False
+GF-24327,loan_decision,Decision summary GF-24327,gold,en,2025-05-03,,,approved,Rajahmundry,1,False
+GF-24137,loan_decision,Decision summary GF-24137,gold,en,2026-03-17,,,approved,Rajahmundry,1,False
+GF-24786,loan_decision,Decision summary GF-24786,two-wheeler,en,2024-10-12,,,approved,Rajahmundry,1,False
+GF-21868,loan_decision,Decision summary GF-21868,two-wheeler,te-latn,2026-08-25,,,approved,Rajahmundry,1,False
+GF-24876,loan_decision,Decision summary GF-24876,gold,en,2025-01-15,,,approved,Rajahmundry,1,False
+GF-21142,loan_decision,Decision summary GF-21142,two-wheeler,en,2026-01-17,,,approved,Rajahmundry,1,False
+GF-22406,loan_decision,Decision summary GF-22406,small-business,en,2025-06-01,,,approved,Rajahmundry,1,False
+GF-23664,loan_decision,Decision summary GF-23664,two-wheeler,en,2025-03-03,,,approved,Rajahmundry,1,False
+GF-23107,loan_decision,Decision summary GF-23107,two-wheeler,en,2026-10-07,,,approved,Rajahmundry,1,False
+GF-23999,loan_decision,Decision summary GF-23999,gold,te-latn,2026-10-07,,,approved,Rajahmundry,1,False
+GF-21070,loan_decision,Decision summary GF-21070,two-wheeler,en,2026-03-20,,,approved,Rajahmundry,1,False
+GF-22035,loan_decision,Decision summary GF-22035,small-business,en,2026-03-04,,,approved,Rajahmundry,1,False

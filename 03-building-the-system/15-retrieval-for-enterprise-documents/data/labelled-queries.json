@@ -1,0 +1,405 @@
+[
+ {
+  "qid": "q01",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "What does GFL/CO/2025/027 say for a pensioner?",
+  "spans": [
+   "pension payment order and bank statement for three months"
+  ]
+ },
+ {
+  "qid": "q02",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "GFL/CO/2025/019 quotation validity",
+  "spans": [
+   "valid for 30 days from its date"
+  ]
+ },
+ {
+  "qid": "q03",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "GFL/CO/2026/009 LTV above 5 lakh",
+  "spans": [
+   "above rs 500,000 | 75 percent"
+  ]
+ },
+ {
+  "qid": "q04",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "annex GFL/CMP/2026/004 gas bill in father's name",
+  "spans": [
+   "with proof of the relationship"
+  ]
+ },
+ {
+  "qid": "q05",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "GFL/CO/2025/052 WhatsApp documents",
+  "spans": [
+   "is not part of the file of record and must not be printed"
+  ]
+ },
+ {
+  "qid": "q06",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "identifier",
+  "text": "GFL/RB/2026/001 finance percentage",
+  "spans": [
+   "finance up to 90 percent of the on-road price"
+  ]
+ },
+ {
+  "qid": "q07",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "table-row",
+  "text": "what income proof is acceptable for a self-employed two-wheeler applicant in Guntur",
+  "spans": [
+   "twelve-month bank statement of the business account, or gst returns for the last four quarters"
+  ]
+ },
+ {
+  "qid": "q08",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "table-row",
+  "text": "income proof for a gig or delivery worker buying a two-wheeler",
+  "spans": [
+   "platform payout statements for six months"
+  ]
+ },
+ {
+  "qid": "q09",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "table-row",
+  "text": "agriculture applicant two wheeler income proof land record",
+  "spans": [
+   "land record (pahani or adangal)"
+  ]
+ },
+ {
+  "qid": "q10",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "table-row",
+  "text": "is an unregistered rent agreement accepted as address proof",
+  "spans": [
+   "accepted with a utility bill in the applicant's own name"
+  ]
+ },
+ {
+  "qid": "q11",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "table-row",
+  "text": "LTV cap for a gold loan of 3 lakh",
+  "spans": [
+   "up to rs 500,000 | 80 percent"
+  ]
+ },
+ {
+  "qid": "q12",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "proof of earnings for a shop owner purchasing a scooter",
+  "spans": [
+   "twelve-month bank statement of the business account, or gst returns for the last four quarters"
+  ]
+ },
+ {
+  "qid": "q13",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "how long is a showroom proforma valid",
+  "spans": [
+   "valid for 30 days from its date"
+  ]
+ },
+ {
+  "qid": "q14",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "can we keep a customer's uid copy without redaction if they agree",
+  "spans": [
+   "is not kept with consent"
+  ]
+ },
+ {
+  "qid": "q15",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "how far back must the salary account statement go for an employee",
+  "spans": [
+   "covering about three months, at least 85 days"
+  ]
+ },
+ {
+  "qid": "q16",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "a customer sent papers to my mobile on a messaging app",
+  "spans": [
+   "is not part of the file of record and must not be printed"
+  ]
+ },
+ {
+  "qid": "q17",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "oldest borrower allowed for a bike loan",
+  "spans": [
+   "21 to 60 years old"
+  ]
+ },
+ {
+  "qid": "q18",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "paraphrase",
+  "text": "which identity documents does the RBI accept",
+  "spans": [
+   "the nrega job card"
+  ]
+ },
+ {
+  "qid": "q19",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "GFL/CO/2024/007 unmasked Aadhaar copy kept with consent",
+  "spans": [
+   "is not kept with consent"
+  ]
+ },
+ {
+  "qid": "q20",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "self-employed two-wheeler applicant income tax returns only",
+  "spans": [
+   "twelve-month bank statement of the business account, or gst returns for the last four quarters"
+  ]
+ },
+ {
+  "qid": "q21",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "salaried bank statement six months",
+  "spans": [
+   "covering about three months"
+  ]
+ },
+ {
+  "qid": "q22",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "dealer quotation valid 15 days",
+  "spans": [
+   "valid for 30 days"
+  ]
+ },
+ {
+  "qid": "q23",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "gold loan LTV 75 percent of the value",
+  "spans": [
+   "up to rs 250,000 | 85 percent"
+  ]
+ },
+ {
+  "qid": "q24",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "superseded",
+  "text": "two-wheeler tenure 12 to 36 months",
+  "spans": [
+   "tenure is 12 to 48 months"
+  ]
+ },
+ {
+  "qid": "q25",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "telugu",
+  "text": "స్వయం ఉపాధి ఆదాయ రుజువు",
+  "spans": [
+   "నాలుగు త్రైమాసికాల జీఎస్టీ రిటర్నులు"
+  ]
+ },
+ {
+  "qid": "q26",
+  "user": "lakshmi",
+  "scope": "policy",
+  "category": "telugu",
+  "text": "అద్దె ఒప్పందం చిరునామా రుజువు",
+  "spans": [
+   "యజమాని పేరు మీద విద్యుత్ బిల్లు"
+  ]
+ },
+ {
+  "qid": "q27",
+  "user": "srinivas",
+  "scope": "policy",
+  "category": "telugu",
+  "text": "ఆధార్ మాస్క్",
+  "spans": [
+   "మొదటి ఎనిమిది అంకెలు"
+  ]
+ },
+ {
+  "qid": "q28",
+  "user": "compliance.desk.01",
+  "scope": "policy",
+  "category": "access",
+  "text": "video KYC for repeat customers",
+  "spans": [
+   "draft for the compliance head"
+  ]
+ },
+ {
+  "qid": "q29",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "similar past files: self-employed kirana shop two-wheeler, bank statement income, rent agreement with landlord electricity bill",
+  "spans": [
+   "GF-23417"
+  ]
+ },
+ {
+  "qid": "q30",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "past files sent back for an unregistered rent agreement",
+  "spans": [
+   "GF-24105"
+  ]
+ },
+ {
+  "qid": "q31",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "agriculture income two-wheeler approved on land record",
+  "spans": [
+   "GF-22730",
+   "GF-24388"
+  ]
+ },
+ {
+  "qid": "q32",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "files sent back for unmasked Aadhaar copy after the masking circular",
+  "spans": [
+   "GF-23290",
+   "GF-23301"
+  ]
+ },
+ {
+  "qid": "q33",
+  "user": "srinivas",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "self-employed kirana shop two-wheeler rent agreement landlord electricity bill",
+  "spans": [
+   "GF-23562"
+  ]
+ },
+ {
+  "qid": "q34",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "precedent",
+  "text": "repeat customer with a closed gold loan in good standing",
+  "spans": [
+   "GF-24620"
+  ]
+ },
+ {
+  "qid": "q35",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "pan",
+  "text": "earlier files for PAN FGHPK1234J",
+  "spans": [
+   "GF-22015",
+   "GF-24620"
+  ]
+ },
+ {
+  "qid": "q36",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "pan",
+  "text": "any file for PAN AKLPR4821M",
+  "spans": [
+   "GF-23417"
+  ]
+ },
+ {
+  "qid": "q37",
+  "user": "srinivas",
+  "scope": "precedent",
+  "category": "pan",
+  "text": "prior applications PAN GJKPM6650R",
+  "spans": [
+   "GF-23911"
+  ]
+ },
+ {
+  "qid": "q38",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "transliteration",
+  "text": "vyavasayam aadayam mirchi panta pahani",
+  "spans": [
+   "GF-22730"
+  ]
+ },
+ {
+  "qid": "q39",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "transliteration",
+  "text": "vyavasaayam adayam vari panta adangal",
+  "spans": [
+   "GF-24388"
+  ]
+ },
+ {
+  "qid": "q40",
+  "user": "lakshmi",
+  "scope": "precedent",
+  "category": "transliteration",
+  "text": "adde agreement registered kadu utility bill ledu",
+  "spans": [
+   "GF-24105"
+  ]
+ }
+]

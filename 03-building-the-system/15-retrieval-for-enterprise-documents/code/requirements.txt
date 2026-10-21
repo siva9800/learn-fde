@@ -1,0 +1,9 @@
+# Day 15 · tested on Python 3.14.3 (Windows 11), October 2026. Needs Python 3.12 or newer.
+# The retrieval package uses the standard library only (BM25, the hashed vectors and RRF are
+# written out in full). These pins are for the tests, and match Day 11's.
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+colorama==0.4.6 ; sys_platform == "win32"

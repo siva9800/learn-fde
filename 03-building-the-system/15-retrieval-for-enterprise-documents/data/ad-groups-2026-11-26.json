@@ -1,0 +1,44 @@
+{
+  "taken_at": "2026-11-26T02:00",
+  "source": "nightly HR to AD export (synthetic)",
+  "members": {
+    "lakshmi": [
+      "GF-ROLE-CREDITOPS",
+      "GF-BR-VJB03",
+      "GF-BR-GNT04",
+      "GF-BR-RJY06"
+    ],
+    "bhavani": [
+      "GF-ROLE-CREDITOPS",
+      "GF-BR-VJB03",
+      "GF-BR-GNT04",
+      "GF-BR-RJY06"
+    ],
+    "srinivas": [
+      "GF-ROLE-CREDITOPS",
+      "GF-BR-KKP01",
+      "GF-BR-DSN02",
+      "GF-BR-WGL05"
+    ],
+    "analyst.hyd.07": [
+      "GF-ROLE-CREDITOPS",
+      "GF-BR-KKP01",
+      "GF-BR-DSN02",
+      "GF-BR-WGL05"
+    ],
+    "kkp.credit.officer": [
+      "GF-ROLE-BRANCH",
+      "GF-BR-GNT04"
+    ],
+    "compliance.desk.01": [
+      "GF-ROLE-COMPLIANCE",
+      "GF-BR-KKP01",
+      "GF-BR-DSN02",
+      "GF-BR-VJB03",
+      "GF-BR-GNT04",
+      "GF-BR-WGL05",
+      "GF-BR-RJY06"
+    ],
+    "svc-kaagaz-retrieval": []
+  }
+}
