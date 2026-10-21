@@ -1,0 +1,22 @@
+{
+  "two-wheeler": {
+    "version": "0.3",
+    "fingerprint": "f535ec29fb04a56172f8c56e4f88c0af4f02d486f74726aafd1f449acd820003",
+    "status": "reviewed-draft",
+    "reviewed_by": "the compliance head",
+    "reviewed_on": "2026-11-06",
+    "signed_by": null,
+    "signed_on": null,
+    "note": "walked through rule by rule after the week-2 checkpoint; signature due at M10, Wednesday 2 December 2026"
+  },
+  "gold": {
+    "version": "0.1",
+    "fingerprint": "6ec4b37ba0d8297a948eecf6fe574d48a14f9edf74ea956679050ef968a1ebeb",
+    "status": "draft",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "signed_by": null,
+    "signed_on": null,
+    "note": "drafted by the FDE from the gold checklist; not yet reviewed (risk R7)"
+  }
+}

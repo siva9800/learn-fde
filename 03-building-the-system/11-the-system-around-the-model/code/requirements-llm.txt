@@ -1,0 +1,3 @@
+# Optional: only for intake/llm_adapter.py (the real-model adapter). Not needed to run the chapter.
+# Version current as of October 2026; it pulls in its own dependencies (httpx2 and others).
+anthropic==1.17.0

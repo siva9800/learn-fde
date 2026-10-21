@@ -1,0 +1,131 @@
+file_id,product,branch,channel,route,rules_fired,real_problems,system_caught,system_missed,model_alone_shipped,model_alone_said_complete
+GF-25001,gold,Kukatpally,sftp_scan,ready_for_approval,,,,,,True
+GF-25003,gold,Kukatpally,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25005,gold,Warangal,mixed,send_back,GL-ADDR-LIST,ADDRESS_NOT_ON_LIST,ADDRESS_NOT_ON_LIST,,,False
+GF-25010,gold,Kukatpally,sftp_scan,ready_for_approval,,,,,,True
+GF-25012,gold,Rajahmundry,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25013,two-wheeler,Warangal,mixed,review,TW-AMT-MARGIN TW-AMT-RANGE,FIELD_ERROR:requested_amount OVER_MARGIN,FIELD_ERROR:requested_amount OVER_MARGIN,,FIELD_ERROR:requested_amount OVER_MARGIN,True
+GF-25014,gold,Guntur,sftp_scan,ready_for_approval,,,,,,True
+GF-25015,two-wheeler,Warangal,phone_photo,send_back,ENV-CONFIDENCE ENV-PAN-FORMAT ENV-UNSURE TW-ADDR-LIST TW-DOC-06,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan MISSING:income_proof,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan MISSING:income_proof,,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan,False
+GF-25016,gold,Dilsukhnagar,mixed,review,ENV-CONFIDENCE ENV-NAME-MATCH,FIELD_ERROR:applicant_name,FIELD_ERROR:applicant_name,,FIELD_ERROR:applicant_name,True
+GF-25017,two-wheeler,Dilsukhnagar,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25019,two-wheeler,Rajahmundry,phone_photo,review,ENV-CONFIDENCE ENV-EVIDENCE ENV-INCOME-MATCH ENV-UNSURE TW-AMT-MARGIN TW-DATE-QUOTE TW-DOC-08 TW-DOC-12,FIELD_ERROR:monthly_income,FIELD_ERROR:monthly_income,,FIELD_ERROR:monthly_income,False
+GF-25020,two-wheeler,Rajahmundry,sftp_scan,blocked,TW-KYC-MASK,AADHAAR_UNMASKED,AADHAAR_UNMASKED,,,False
+GF-25023,two-wheeler,Rajahmundry,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25024,two-wheeler,Warangal,mixed,send_back,ENV-CONFIDENCE ENV-UNSURE TW-DOC-05 TW-DOC-06,MISSING:income_proof MISSING:proof_of_address,MISSING:income_proof MISSING:proof_of_address,,MISSING:proof_of_address,False
+GF-25025,two-wheeler,Warangal,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25026,gold,Warangal,sftp_scan,blocked,ENV-CONFIDENCE GL-LTV,FIELD_ERROR:requested_amount,FIELD_ERROR:requested_amount,,FIELD_ERROR:requested_amount,False
+GF-25030,gold,Guntur,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25031,two-wheeler,Kukatpally,sftp_scan,send_back,TW-ADDR-AGE,ADDRESS_STALE,ADDRESS_STALE,,ADDRESS_STALE,True
+GF-25032,gold,Warangal,phone_photo,blocked,ENV-CONFIDENCE ENV-PAN-MATCH GL-DOC-05 GL-LTV,FIELD_ERROR:pan MISSING:proof_of_address OVER_LTV,FIELD_ERROR:pan MISSING:proof_of_address OVER_LTV,,FIELD_ERROR:pan OVER_LTV,False
+GF-25035,two-wheeler,Dilsukhnagar,mixed,send_back,ENV-UNSURE TW-AMT-MARGIN TW-DOC-03,MISSING:pan_card OVER_MARGIN,MISSING:pan_card OVER_MARGIN,,OVER_MARGIN,False
+GF-25036,gold,Rajahmundry,sftp_scan,ready_for_approval,,,,,,True
+GF-25037,gold,Dilsukhnagar,sftp_scan,send_back,ENV-UNSURE GL-DOC-03,MISSING:pan_card,MISSING:pan_card,,MISSING:pan_card,True
+GF-25039,two-wheeler,Vijayawada-Benz Circle,mixed,send_back,ENV-UNSURE TW-DOC-06,MISSING:income_proof,MISSING:income_proof,,,False
+GF-25040,two-wheeler,Kukatpally,sftp_scan,review,ENV-CONFIDENCE ENV-GROUND ENV-NAME-MATCH TW-DOC-04 TW-DOC-12,FIELD_ERROR:applicant_name MISSING:customer_declaration,FIELD_ERROR:applicant_name MISSING:customer_declaration,,FIELD_ERROR:applicant_name MISSING:customer_declaration,True
+GF-25042,gold,Warangal,phone_photo,blocked,ENV-CONFIDENCE ENV-PAN-FORMAT ENV-PAN-MATCH GL-LTV,FIELD_ERROR:pan OVER_LTV,FIELD_ERROR:pan OVER_LTV,,FIELD_ERROR:pan,False
+GF-25045,two-wheeler,Guntur,sftp_scan,ready_for_approval,,,,,,False
+GF-25046,two-wheeler,Rajahmundry,sftp_scan,send_back,ENV-CONFIDENCE TW-ADDR-AGE,ADDRESS_STALE,ADDRESS_STALE,,ADDRESS_STALE,True
+GF-25047,gold,Kukatpally,mixed,send_back,ENV-CONFIDENCE GL-ADDR-LIST,ADDRESS_NOT_ON_LIST,ADDRESS_NOT_ON_LIST,,ADDRESS_NOT_ON_LIST,True
+GF-25048,two-wheeler,Warangal,mixed,blocked,ENV-CONFIDENCE TW-KYC-MASK,AADHAAR_UNMASKED,AADHAAR_UNMASKED,,,False
+GF-25049,two-wheeler,Dilsukhnagar,sftp_scan,send_back,ENV-CONFIDENCE ENV-PAN-MATCH TW-ADDR-AGE TW-DOC-14,ADDRESS_STALE MISSING:co_applicant_kyc,ADDRESS_STALE MISSING:co_applicant_kyc,,MISSING:co_applicant_kyc,False
+GF-25050,two-wheeler,Guntur,sftp_scan,review,ENV-CONFIDENCE,,,,,False
+GF-25052,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-CONFIDENCE TW-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25053,two-wheeler,Vijayawada-Benz Circle,sftp_scan,ready_for_approval,,,,,,True
+GF-25056,gold,Guntur,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25057,two-wheeler,Dilsukhnagar,mixed,ready_for_approval,,,,,,False
+GF-25058,gold,Kukatpally,sftp_scan,blocked,GL-LTV,OVER_LTV,OVER_LTV,,,False
+GF-25059,gold,Guntur,sftp_scan,send_back,ENV-PAN-FORMAT ENV-PAN-MATCH GL-DOC-05,FIELD_ERROR:pan MISSING:proof_of_address,FIELD_ERROR:pan MISSING:proof_of_address,,FIELD_ERROR:pan,False
+GF-25060,two-wheeler,Kukatpally,mixed,send_back,ENV-CONFIDENCE ENV-PAN-MATCH ENV-UNSURE TW-AGE TW-DOC-05 TW-DOC-06,FIELD_ERROR:date_of_birth MISSING:income_proof MISSING:proof_of_address,FIELD_ERROR:date_of_birth MISSING:income_proof MISSING:proof_of_address,,FIELD_ERROR:date_of_birth,False
+GF-25062,gold,Vijayawada-Benz Circle,sftp_scan,ready_for_approval,,,,,,True
+GF-25063,two-wheeler,Warangal,sftp_scan,review,ENV-CONFIDENCE,,,,,False
+GF-25064,two-wheeler,Vijayawada-Benz Circle,sftp_scan,review,ENV-GROUND ENV-SALARY-ACCT ENV-UNSURE TW-AMT-MARGIN TW-DATE-QUOTE TW-DOC-08 TW-DOC-12 TW-DOC-13,MISSING:dealer_quotation,MISSING:dealer_quotation,,,False
+GF-25066,two-wheeler,Dilsukhnagar,mixed,send_back,ENV-CONFIDENCE TW-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25067,two-wheeler,Guntur,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25069,two-wheeler,Guntur,sftp_scan,send_back,ENV-CONFIDENCE TW-BANK-AGE,STATEMENT_STALE,STATEMENT_STALE,,STATEMENT_STALE,True
+GF-25071,gold,Rajahmundry,mixed,send_back,ENV-UNSURE GL-DOC-03 GL-DOC-05,MISSING:pan_card MISSING:proof_of_address,MISSING:pan_card MISSING:proof_of_address,,,False
+GF-25072,two-wheeler,Vijayawada-Benz Circle,mixed,send_back,TW-DOC-02,MISSING:photograph,MISSING:photograph,,,False
+GF-25073,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-CONFIDENCE ENV-GROUND ENV-UNSURE TW-ADDR-LIST TW-DOC-06 TW-DOC-07 TW-DOC-11,ADDRESS_NOT_ON_LIST MISSING:bank_statement MISSING:insurance_proposal,ADDRESS_NOT_ON_LIST MISSING:bank_statement MISSING:insurance_proposal,,ADDRESS_NOT_ON_LIST MISSING:bank_statement,False
+GF-25074,two-wheeler,Guntur,mixed,send_back,ENV-CONFIDENCE TW-ADDR-LIST,ADDRESS_NOT_ON_LIST,ADDRESS_NOT_ON_LIST,,ADDRESS_NOT_ON_LIST,True
+GF-25075,gold,Kukatpally,sftp_scan,send_back,ENV-GROUND GL-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,MISSING:proof_of_address,True
+GF-25076,gold,Vijayawada-Benz Circle,sftp_scan,blocked,ENV-CONFIDENCE GL-KYC-MASK,AADHAAR_UNMASKED,AADHAAR_UNMASKED,,,False
+GF-25077,gold,Rajahmundry,mixed,blocked,ENV-CONFIDENCE GL-LTV,OVER_LTV,OVER_LTV,,,False
+GF-25078,two-wheeler,Dilsukhnagar,sftp_scan,review,ENV-CONFIDENCE TW-AMT-MARGIN,OVER_MARGIN,OVER_MARGIN,,,False
+GF-25079,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-GROUND ENV-UNSURE TW-AMT-MARGIN TW-DATE-QUOTE TW-DOC-05 TW-DOC-08,MISSING:dealer_quotation MISSING:proof_of_address,MISSING:dealer_quotation MISSING:proof_of_address,,MISSING:dealer_quotation,False
+GF-25080,two-wheeler,Kukatpally,mixed,send_back,ENV-CONFIDENCE ENV-PAN-MATCH ENV-UNSURE TW-ADDR-LIST TW-DOC-06 TW-DOC-13,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan MISSING:income_proof,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan MISSING:income_proof,,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan,False
+GF-25081,two-wheeler,Vijayawada-Benz Circle,sftp_scan,ready_for_approval,,,,,,True
+GF-25082,two-wheeler,Warangal,sftp_scan,review,ENV-CONFIDENCE,,,,,False
+GF-25083,two-wheeler,Dilsukhnagar,sftp_scan,send_back,ENV-CONFIDENCE TW-BANK-AGE TW-DOC-05,MISSING:proof_of_address STATEMENT_STALE,MISSING:proof_of_address STATEMENT_STALE,,STATEMENT_STALE,False
+GF-25084,gold,Vijayawada-Benz Circle,sftp_scan,send_back,ENV-CONFIDENCE ENV-UNSURE GL-DOC-03,MISSING:pan_card,MISSING:pan_card,,,False
+GF-25085,two-wheeler,Dilsukhnagar,sftp_scan,send_back,ENV-CONFIDENCE TW-DOC-04 TW-DOC-05,MISSING:proof_of_address MISSING:proof_of_identity,MISSING:proof_of_address MISSING:proof_of_identity,,MISSING:proof_of_address,False
+GF-25086,two-wheeler,Warangal,sftp_scan,review,ENV-UNSURE TW-DOC-03,,,,,False
+GF-25087,two-wheeler,Guntur,phone_photo,send_back,ENV-CONFIDENCE ENV-PAN-MATCH TW-ADDR-LIST TW-DOC-11,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan,,ADDRESS_NOT_ON_LIST FIELD_ERROR:pan,False
+GF-25089,two-wheeler,Dilsukhnagar,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25090,gold,Vijayawada-Benz Circle,sftp_scan,send_back,ENV-CONFIDENCE ENV-PAN-FORMAT ENV-PAN-MATCH GL-DOC-05,FIELD_ERROR:pan MISSING:proof_of_address,FIELD_ERROR:pan MISSING:proof_of_address,,FIELD_ERROR:pan,False
+GF-25094,two-wheeler,Dilsukhnagar,sftp_scan,ready_for_approval,,,,,,False
+GF-25095,gold,Dilsukhnagar,phone_photo,send_back,ENV-CONFIDENCE ENV-UNSURE GL-DOC-03 GL-DOC-04 GL-DOC-05,MISSING:pan_card MISSING:proof_of_address MISSING:proof_of_identity,MISSING:pan_card MISSING:proof_of_address MISSING:proof_of_identity,,,False
+GF-25096,two-wheeler,Vijayawada-Benz Circle,sftp_scan,review,ENV-SALARY-ACCT ENV-UNSURE TW-ADDR-AGE TW-AGE TW-AMT-MARGIN TW-AMT-RANGE TW-BANK-AGE TW-DATE-QUOTE TW-TENURE,ADDRESS_STALE,ADDRESS_STALE,,ADDRESS_STALE,False
+GF-25098,two-wheeler,Kukatpally,sftp_scan,send_back,TW-DOC-14,MISSING:co_applicant_kyc,MISSING:co_applicant_kyc,,MISSING:co_applicant_kyc,False
+GF-25099,two-wheeler,Dilsukhnagar,phone_photo,send_back,ENV-CONFIDENCE ENV-GROUND ENV-PAN-MATCH ENV-UNSURE TW-DOC-05 TW-DOC-06,MISSING:income_proof MISSING:proof_of_address,MISSING:income_proof MISSING:proof_of_address,,MISSING:proof_of_address,False
+GF-25100,gold,Kukatpally,sftp_scan,ready_for_approval,,,,,,True
+GF-25103,two-wheeler,Dilsukhnagar,mixed,send_back,TW-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25104,two-wheeler,Warangal,sftp_scan,review,ENV-CONFIDENCE,,,,,False
+GF-25105,two-wheeler,Guntur,phone_photo,review,ENV-CONFIDENCE ENV-GROUND ENV-UNSURE TW-DOC-03 TW-DOC-05 TW-DOC-06 TW-DOC-11 TW-DOC-13,MISSING:income_proof MISSING:pan_card MISSING:proof_of_address,MISSING:income_proof MISSING:pan_card MISSING:proof_of_address,,MISSING:pan_card,False
+GF-25106,two-wheeler,Rajahmundry,phone_photo,review,ENV-UNSURE TW-AGE TW-AMT-MARGIN TW-AMT-RANGE TW-BANK-AGE TW-DATE-QUOTE TW-DOC-01 TW-DOC-05 TW-DOC-06 TW-DOC-11 TW-TENURE,FIELD_ERROR:pan MISSING:income_proof,MISSING:income_proof,FIELD_ERROR:pan,FIELD_ERROR:pan,False
+GF-25107,two-wheeler,Dilsukhnagar,sftp_scan,ready_for_approval,,,,,,False
+GF-25109,gold,Guntur,sftp_scan,send_back,ENV-UNSURE GL-DOC-03,MISSING:pan_card,MISSING:pan_card,,,False
+GF-25110,gold,Rajahmundry,sftp_scan,send_back,ENV-CONFIDENCE GL-ADDR-LIST,ADDRESS_NOT_ON_LIST,ADDRESS_NOT_ON_LIST,,ADDRESS_NOT_ON_LIST,True
+GF-25112,gold,Rajahmundry,sftp_scan,ready_for_approval,,,,,,True
+GF-25113,two-wheeler,Vijayawada-Benz Circle,mixed,review,ENV-CONFIDENCE,,,,,False
+GF-25115,two-wheeler,Kukatpally,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25116,two-wheeler,Dilsukhnagar,sftp_scan,send_back,ENV-CONFIDENCE ENV-UNSURE TW-DOC-06,MISSING:income_proof,MISSING:income_proof,,,False
+GF-25117,two-wheeler,Vijayawada-Benz Circle,mixed,review,ENV-CONFIDENCE ENV-PAN-MATCH,,,,,False
+GF-25118,two-wheeler,Rajahmundry,sftp_scan,ready_for_approval,,,,,,False
+GF-25120,two-wheeler,Warangal,sftp_scan,review,ENV-CONFIDENCE ENV-NAME-MATCH,FIELD_ERROR:applicant_name,FIELD_ERROR:applicant_name,,FIELD_ERROR:applicant_name,False
+GF-25121,two-wheeler,Kukatpally,phone_photo,send_back,ENV-CONFIDENCE TW-DOC-04,MISSING:proof_of_identity,MISSING:proof_of_identity,,,False
+GF-25122,two-wheeler,Kukatpally,mixed,ready_for_approval,,,,,,False
+GF-25123,two-wheeler,Dilsukhnagar,phone_photo,send_back,ENV-CONFIDENCE TW-ADDR-AGE TW-DOC-12,ADDRESS_STALE,ADDRESS_STALE,,,False
+GF-25127,two-wheeler,Vijayawada-Benz Circle,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25129,two-wheeler,Kukatpally,mixed,review,ENV-CONFIDENCE,,,,,True
+GF-25130,gold,Guntur,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25133,gold,Warangal,phone_photo,review,ENV-UNSURE GL-LTV GL-TENURE,,,,,True
+GF-25135,two-wheeler,Guntur,sftp_scan,review,ENV-UNSURE TW-AGE TW-AMT-MARGIN TW-AMT-RANGE TW-BANK-AGE TW-DATE-QUOTE TW-TENURE,,,,,True
+GF-25137,gold,Dilsukhnagar,sftp_scan,ready_for_approval,,,,,,True
+GF-25138,gold,Vijayawada-Benz Circle,sftp_scan,blocked,ENV-CONFIDENCE ENV-UNSURE GL-DOC-06 GL-KYC-MASK GL-LTV,AADHAAR_UNMASKED MISSING:gold_appraisal,AADHAAR_UNMASKED MISSING:gold_appraisal,,,False
+GF-25139,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-CONFIDENCE ENV-PAN-FORMAT ENV-PAN-MATCH TW-AMT-MARGIN TW-BANK-AGE,FIELD_ERROR:pan OVER_MARGIN STATEMENT_STALE,FIELD_ERROR:pan OVER_MARGIN STATEMENT_STALE,,FIELD_ERROR:pan OVER_MARGIN,False
+GF-25140,two-wheeler,Dilsukhnagar,mixed,ready_for_approval,,FIELD_ERROR:date_of_birth,,FIELD_ERROR:date_of_birth,FIELD_ERROR:date_of_birth,True
+GF-25142,two-wheeler,Vijayawada-Benz Circle,phone_photo,review,ENV-CONFIDENCE ENV-UNSURE TW-DOC-03 TW-DOC-06 TW-DOC-12,MISSING:customer_declaration MISSING:income_proof,MISSING:customer_declaration MISSING:income_proof,,MISSING:customer_declaration,False
+GF-25143,two-wheeler,Vijayawada-Benz Circle,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25146,gold,Warangal,mixed,ready_for_approval,,,,,,True
+GF-25147,two-wheeler,Kukatpally,sftp_scan,review,ENV-CONFIDENCE,,,,,True
+GF-25148,two-wheeler,Kukatpally,phone_photo,review,ENV-CONFIDENCE ENV-UNSURE TW-DOC-03 TW-DOC-06,MISSING:income_proof MISSING:pan_card,MISSING:income_proof MISSING:pan_card,,,False
+GF-25150,two-wheeler,Rajahmundry,sftp_scan,send_back,ENV-CONFIDENCE TW-ADDR-LIST,ADDRESS_NOT_ON_LIST,ADDRESS_NOT_ON_LIST,,ADDRESS_NOT_ON_LIST,False
+GF-25153,gold,Dilsukhnagar,sftp_scan,ready_for_approval,,,,,,True
+GF-25154,two-wheeler,Rajahmundry,sftp_scan,review,ENV-UNSURE TW-AMT-MARGIN TW-DATE-QUOTE TW-DOC-08 TW-DOC-09,,,,,False
+GF-25155,two-wheeler,Warangal,mixed,send_back,ENV-GROUND ENV-UNSURE TW-ADDR-LIST TW-AGE TW-DOC-03,ADDRESS_NOT_ON_LIST FIELD_ERROR:date_of_birth MISSING:pan_card,ADDRESS_NOT_ON_LIST FIELD_ERROR:date_of_birth MISSING:pan_card,,ADDRESS_NOT_ON_LIST FIELD_ERROR:date_of_birth MISSING:pan_card,False
+GF-25156,two-wheeler,Warangal,sftp_scan,send_back,ENV-CONFIDENCE ENV-PAN-MATCH TW-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25157,gold,Guntur,mixed,send_back,ENV-GROUND GL-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,MISSING:proof_of_address,True
+GF-25158,gold,Vijayawada-Benz Circle,sftp_scan,ready_for_approval,,,,,,True
+GF-25159,gold,Vijayawada-Benz Circle,sftp_scan,ready_for_approval,,,,,,True
+GF-25160,gold,Vijayawada-Benz Circle,mixed,send_back,ENV-CONFIDENCE ENV-UNSURE GL-DOC-03 GL-DOC-05,MISSING:pan_card MISSING:proof_of_address,MISSING:pan_card MISSING:proof_of_address,,,False
+GF-25161,gold,Guntur,mixed,review,ENV-CONFIDENCE ENV-NAME-MATCH,FIELD_ERROR:applicant_name,FIELD_ERROR:applicant_name,,FIELD_ERROR:applicant_name,True
+GF-25165,two-wheeler,Guntur,sftp_scan,review,ENV-CONFIDENCE ENV-EVIDENCE ENV-INCOME-MATCH TW-AMT-MARGIN,FIELD_ERROR:monthly_income OVER_MARGIN,FIELD_ERROR:monthly_income OVER_MARGIN,,FIELD_ERROR:monthly_income OVER_MARGIN,False
+GF-25167,gold,Dilsukhnagar,phone_photo,send_back,ENV-CONFIDENCE GL-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25168,two-wheeler,Dilsukhnagar,sftp_scan,ready_for_approval,,,,,,False
+GF-25169,gold,Kukatpally,mixed,send_back,ENV-CONFIDENCE GL-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,,False
+GF-25170,two-wheeler,Dilsukhnagar,sftp_scan,send_back,TW-ADDR-LIST TW-DOC-02,ADDRESS_NOT_ON_LIST MISSING:photograph,ADDRESS_NOT_ON_LIST MISSING:photograph,,ADDRESS_NOT_ON_LIST,False
+GF-25175,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-UNSURE TW-DOC-06,MISSING:income_proof,MISSING:income_proof,,,False
+GF-25177,two-wheeler,Kukatpally,sftp_scan,send_back,ENV-CONFIDENCE ENV-UNSURE TW-AMT-MARGIN TW-DOC-06 TW-DOC-07,MISSING:bank_statement MISSING:income_proof OVER_MARGIN,MISSING:bank_statement MISSING:income_proof OVER_MARGIN,,OVER_MARGIN,False
+GF-25178,gold,Rajahmundry,sftp_scan,review,ENV-CONFIDENCE ENV-PAN-FORMAT ENV-PAN-MATCH,FIELD_ERROR:pan,FIELD_ERROR:pan,,FIELD_ERROR:pan,True
+GF-25179,two-wheeler,Kukatpally,mixed,review,ENV-CONFIDENCE,,,,,True
+GF-25182,two-wheeler,Vijayawada-Benz Circle,sftp_scan,send_back,ENV-CONFIDENCE TW-DOC-05,MISSING:proof_of_address,MISSING:proof_of_address,,MISSING:proof_of_address,False
+GF-25183,two-wheeler,Kukatpally,phone_photo,review,ENV-UNSURE TW-AGE TW-AMT-MARGIN TW-AMT-RANGE TW-BANK-AGE TW-DATE-QUOTE TW-DOC-02 TW-DOC-06 TW-DOC-12 TW-TENURE,MISSING:photograph,MISSING:photograph,,,False
+GF-25185,gold,Dilsukhnagar,sftp_scan,blocked,ENV-CONFIDENCE GL-ADDR-LIST GL-KYC-MASK,AADHAAR_UNMASKED ADDRESS_NOT_ON_LIST,AADHAAR_UNMASKED ADDRESS_NOT_ON_LIST,,ADDRESS_NOT_ON_LIST,False
+GF-25186,gold,Rajahmundry,phone_photo,review,ENV-CONFIDENCE,,,,,True
+GF-25187,two-wheeler,Vijayawada-Benz Circle,sftp_scan,review,ENV-CONFIDENCE,,,,,False
+GF-25188,two-wheeler,Vijayawada-Benz Circle,mixed,send_back,ENV-UNSURE TW-DOC-03,MISSING:pan_card,MISSING:pan_card,,,False
+GF-25191,gold,Dilsukhnagar,sftp_scan,review,ENV-PAN-MATCH,FIELD_ERROR:pan,FIELD_ERROR:pan,,FIELD_ERROR:pan,True
+GF-25192,gold,Warangal,sftp_scan,ready_for_approval,,,,,,False
+GF-25194,two-wheeler,Vijayawada-Benz Circle,mixed,send_back,ENV-CONFIDENCE TW-DOC-02,MISSING:photograph,MISSING:photograph,,,False
+GF-25197,gold,Guntur,phone_photo,send_back,GL-DOC-05 GL-DOC-09,MISSING:key_fact_statement MISSING:proof_of_address,MISSING:key_fact_statement MISSING:proof_of_address,,MISSING:proof_of_address,False
+GF-25199,gold,Rajahmundry,sftp_scan,send_back,ENV-CONFIDENCE ENV-UNSURE GL-DOC-03 GL-DOC-05,FIELD_ERROR:date_of_birth MISSING:pan_card MISSING:proof_of_address,FIELD_ERROR:date_of_birth MISSING:pan_card MISSING:proof_of_address,,FIELD_ERROR:date_of_birth,False

@@ -1,0 +1,8 @@
+# Day 11 · tested on Python 3.14.3 (Windows 11), October 2026. Needs Python 3.12 or newer.
+# The intake package itself uses the standard library only; these pins are for the tests.
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+colorama==0.4.6 ; sys_platform == "win32"
