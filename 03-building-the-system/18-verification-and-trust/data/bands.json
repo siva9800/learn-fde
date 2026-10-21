@@ -1,0 +1,496 @@
+{
+  "policy_version": "bands-policy-1.0",
+  "fitted_on": "Day 14 development split (50 files)",
+  "confirmed_on": "Day 14 test split (150 files)",
+  "summary": {
+    "auto_before": 1589,
+    "auto_errors_before": 9,
+    "upper_before": 0.01072971144102257,
+    "auto_after": 971,
+    "auto_errors_after": 0,
+    "upper_after": 0.00394074278323781,
+    "pooled_limit": 0.015,
+    "withdrawn": [
+      "applicant_name|handwritten_telugu",
+      "date_of_birth|printed",
+      "on_road_price|printed",
+      "requested_amount|handwritten_telugu"
+    ],
+    "blocked": [
+      "address|handwritten_telugu",
+      "application_date|handwritten_telugu",
+      "date_of_birth|handwritten_telugu",
+      "mobile|handwritten_telugu",
+      "tenure_months|handwritten_telugu"
+    ],
+    "expected_wrong_share_in_review": 0.054474708171206226
+  },
+  "cells": {
+    "address|handwritten_telugu": {
+      "field": "address",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.73,
+      "reject_below": 0.0,
+      "status": "blocked_until_proven",
+      "reason": "0 wrong of 67 auto-accepted test fields, upper bound 5.4%; proof needs 253 or more with none wrong",
+      "dev_n": 27,
+      "dev_auto_n": 26,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 69,
+        "auto": 67,
+        "auto_errors": 0,
+        "auto_upper": 0.0542,
+        "examples": []
+      }
+    },
+    "address|printed": {
+      "field": "address",
+      "stratum": "printed",
+      "accept_at": 0.83,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 23 development candidates at or above 0.83 correct",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 77,
+        "auto_errors": 0,
+        "auto_upper": 0.0475,
+        "examples": []
+      }
+    },
+    "applicant_name|handwritten_telugu": {
+      "field": "applicant_name",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.77,
+      "reject_below": 0.0,
+      "status": "withdrawn",
+      "reason": "confirmation failed: 1 wrong of 56 auto-accepted test fields",
+      "dev_n": 27,
+      "dev_auto_n": 22,
+      "review_dev_n": 4,
+      "review_dev_errors": 2,
+      "test": {
+        "n": 69,
+        "auto": 56,
+        "auto_errors": 1,
+        "auto_upper": 0.0945,
+        "examples": [
+          "GF-41981 read 'GOPI CHAND TADIKONDA', truth 'GOPI CHRND TADIKONDA' at 0.85 from 'దరఖాస్తుదారు పేరు / Applicant name: GOPI CHAND TADIKONDA'"
+        ]
+      }
+    },
+    "applicant_name|printed": {
+      "field": "applicant_name",
+      "stratum": "printed",
+      "accept_at": 0.87,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 23 development candidates at or above 0.87 correct",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 68,
+        "auto_errors": 0,
+        "auto_upper": 0.0535,
+        "examples": []
+      }
+    },
+    "application_date|handwritten_telugu": {
+      "field": "application_date",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.71,
+      "reject_below": 0.0,
+      "status": "blocked_until_proven",
+      "reason": "0 wrong of 67 auto-accepted test fields, upper bound 5.4%; proof needs 253 or more with none wrong",
+      "dev_n": 27,
+      "dev_auto_n": 26,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 69,
+        "auto": 67,
+        "auto_errors": 0,
+        "auto_upper": 0.0542,
+        "examples": []
+      }
+    },
+    "application_date|printed": {
+      "field": "application_date",
+      "stratum": "printed",
+      "accept_at": 0.86,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 23 development candidates at or above 0.86 correct",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 68,
+        "auto_errors": 0,
+        "auto_upper": 0.0535,
+        "examples": []
+      }
+    },
+    "appraisal_date|printed": {
+      "field": "appraisal_date",
+      "stratum": "printed",
+      "accept_at": 0.89,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 16 development candidates at or above 0.89 correct",
+      "dev_n": 16,
+      "dev_auto_n": 16,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 50,
+        "auto": 40,
+        "auto_errors": 0,
+        "auto_upper": 0.0876,
+        "examples": []
+      }
+    },
+    "date_of_birth|handwritten_telugu": {
+      "field": "date_of_birth",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.75,
+      "reject_below": 0.0,
+      "status": "blocked_until_proven",
+      "reason": "0 wrong of 58 auto-accepted test fields, upper bound 6.2%; proof needs 253 or more with none wrong",
+      "dev_n": 27,
+      "dev_auto_n": 25,
+      "review_dev_n": 1,
+      "review_dev_errors": 1,
+      "test": {
+        "n": 69,
+        "auto": 58,
+        "auto_errors": 0,
+        "auto_upper": 0.0621,
+        "examples": []
+      }
+    },
+    "date_of_birth|printed": {
+      "field": "date_of_birth",
+      "stratum": "printed",
+      "accept_at": 0.85,
+      "reject_below": 0.0,
+      "status": "withdrawn",
+      "reason": "confirmation failed: 1 wrong of 78 auto-accepted test fields",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 78,
+        "auto_errors": 1,
+        "auto_upper": 0.0691,
+        "examples": [
+          "GF-41867 read '81-12-1969', truth '31-12-1969' at 0.88 from 'Date of birth: 81-12-1969'"
+        ]
+      }
+    },
+    "dealer_code|printed": {
+      "field": "dealer_code",
+      "stratum": "printed",
+      "accept_at": 0.9,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 32 development candidates at or above 0.90 correct",
+      "dev_n": 34,
+      "dev_auto_n": 32,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 100,
+        "auto": 96,
+        "auto_errors": 0,
+        "auto_upper": 0.0385,
+        "examples": []
+      }
+    },
+    "gross_weight_g|printed": {
+      "field": "gross_weight_g",
+      "stratum": "printed",
+      "accept_at": 0.85,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 16 development candidates at or above 0.85 correct",
+      "dev_n": 16,
+      "dev_auto_n": 16,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 50,
+        "auto": 49,
+        "auto_errors": 0,
+        "auto_upper": 0.0727,
+        "examples": []
+      }
+    },
+    "mobile|handwritten_telugu": {
+      "field": "mobile",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.72,
+      "reject_below": 0.0,
+      "status": "blocked_until_proven",
+      "reason": "0 wrong of 68 auto-accepted test fields, upper bound 5.3%; proof needs 253 or more with none wrong",
+      "dev_n": 27,
+      "dev_auto_n": 26,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 69,
+        "auto": 68,
+        "auto_errors": 0,
+        "auto_upper": 0.0535,
+        "examples": []
+      }
+    },
+    "mobile|printed": {
+      "field": "mobile",
+      "stratum": "printed",
+      "accept_at": 0.83,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 23 development candidates at or above 0.83 correct",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 79,
+        "auto_errors": 0,
+        "auto_upper": 0.0464,
+        "examples": []
+      }
+    },
+    "monthly_income|handwritten_telugu": {
+      "field": "monthly_income",
+      "stratum": "handwritten_telugu",
+      "accept_at": null,
+      "reject_below": 0.0,
+      "status": "no_auto_band",
+      "reason": "no threshold has 15 or more development candidates above it, all correct (5 candidates, 0 wrong)",
+      "dev_n": 6,
+      "dev_auto_n": 0,
+      "review_dev_n": 5,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 13,
+        "auto": 0,
+        "auto_errors": 0,
+        "auto_upper": null,
+        "examples": []
+      }
+    },
+    "monthly_income|printed": {
+      "field": "monthly_income",
+      "stratum": "printed",
+      "accept_at": 0.87,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 22 development candidates at or above 0.87 correct",
+      "dev_n": 28,
+      "dev_auto_n": 22,
+      "review_dev_n": 1,
+      "review_dev_errors": 1,
+      "test": {
+        "n": 87,
+        "auto": 61,
+        "auto_errors": 0,
+        "auto_upper": 0.0592,
+        "examples": []
+      }
+    },
+    "net_weight_g|printed": {
+      "field": "net_weight_g",
+      "stratum": "printed",
+      "accept_at": 0.87,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 16 development candidates at or above 0.87 correct",
+      "dev_n": 16,
+      "dev_auto_n": 16,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 50,
+        "auto": 47,
+        "auto_errors": 0,
+        "auto_upper": 0.0756,
+        "examples": []
+      }
+    },
+    "on_road_price|printed": {
+      "field": "on_road_price",
+      "stratum": "printed",
+      "accept_at": 0.83,
+      "reject_below": 0.0,
+      "status": "withdrawn",
+      "reason": "confirmation failed: 6 wrong of 96 auto-accepted test fields",
+      "dev_n": 34,
+      "dev_auto_n": 32,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 100,
+        "auto": 96,
+        "auto_errors": 6,
+        "auto_upper": 0.1297,
+        "examples": [
+          "GF-40821 read '37150', truth '137150' at 0.93 from 'On-road price: Rs I,37,150'",
+          "GF-40988 read '26800', truth '126800' at 0.93 from 'On-road price: Rs I,26,800'",
+          "GF-41214 read '9500', truth '95050' at 0.91 from 'On-road price: Rs 95,0S0'"
+        ]
+      }
+    },
+    "pan|printed": {
+      "field": "pan",
+      "stratum": "printed",
+      "accept_at": 0.88,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 38 development candidates at or above 0.88 correct",
+      "dev_n": 50,
+      "dev_auto_n": 38,
+      "review_dev_n": 5,
+      "review_dev_errors": 3,
+      "test": {
+        "n": 150,
+        "auto": 105,
+        "auto_errors": 0,
+        "auto_upper": 0.0353,
+        "examples": []
+      }
+    },
+    "purity_carat|printed": {
+      "field": "purity_carat",
+      "stratum": "printed",
+      "accept_at": 0.89,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 16 development candidates at or above 0.89 correct",
+      "dev_n": 16,
+      "dev_auto_n": 16,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 50,
+        "auto": 43,
+        "auto_errors": 0,
+        "auto_upper": 0.082,
+        "examples": []
+      }
+    },
+    "quotation_date|printed": {
+      "field": "quotation_date",
+      "stratum": "printed",
+      "accept_at": 0.85,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 31 development candidates at or above 0.85 correct",
+      "dev_n": 34,
+      "dev_auto_n": 31,
+      "review_dev_n": 1,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 100,
+        "auto": 95,
+        "auto_errors": 0,
+        "auto_upper": 0.0389,
+        "examples": []
+      }
+    },
+    "requested_amount|handwritten_telugu": {
+      "field": "requested_amount",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.71,
+      "reject_below": 0.0,
+      "status": "withdrawn",
+      "reason": "confirmation failed: 1 wrong of 59 auto-accepted test fields",
+      "dev_n": 27,
+      "dev_auto_n": 21,
+      "review_dev_n": 5,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 69,
+        "auto": 59,
+        "auto_errors": 1,
+        "auto_upper": 0.09,
+        "examples": [
+          "GF-42025 read '70000', truth '70060' at 0.87 from 'Loan amount requested: Rs 70,000'"
+        ]
+      }
+    },
+    "requested_amount|printed": {
+      "field": "requested_amount",
+      "stratum": "printed",
+      "accept_at": 0.86,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 21 development candidates at or above 0.86 correct",
+      "dev_n": 23,
+      "dev_auto_n": 21,
+      "review_dev_n": 2,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 64,
+        "auto_errors": 0,
+        "auto_upper": 0.0566,
+        "examples": []
+      }
+    },
+    "tenure_months|handwritten_telugu": {
+      "field": "tenure_months",
+      "stratum": "handwritten_telugu",
+      "accept_at": 0.72,
+      "reject_below": 0.0,
+      "status": "blocked_until_proven",
+      "reason": "0 wrong of 69 auto-accepted test fields, upper bound 5.3%; proof needs 253 or more with none wrong",
+      "dev_n": 27,
+      "dev_auto_n": 26,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 69,
+        "auto": 69,
+        "auto_errors": 0,
+        "auto_upper": 0.0527,
+        "examples": []
+      }
+    },
+    "tenure_months|printed": {
+      "field": "tenure_months",
+      "stratum": "printed",
+      "accept_at": 0.83,
+      "reject_below": 0.0,
+      "status": "auto",
+      "reason": "all 23 development candidates at or above 0.83 correct",
+      "dev_n": 23,
+      "dev_auto_n": 23,
+      "review_dev_n": 0,
+      "review_dev_errors": 0,
+      "test": {
+        "n": 81,
+        "auto": 79,
+        "auto_errors": 0,
+        "auto_upper": 0.0464,
+        "examples": []
+      }
+    }
+  }
+}

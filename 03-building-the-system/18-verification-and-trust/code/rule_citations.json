@@ -1,0 +1,30 @@
+{
+  "version": "citations-0.1",
+  "status": "drafted by the FDE from Day 15's register; to be reviewed by the compliance head with the rules at M10",
+  "note": "One rule, one clause, by document number. The page looks the clause up in Day 15's corpus and quotes it; it never searches for it. Engineering checks (ENV-*) are not signed rules and cite nothing.",
+  "rules": {
+    "TW-DOC-01": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-02": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-03": ["GFL/CO/2025/041", "2.1"],
+    "TW-DOC-04": ["GFL/RBI/2025/001", "2.1"],
+    "TW-DOC-05": ["GFL/RBI/2025/001", "2.1"],
+    "TW-DOC-06": ["GFL/CO/2025/027", "4.2"],
+    "TW-DOC-07": ["GFL/CO/2025/033", "2.1"],
+    "TW-DOC-08": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-09": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-10": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-11": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-12": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-13": ["GFL/RB/2026/001", "2.1"],
+    "TW-DOC-14": ["GFL/CO/2025/038", "2.1"],
+    "TW-ADDR-LIST": ["GFL/CMP/2026/004", "2.1"],
+    "TW-ADDR-AGE": ["GFL/RBI/2025/001", "2.3"],
+    "TW-KYC-MASK": ["GFL/CO/2025/012", "2.2"],
+    "TW-AMT-RANGE": ["GFL/RB/2026/001", "1.1"],
+    "TW-AMT-MARGIN": ["GFL/RB/2026/001", "1.1"],
+    "TW-TENURE": ["GFL/CO/2025/049", "2.2"],
+    "TW-AGE": ["GFL/CO/2025/049", "2.1"],
+    "TW-DATE-QUOTE": ["GFL/CO/2025/019", "2.1"],
+    "TW-BANK-AGE": ["GFL/CO/2025/033", "2.2"]
+  }
+}

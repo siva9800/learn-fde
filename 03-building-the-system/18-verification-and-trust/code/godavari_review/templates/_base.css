@@ -1,0 +1,26 @@
+body { font-family: "Noto Sans", "Noto Sans Telugu", "Nirmala UI", "Gautami", Arial, sans-serif; font-size: 16px;
+       line-height: 1.5; color: #1a1a1a; background: #ffffff; margin: 0 auto; max-width: 72rem; padding: 0 16px 48px; }
+h1 { font-size: 1.5rem; margin: 1rem 0 0.25rem; }
+h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.25rem; }
+.meta, .small { color: #3d3d3d; font-size: 0.9rem; }
+.banner { border: 2px solid #8a5a00; background: #fff6e0; padding: 0.5rem 0.75rem; margin: 0.75rem 0; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: #ffffff; padding: 0.25rem 0.5rem; border: 2px solid #1a1a1a; }
+:focus { outline: 3px solid #0047ab; outline-offset: 2px; }
+table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; }
+th, td { border: 1px solid #8c8c8c; padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+th { background: #f0f0f0; }
+.band { font-weight: bold; white-space: nowrap; }
+.band-review { border-left: 6px solid #8a5a00; }
+.band-reject { border-left: 6px solid #a00000; }
+.band-auto_accept { border-left: 6px solid #2e6b2e; }
+.forced { border: 3px solid #0047ab; padding: 0.75rem; margin: 0.5rem 0; }
+pre.crop { background: #f6f6f6; border: 1px solid #8c8c8c; padding: 0.4rem; margin: 0.25rem 0; white-space: pre-wrap;
+           font-family: Consolas, "Courier New", monospace; font-size: 0.95rem; }
+mark { background: #ffe58a; color: #1a1a1a; }
+.value { font-family: Consolas, "Courier New", monospace; font-size: 1.05rem; font-weight: bold; }
+.te { font-size: 0.95rem; color: #3d3d3d; }
+.clause { border-left: 4px solid #555555; padding-left: 0.5rem; margin: 0.25rem 0; }
+.problem { color: #a00000; font-weight: bold; }
+fieldset { border: 1px solid #8c8c8c; margin: 0.5rem 0; }
+button[disabled] { color: #3d3d3d; }

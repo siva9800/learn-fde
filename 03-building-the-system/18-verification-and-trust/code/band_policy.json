@@ -1,0 +1,45 @@
+{
+  "version": "bands-policy-1.0",
+  "status": "draft for the eval owners (Lakshmi, the senior analyst) and the compliance head; not yet agreed",
+  "grid": {"low": 0.70, "high": 0.99, "step": 0.01},
+  "strata": "the field's source page: handwritten Telugu, or printed (Day 14's handwritten_telugu stratum)",
+  "auto_accept": {
+    "min_support_dev": 15,
+    "max_dev_errors": 0,
+    "note": "fitted on the development split only (Day 14, section 02.5): the lowest threshold above which at least 15 development fields with no deterministic finding were all correct"
+  },
+  "reject": {
+    "min_support_dev": 10,
+    "below_accuracy": 0.80,
+    "note": "below this confidence the value is not offered and the analyst keys it from the page, because a wrong guess on screen anchors the reader; the model's own 'unsure' is always in this band"
+  },
+  "confirm": {
+    "max_test_errors_per_cell": 0,
+    "pooled_upper_bound_max": 0.015,
+    "basis": "the senior analyst's own keying error on the golden set, 1.50 percent (Day 14, section 03.9): an auto-accepted field must be no worse than a careful person re-keying it",
+    "on_failure": "the cell's auto-accept band is withdrawn and the cell joins the standing forced-look list; a failed confirmation may only remove automation, never move a threshold (moving one needs new development data)"
+  },
+  "proof_before_auto": {
+    "strata": ["handwritten_telugu"],
+    "max_upper_bound": 0.015,
+    "basis": "the senior analyst: 'the reading of anything handwritten, until it has proved itself on my hundred' (Day 6, transcript 09); Day 10 risk R1. A handwritten Telugu cell is auto-accepted only when its own test fields bound its error at or below 1.5 percent"
+  },
+  "seconds": {
+    "auto_glance": 2,
+    "review_confirm": 12,
+    "review_correct_extra": 45,
+    "key_in": 58,
+    "basis": "assumptions until the review screen's timer measures pilot week 1: 2 s to glance at a value beside its source; 12 s to read a crop and confirm; 45 s more to correct; 58 s to key a field from the page (Day 9: 0.97 hours of re-keying for about sixty fields)"
+  },
+  "impact": {
+    "default": 1,
+    "fields": {
+      "requested_amount": 3, "on_road_price": 3, "monthly_income": 3, "pan": 3,
+      "gross_weight_g": 3, "net_weight_g": 3, "purity_carat": 3,
+      "applicant_name": 2, "date_of_birth": 2, "address": 2, "dealer_code": 2
+    },
+    "note": "how much a wrong value costs downstream: 3 feeds an eligibility rule or the core-system record of money or identity; to be agreed with the eval owners"
+  },
+  "files_per_month": 1400,
+  "files_per_month_basis": "the paper and PDF intake workload (about 60 percent of about 2,400 applications a month)"
+}

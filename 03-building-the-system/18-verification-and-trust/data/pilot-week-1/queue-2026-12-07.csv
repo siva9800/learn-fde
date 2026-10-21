@@ -1,0 +1,13 @@
+rank,file_id,branch,arrived,requested_amount,route,to_check,to_key_in,look_first,why_here
+1,GF-61000,Guntur,2026-12-07T02:00,84500,send_back,5,1,on_road_price,"tell the branch today; 1 for the branch (TW-DOC-06); 5 to check, 1 to key in; look first: on_road_price"
+2,GF-61001,Kukatpally,2026-12-07T02:00,93000,send_back,2,1,on_road_price,"tell the branch today; 1 for the branch (TW-DOC-06); 2 to check, 1 to key in; look first: on_road_price"
+3,GF-61013,Kukatpally,2026-12-07T02:00,75500,send_back,9,0,on_road_price,"tell the branch today; 1 for the branch (TW-DOC-05); 9 to check, 0 to key in; look first: on_road_price"
+4,GF-61005,Guntur,2026-12-07T02:00,124000,review,9,0,on_road_price,"fields to check; 9 to check, 0 to key in; look first: on_road_price"
+5,GF-61011,Kukatpally,2026-12-07T02:00,122500,review,8,0,on_road_price,"fields to check; 8 to check, 0 to key in; look first: on_road_price"
+6,GF-61004,Kukatpally,2026-12-07T02:00,102500,review,8,0,on_road_price,"fields to check; 8 to check, 0 to key in; look first: on_road_price"
+7,GF-61008,Guntur,2026-12-07T02:00,98000,review,2,0,on_road_price,"fields to check; 2 to check, 0 to key in; look first: on_road_price"
+8,GF-61003,Guntur,2026-12-07T02:00,88000,review,3,0,on_road_price,"fields to check; 3 to check, 0 to key in; look first: on_road_price"
+9,GF-61002,Kukatpally,2026-12-07T02:00,78000,review,3,1,on_road_price,"fields to check; 3 to check, 1 to key in; look first: on_road_price"
+10,GF-61010,Kukatpally,2026-12-07T02:00,70000,review,2,0,on_road_price,"fields to check; 2 to check, 0 to key in; look first: on_road_price"
+11,GF-61006,Guntur,2026-12-07T02:00,57500,review,2,0,on_road_price,"fields to check; 2 to check, 0 to key in; look first: on_road_price"
+12,GF-61007,Guntur,2026-12-07T02:00,50500,ready_for_approval,2,0,on_road_price,"ready for approval; 2 to check, 0 to key in; look first: on_road_price"

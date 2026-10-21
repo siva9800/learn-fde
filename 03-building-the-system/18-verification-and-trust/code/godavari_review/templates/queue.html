@@ -1,0 +1,52 @@
+{#- The review queue for one day. Every {{ }} is escaped; the page loads nothing. -#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{{ CSP }}">
+<title>Review queue {{ day }}</title>
+<style>
+{% include "_base.css" %}
+</style>
+</head>
+<body>
+<header>
+<h1>Review queue · {{ day }} · Kukatpally and Guntur</h1>
+<p class="meta">{{ items | length }} files. Order: files the branch must hear about today first; then files with fields
+to check, largest loan first, oldest first; then files ready for approval, oldest first. Every row says why it is where it is.</p>
+<div class="banner" role="note">Bulk actions here: {{ safe_bulk | join(", ") }} (they decide nothing and can be undone).
+Never in bulk: {{ never_bulk | join(", ") }}. A named analyst decides every file (decision D07).
+The same table is in the CSV beside this page, to sort in Excel.</div>
+</header>
+<main>
+<form>
+<fieldset><legend>Selected files</legend>
+<button type="button" disabled>Claim selected</button> <button type="button" disabled>Export selected to CSV</button>
+</fieldset>
+<table>
+<caption class="small">Queue for {{ day }}</caption>
+<thead><tr><th scope="col">Select</th><th scope="col">#</th><th scope="col">File</th><th scope="col">Branch</th>
+<th scope="col">Arrived</th><th scope="col">Requested</th><th scope="col">Route</th><th scope="col">To check</th>
+<th scope="col">Look first</th><th scope="col">Why it is here</th></tr></thead>
+<tbody>
+{% for it in items %}
+<tr>
+<td><input type="checkbox" name="sel" value="{{ it.file_id }}" aria-label="Select {{ it.file_id }}"></td>
+<td>{{ loop.index }}</td>
+<td>{% if it.file_id in links %}<a href="files/{{ it.file_id }}.html">{{ it.file_id }}</a>{% else %}{{ it.file_id }}{% endif %}</td>
+<td>{{ it.branch }}</td>
+<td>{{ it.arrived.strftime("%H:%M") }}</td>
+<td>{{ it.amount | money }}</td>
+<td>{{ it.route }}</td>
+<td>{{ it.in_band(Band.REVIEW) | length }}</td>
+<td>{% if it.forced %}{% set en, te = label(it.forced.row.field) %}{{ en }} <span class="te" lang="te">{{ te }}</span>{% endif %}</td>
+<td>{{ it.why }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</form>
+</main>
+</body>
+</html>

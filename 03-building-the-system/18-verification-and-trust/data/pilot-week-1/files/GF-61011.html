@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src data:; form-action &#39;none&#39;; base-uri &#39;none&#39;">
+<title>Review GF-61011</title>
+<style>
+body { font-family: "Noto Sans", "Noto Sans Telugu", "Nirmala UI", "Gautami", Arial, sans-serif; font-size: 16px;
+       line-height: 1.5; color: #1a1a1a; background: #ffffff; margin: 0 auto; max-width: 72rem; padding: 0 16px 48px; }
+h1 { font-size: 1.5rem; margin: 1rem 0 0.25rem; }
+h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.25rem; }
+.meta, .small { color: #3d3d3d; font-size: 0.9rem; }
+.banner { border: 2px solid #8a5a00; background: #fff6e0; padding: 0.5rem 0.75rem; margin: 0.75rem 0; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: #ffffff; padding: 0.25rem 0.5rem; border: 2px solid #1a1a1a; }
+:focus { outline: 3px solid #0047ab; outline-offset: 2px; }
+table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; }
+th, td { border: 1px solid #8c8c8c; padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+th { background: #f0f0f0; }
+.band { font-weight: bold; white-space: nowrap; }
+.band-review { border-left: 6px solid #8a5a00; }
+.band-reject { border-left: 6px solid #a00000; }
+.band-auto_accept { border-left: 6px solid #2e6b2e; }
+.forced { border: 3px solid #0047ab; padding: 0.75rem; margin: 0.5rem 0; }
+pre.crop { background: #f6f6f6; border: 1px solid #8c8c8c; padding: 0.4rem; margin: 0.25rem 0; white-space: pre-wrap;
+           font-family: Consolas, "Courier New", monospace; font-size: 0.95rem; }
+mark { background: #ffe58a; color: #1a1a1a; }
+.value { font-family: Consolas, "Courier New", monospace; font-size: 1.05rem; font-weight: bold; }
+.te { font-size: 0.95rem; color: #3d3d3d; }
+.clause { border-left: 4px solid #555555; padding-left: 0.5rem; margin: 0.25rem 0; }
+.problem { color: #a00000; font-weight: bold; }
+fieldset { border: 1px solid #8c8c8c; margin: 0.5rem 0; }
+button[disabled] { color: #3d3d3d; }
+</style>
+</head>
+<body>
+<a class="skip" href="#look-first">Skip to the field to look at first</a>
+<header>
+<h1>GF-61011 · Kukatpally · two-wheeler</h1>
+<p class="meta">Arrived Mon 07 Dec 2026, 02:00 · channel sftp_scan ·
+requested Rs 1,22,500 · route <strong>review</strong> · why it is here: fields to check; 8 to check, 0 to key in; look first: on_road_price</p>
+<div class="banner" role="note">
+<strong>Rules:</strong> two-wheeler rules v0.3: reviewed-draft (the compliance head, 2026-11-06); fingerprint matches the record (code fingerprint f535ec29fb04).<br>
+<strong>Bands:</strong> bands-policy-1.0 fitted on Day 14 development, confirmed on test (data/bands.json). <strong>Labels:</strong> draft: form labels copied from the form; the rest to be reviewed by Lakshmi and the Vijayawada team lead.<br>
+A named analyst decides every file (decision D07). Accepted fields are spot-checked after approval.
+</div>
+</header>
+<main>
+<form>
+<section id="look-first" aria-labelledby="h-first">
+<h2 id="h-first">1. Look at this first <span class="te" lang="te">ముందుగా ఇది చూడండి</span></h2>
+<div class="forced">
+<p class="small">This is the field most likely to be wrong and most costly if it is, for this file. Open the source
+and compare before anything else; the file cannot be approved until you have.</p>
+<table><tbody><tr class="band-review">
+  <th scope="row"><span>On-road price</span><br><span class="te" lang="te">ఆన్-రోడ్ ధర</span></th>
+  <td><span class="value">154350</span><br>
+      <span class="small">model confidence 0.98: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 10">  3  Vehicle: scooter 110cc
+  4  <mark>On-road price: Rs 1,54,350</mark>
+  5  Quotation date: 28-10-2026
+</pre>
+<span class="small">page 10, line 4</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f0" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f0" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v0"></label><br>
+      <label class="small">Reason <select name="r0">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+</tbody></table>
+</div>
+</section>
+
+<section aria-labelledby="h-check">
+<h2 id="h-check">2. Fields to check (7)</h2>
+<table><thead><tr><th scope="col">Field</th><th scope="col">Value read</th><th scope="col">Source</th><th scope="col">Action</th></tr></thead>
+<tbody><tr class="band-review">
+  <th scope="row"><span>Applicant name</span><br><span class="te" lang="te">దరఖాస్తుదారు పేరు</span></th>
+  <td><span class="value">RAVI TEJA MANDAVA</span><br>
+      <span class="small">model confidence 0.85: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1">  4  File number: GF-61011
+  5  <mark>దరఖాస్తుదారు పేరు / Applicant name: RAVI TEJA MANDAVA</mark>
+  6  Father&#39;s name: VENKATESWARLU MANDAVA
+</pre>
+<span class="small">page 1, line 5</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f1" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f1" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v1"></label><br>
+      <label class="small">Reason <select name="r1">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Date of birth</span><br><span class="te" lang="te">పుట్టిన తేదీ</span></th>
+  <td><span class="value">22-08-1980</span><br>
+      <span class="small">model confidence 0.83: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1">  6  Father&#39;s name: VENKATESWARLU MANDAVA
+  7  <mark>Date of birth: 22-08-1980</mark>
+  8  PAN: AHFPM2998F
+</pre>
+<span class="small">page 1, line 7</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f2" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f2" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v2"></label><br>
+      <label class="small">Reason <select name="r2">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Residential address</span><br><span class="te" lang="te">చిరునామా</span></th>
+  <td><span class="value">9-19, KPHB Colony, Kukatpally, Hyderabad 500072</span><br>
+      <span class="small">model confidence 0.84: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1">  9  Aadhaar: XXXX XXXX 6154
+ 10  <mark>చిరునామా / Residential address: 9-19, KPHB Colony, Kukatpally, Hyderabad 500072</mark>
+ 11  Mobile: 9362907970
+</pre>
+<span class="small">page 1, line 10</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f3" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f3" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v3"></label><br>
+      <label class="small">Reason <select name="r3">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Mobile</span><br><span class="te" lang="te">మొబైల్ నంబర్</span></th>
+  <td><span class="value">9362907970</span><br>
+      <span class="small">model confidence 0.87: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1"> 10  చిరునామా / Residential address: 9-19, KPHB Colony, Kukatpally, Hyderabad 500072
+ 11  <mark>Mobile: 9362907970</mark>
+ 12  Loan amount requested: Rs 1,22,500
+</pre>
+<span class="small">page 1, line 11</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f4" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f4" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v4"></label><br>
+      <label class="small">Reason <select name="r4">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Loan amount requested</span><br><span class="te" lang="te">కోరిన రుణ మొత్తం</span></th>
+  <td><span class="value">122500</span><br>
+      <span class="small">model confidence 0.86: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1"> 11  Mobile: 9362907970
+ 12  <mark>Loan amount requested: Rs 1,22,500</mark>
+ 13  Tenure (months): 12
+</pre>
+<span class="small">page 1, line 12</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f5" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f5" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v5"></label><br>
+      <label class="small">Reason <select name="r5">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Tenure (months)</span><br><span class="te" lang="te">కాలవ్యవధి (నెలలు)</span></th>
+  <td><span class="value">12</span><br>
+      <span class="small">model confidence 0.80: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1"> 12  Loan amount requested: Rs 1,22,500
+ 13  <mark>Tenure (months): 12</mark>
+ 14  నెలసరి ఆదాయం / Monthly income: Rs 24,500
+</pre>
+<span class="small">page 1, line 13</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f6" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f6" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v6"></label><br>
+      <label class="small">Reason <select name="r6">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+<tr class="band-review">
+  <th scope="row"><span>Application date</span><br><span class="te" lang="te">దరఖాస్తు తేదీ</span></th>
+  <td><span class="value">04-11-2026</span><br>
+      <span class="small">model confidence 0.79: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 1"> 16  Co-applicant: SUNEETHA MANDAVA
+ 17  <mark>Application date: 04-11-2026</mark>
+ 18  Signature of applicant: [signed]
+</pre>
+<span class="small">page 1, line 17</span>
+</td>
+  <td><span class="band">Check: confirm or correct</span><br><span class="te" lang="te">తనిఖీ చేయండి</span>
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f7" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f7" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v7"></label><br>
+      <label class="small">Reason <select name="r7">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  </td>
+</tr>
+</tbody></table>
+</section>
+
+<section aria-labelledby="h-key">
+<h2 id="h-key">3. Key in from the page (0)</h2>
+<p>None.</p></section>
+
+<section aria-labelledby="h-auto">
+<h2 id="h-auto">4. Accepted fields (4), each with its source</h2>
+<table><thead><tr><th scope="col">Field</th><th scope="col">Value read</th><th scope="col">Source</th><th scope="col">Band</th></tr></thead>
+<tbody><tr class="band-auto_accept">
+  <th scope="row"><span>PAN</span><br><span class="te" lang="te">పాన్ నంబర్</span></th>
+  <td><span class="value">AHFPM2998F</span><br>
+      <span class="small">model confidence 0.99: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 6">  4  Date of Birth: 22-08-1980
+  5  <mark>Permanent Account Number: AHFPM2998F</mark>
+</pre>
+<span class="small">page 6, line 5</span>
+</td>
+  <td><span class="band">Accepted: no action needed</span><br><span class="te" lang="te">ఆమోదించబడింది</span>
+  </td>
+</tr>
+<tr class="band-auto_accept">
+  <th scope="row"><span>Monthly income</span><br><span class="te" lang="te">నెలసరి ఆదాయం</span></th>
+  <td><span class="value">24500</span><br>
+      <span class="small">model confidence 0.90: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 2">  4  Employee: RAVI TEJA MANDAVA
+  5  <mark>Net pay: Rs 24,500</mark>
+</pre>
+<span class="small">page 2, line 5</span>
+</td>
+  <td><span class="band">Accepted: no action needed</span><br><span class="te" lang="te">ఆమోదించబడింది</span>
+  </td>
+</tr>
+<tr class="band-auto_accept">
+  <th scope="row"><span>Dealer code</span><br><span class="te" lang="te">డీలర్ కోడ్</span></th>
+  <td><span class="value">DLR-KKP-014</span><br>
+      <span class="small">model confidence 0.91: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 10">  1  DEALER QUOTATION / PROFORMA INVOICE
+  2  <mark>Dealer: Sri Sai Motors (DLR-KKP-014)</mark>
+  3  Vehicle: scooter 110cc
+</pre>
+<span class="small">page 10, line 2</span>
+</td>
+  <td><span class="band">Accepted: no action needed</span><br><span class="te" lang="te">ఆమోదించబడింది</span>
+  </td>
+</tr>
+<tr class="band-auto_accept">
+  <th scope="row"><span>Quotation date</span><br><span class="te" lang="te">కొటేషన్ తేదీ</span></th>
+  <td><span class="value">28-10-2026</span><br>
+      <span class="small">model confidence 0.99: one signal, not the evidence</span>
+</td>
+  <td><pre class="crop" aria-label="Source text, page 10">  4  On-road price: Rs 1,54,350
+  5  <mark>Quotation date: 28-10-2026</mark>
+</pre>
+<span class="small">page 10, line 5</span>
+</td>
+  <td><span class="band">Accepted: no action needed</span><br><span class="te" lang="te">ఆమోదించబడింది</span>
+  </td>
+</tr>
+</tbody></table>
+</section>
+
+<section aria-labelledby="h-rules">
+<h2 id="h-rules">5. What the rules found (0)</h2>
+<p>No findings.</p>
+</section>
+
+<section aria-labelledby="h-branch">
+<h2 id="h-branch">6. For the branch manager</h2>
+<p>Nothing for the branch on this file.</p>
+</section>
+
+<section aria-labelledby="h-record">
+<h2 id="h-record">7. Decision record (for the auditor)</h2>
+<table><tbody>
+<tr><th scope="row">Decided by</th><td>H2 at 2026-12-07T16:05:22</td></tr>
+<tr><th scope="row">Pages decided on</th><td>bundle fingerprint 595f50a8aad871b0, 17 pages</td></tr>
+<tr><th scope="row">Rules</th><td>two-wheeler rules v0.3: reviewed-draft (the compliance head, 2026-11-06); fingerprint matches the record</td></tr>
+<tr><th scope="row">Fields</th><td>4 accepted, 8 confirmed, 0 corrected, 0 keyed</td></tr>
+<tr><th scope="row">Look-first field</th><td>on_road_price, 15.3 s on it</td></tr>
+<tr><th scope="row">Corrections</th><td>none</td></tr>
+</tbody></table>
+</section>
+
+<p><button type="submit" disabled>Approve (after the look-first field; you decide this file)</button></p>
+</form>
+</main>
+</body>
+</html>

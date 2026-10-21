@@ -1,0 +1,154 @@
+{#- One file's review screen. Every {{ }} below is escaped by the environment; nothing here is marked safe. -#}
+{% macro field_label(name) %}{% set en, te = label(name) %}<span>{{ en }}</span><br><span class="te" lang="te">{{ te }}</span>{% endmacro %}
+{% macro crop_block(v) %}
+{% if v.crop %}
+<pre class="crop" aria-label="Source text, page {{ v.row.page }}">{% for no, text, hit in v.crop %}{{ "%3d" | format(no) }}  {% if hit %}<mark>{{ text }}</mark>{% else %}{{ text }}{% endif %}{{ "
+" }}{% endfor %}</pre>
+<span class="small">page {{ v.row.page }}, line {{ v.quote_line }}</span>
+{% elif v.row.page %}
+<span class="problem">The quote is not on page {{ v.row.page }}. Open the page; do not trust the value.</span>
+{% else %}
+<span class="small">No source found by the model. Find it in the file.</span>
+{% endif %}
+{% endmacro %}
+{% macro field_row(v, idx) %}
+<tr class="band-{{ v.band.value }}">
+  <th scope="row">{{ field_label(v.row.field) }}</th>
+  <td><span class="value">{{ v.row.value if v.row.value is not none else "(not offered)" }}</span><br>
+      <span class="small">model confidence {{ "%.2f" | format(v.row.confidence) }}: one signal, not the evidence</span>
+      {% for r in v.reasons %}<br><span class="problem">{{ r }}</span>{% endfor %}</td>
+  <td>{{ crop_block(v) }}</td>
+  <td><span class="band">{{ BAND_WORDS[v.band.value][0] }}</span><br><span class="te" lang="te">{{ BAND_WORDS[v.band.value][1] }}</span>
+  {% if v.band == Band.REVIEW %}
+    <fieldset><legend class="small">Your check</legend>
+      <label><input type="radio" name="f{{ idx }}" value="confirm"> Confirm</label>
+      <label><input type="radio" name="f{{ idx }}" value="correct"> Correct</label><br>
+      <label class="small">Corrected value <input type="text" name="v{{ idx }}"></label><br>
+      <label class="small">Reason <select name="r{{ idx }}">
+        <option value="">choose</option><option>misread character</option><option>wrong page or document</option>
+        <option>not in the file</option><option>spelling or transliteration</option><option>format only</option>
+        <option>other (write it)</option></select></label>
+    </fieldset>
+  {% elif v.band == Band.REJECT %}
+    <label class="small">Value from the page <input type="text" name="v{{ idx }}"></label>
+  {% endif %}
+  </td>
+</tr>
+{% endmacro %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{{ CSP }}">
+<title>Review {{ item.file_id }}</title>
+<style>
+{% include "_base.css" %}
+</style>
+</head>
+<body>
+<a class="skip" href="#look-first">Skip to the field to look at first</a>
+<header>
+<h1>{{ item.file_id }} · {{ item.branch }} · {{ item.product }}</h1>
+<p class="meta">Arrived {{ item.arrived.strftime("%a %d %b %Y, %H:%M") }} · channel {{ item.channel }} ·
+requested {{ item.amount | money }} · route <strong>{{ item.route }}</strong> · why it is here: {{ item.why }}</p>
+<div class="banner" role="note">
+<strong>Rules:</strong> {{ item.rules_banner }} (code fingerprint {{ item.rules_fingerprint }}).<br>
+<strong>Bands:</strong> {{ item.bands_version }}. <strong>Labels:</strong> {{ LABELS_STATUS }}.<br>
+A named analyst decides every file (decision D07). Accepted fields are spot-checked after approval.
+</div>
+</header>
+<main>
+<form>
+{% set f = item.forced %}
+<section id="look-first" aria-labelledby="h-first">
+<h2 id="h-first">1. Look at this first <span class="te" lang="te">{{ BAND_WORDS["forced"][1] }}</span></h2>
+{% if f %}
+<div class="forced">
+<p class="small">This is the field most likely to be wrong and most costly if it is, for this file. Open the source
+and compare before anything else; the file cannot be approved until you have.</p>
+<table><tbody>{{ field_row(f, 0) }}</tbody></table>
+</div>
+{% else %}
+<p>Every field is to be keyed from the page.</p>
+{% endif %}
+</section>
+
+<section aria-labelledby="h-check">
+<h2 id="h-check">2. Fields to check ({{ item.in_band(Band.REVIEW) | length }})</h2>
+{% if item.in_band(Band.REVIEW) %}
+<table><thead><tr><th scope="col">Field</th><th scope="col">Value read</th><th scope="col">Source</th><th scope="col">Action</th></tr></thead>
+<tbody>{% for v in item.in_band(Band.REVIEW) %}{{ field_row(v, loop.index) }}{% endfor %}</tbody></table>
+{% else %}<p>None.</p>{% endif %}
+</section>
+
+<section aria-labelledby="h-key">
+<h2 id="h-key">3. Key in from the page ({{ item.in_band(Band.REJECT) | length }})</h2>
+{% if item.in_band(Band.REJECT) %}
+<table><thead><tr><th scope="col">Field</th><th scope="col">Value read</th><th scope="col">Source</th><th scope="col">Action</th></tr></thead>
+<tbody>{% for v in item.in_band(Band.REJECT) %}{{ field_row(v, 100 + loop.index) }}{% endfor %}</tbody></table>
+{% else %}<p>None.</p>{% endif %}
+</section>
+
+<section aria-labelledby="h-auto">
+<h2 id="h-auto">4. Accepted fields ({{ item.in_band(Band.AUTO) | length }}), each with its source</h2>
+<table><thead><tr><th scope="col">Field</th><th scope="col">Value read</th><th scope="col">Source</th><th scope="col">Band</th></tr></thead>
+<tbody>{% for v in item.in_band(Band.AUTO) %}{{ field_row(v, 200 + loop.index) }}{% endfor %}</tbody></table>
+</section>
+
+<section aria-labelledby="h-rules">
+<h2 id="h-rules">5. What the rules found ({{ item.findings | length }})</h2>
+{% for fd in item.findings %}
+<div class="clause">
+<p><strong>{{ fd.rule_id }}</strong> · {{ fd.kind }} · {{ fd.action }}{% if fd.field_name %} · field {{ fd.field_name }}{% endif %}<br>{{ fd.message }}</p>
+{% if fd.citation %}
+<p class="small">Rests on {{ fd.citation.line }}:</p>
+<blockquote>{{ fd.citation.text }}</blockquote>
+{% elif fd.citation_problem %}
+<p class="problem">Citation problem: {{ fd.citation_problem }}</p>
+{% else %}
+<p class="small">An engineering check, not a signed rule: it sends the field to a person and cites no circular.</p>
+{% endif %}
+</div>
+{% else %}
+<p>No findings.</p>
+{% endfor %}
+</section>
+
+<section aria-labelledby="h-branch">
+<h2 id="h-branch">6. For the branch manager</h2>
+{% if item.branch_findings %}
+<pre class="crop">{{ item.note }}</pre>
+<ul>
+{% for fd in item.branch_findings %}
+<li>{{ fd.rule_id }}{% if fd.citation %}: {{ fd.citation.line }}{% elif fd.citation_problem %}: <span class="problem">{{ fd.citation_problem }}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+<p class="small">The note is drafted by the model from what code decided; code checks that every rule is cited. The clause
+texts are in section 5, quoted from the register, not from the model.</p>
+{% else %}
+<p>Nothing for the branch on this file.</p>
+{% endif %}
+</section>
+
+<section aria-labelledby="h-record">
+<h2 id="h-record">7. Decision record (for the auditor)</h2>
+{% if record %}
+<table><tbody>
+<tr><th scope="row">Decided by</th><td>{{ record.analyst }} at {{ record.approved_at }}</td></tr>
+<tr><th scope="row">Pages decided on</th><td>bundle fingerprint {{ record.bundle_sha256[:16] }}, {{ record.pages }} pages</td></tr>
+<tr><th scope="row">Rules</th><td>{{ item.rules_banner }}</td></tr>
+<tr><th scope="row">Fields</th><td>{{ record.accepted }} accepted, {{ record.confirmed }} confirmed, {{ record.corrected }} corrected, {{ record.keyed }} keyed</td></tr>
+<tr><th scope="row">Look-first field</th><td>{{ record.forced_field }}, {{ "%.1f" | format(record.forced_seconds) }} s on it</td></tr>
+<tr><th scope="row">Corrections</th><td>{% for c in record.corrections %}{{ c }}<br>{% else %}none{% endfor %}</td></tr>
+</tbody></table>
+{% else %}
+<p>Not decided yet.</p>
+{% endif %}
+</section>
+
+<p><button type="submit" disabled>Approve (after the look-first field; you decide this file)</button></p>
+</form>
+</main>
+</body>
+</html>
