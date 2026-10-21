@@ -27,7 +27,7 @@ flowchart LR
 |---|---|---|---|
 | - | 0 · Start here | 0 | [00-start-here](00-start-here/00-the-engineer-in-the-room/README.md) |
 | **1 · Understand the job** | 1 · The Role and the Market | 1 to 3 | [01-the-role](01-the-role/README.md) |
-| | 2 · Discovery and Decomposition | 4 to 10 | [plan](curriculum/part-02-discovery-and-decomposition.md) |
+| | 2 · Discovery and Decomposition | 4 to 10 | [02-discovery-and-decomposition](02-discovery-and-decomposition/README.md) |
 | **2 · Build and deploy** | 3 · Building the System Around the Model | 11 to 20 | [plan](curriculum/part-03-building-the-system.md) |
 | | 4 · Deploying Into the Customer's World | 21 to 28 | [plan](curriculum/part-04-deploying-into-their-world.md) |
 | | 5 · Working With the Customer | 29 to 34 | [plan](curriculum/part-05-working-with-the-customer.md) |
