@@ -1,0 +1,61 @@
+file_id,pages,inr_model_calls,classify_s,extract_s,processing_s,needs_review,review_reasons
+KMM-26-00001,40,8.42,12.3,8.4,20.7,False,
+KKP-26-00002,15,5.48,10.0,9.5,19.5,False,
+AMP-26-00003,29,6.45,12.5,8.4,20.9,False,
+VJA-26-00004,26,6.42,11.2,7.9,19.1,False,
+GNT-26-00005,20,6.31,9.0,7.7,16.7,True,product: confidence 0.71 on page 9
+ONG-26-00006,20,6.36,12.9,7.8,20.7,False,
+AMP-26-00007,13,6.27,8.0,7.8,15.8,False,
+KKP-26-00008,13,4.73,10.8,7.6,18.4,True,product: not found on any page | requested_amount: not found on any page
+VJA-26-00009,21,6.38,3.5,38.4,41.9,True,requested_amount: confidence 0.66 on page 18
+VJA-26-00010,19,6.25,2.1,10.3,12.4,True,requested_amount: confidence 0.56 on page 10
+NLR-26-00011,25,7.89,8.8,12.3,21.2,False,
+NLR-26-00012,22,4.81,6.2,9.9,16.1,True,product: confidence 0.70 on page 20
+ONG-26-00013,35,8.73,13.6,36.0,49.6,False,
+KMM-26-00014,24,5.65,11.2,7.7,18.9,False,
+NLR-26-00015,23,9.51,15.5,24.6,40.1,False,
+AMP-26-00016,15,4.73,4.0,7.7,11.7,False,
+KKP-26-00017,38,6.53,14.6,8.2,22.8,False,
+GNT-26-00018,23,5.67,9.4,8.5,17.9,False,
+VJA-26-00019,20,7.10,12.4,38.0,50.4,False,
+KKP-26-00020,15,5.51,2.3,7.9,10.2,False,
+AMP-26-00021,21,4.82,11.2,37.9,49.1,False,
+KKP-26-00022,19,6.27,3.2,8.4,11.6,False,
+GNT-26-00023,27,5.64,8.7,13.4,22.1,False,
+VJA-26-00024,15,7.01,2.3,13.4,15.7,False,
+VJA-26-00025,23,4.07,3.9,7.5,11.4,True,product: confidence 0.59 on page 3
+KKP-26-00026,12,5.44,9.0,9.1,18.2,False,
+AMP-26-00027,16,5.56,10.1,10.7,20.7,False,
+VJA-26-00028,36,6.48,13.7,7.9,21.7,False,
+KMM-26-00029,14,5.50,4.8,7.1,11.9,False,
+KMM-26-00030,14,7.06,4.1,26.8,30.9,False,
+GNT-26-00031,17,7.04,11.2,44.6,55.8,False,
+ONG-26-00032,25,7.96,13.9,8.3,22.2,False,
+WGL-26-00033,12,3.96,2.7,7.4,10.2,True,product: confidence 0.72 on page 6
+GNT-26-00034,14,7.79,14.0,13.8,27.8,False,
+NLR-26-00035,32,6.46,11.8,10.1,21.8,False,
+ONG-26-00036,25,7.15,13.2,9.8,23.0,False,
+ONG-26-00037,20,6.35,12.0,7.8,19.8,True,product: confidence 0.70 on page 1
+NLR-26-00038,25,7.95,10.0,8.0,18.0,False,
+KKP-26-00039,15,5.51,3.3,11.8,15.2,False,
+WGL-26-00040,13,3.20,2.0,7.0,9.0,False,
+GNT-26-00041,27,7.12,5.4,14.8,20.2,False,
+ONG-26-00042,23,5.60,10.9,14.4,25.3,False,
+KKP-26-00043,23,8.77,10.8,37.7,48.5,False,
+VJA-26-00044,16,4.72,3.8,37.2,41.0,True,requested_amount: confidence 0.73 on page 11
+KKP-26-00045,14,6.34,4.2,20.4,24.6,False,
+NLR-26-00046,21,7.12,13.7,7.9,21.6,False,
+KKP-26-00047,32,4.94,10.4,9.0,19.4,False,
+KMM-26-00048,18,6.32,12.8,9.4,22.2,False,
+KKP-26-00049,37,8.04,13.5,8.8,22.3,True,product: not found on any page | requested_amount: not found on any page
+ONG-26-00050,13,5.52,8.6,9.8,18.4,False,
+GNT-26-00051,18,5.52,4.5,9.4,13.9,False,
+ONG-26-00052,20,5.55,4.0,10.4,14.4,False,
+KMM-26-00053,18,7.86,12.1,7.7,19.8,False,
+WGL-26-00054,39,9.57,13.1,14.1,27.2,False,
+NLR-26-00055,20,6.34,11.7,13.2,24.9,False,
+NLR-26-00056,16,4.78,12.1,8.0,20.1,False,
+KKP-26-00057,15,7.03,9.4,38.8,48.2,True,"applicant_name: pages disagree (page 1: Mounika Yadav, page 13: SAI TEJA YADAV)"
+AMP-26-00058,34,8.63,31.2,7.6,38.8,False,
+NLR-26-00059,14,6.26,2.9,35.6,38.5,False,
+AMP-26-00060,13,5.43,2.4,37.7,40.1,False,

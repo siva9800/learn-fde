@@ -1,0 +1,13 @@
+# Day 12 · tested on Python 3.14.3 (Windows 11), 21 October 2026. Needs Python 3.12 or newer.
+# Everything runs offline against the fake provider. No API key, no network after install.
+pydantic==2.12.5
+pydantic_core==2.41.5
+annotated-types==0.8.0
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+colorama==0.4.6 ; sys_platform == "win32"

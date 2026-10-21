@@ -1,0 +1,207 @@
+{
+  "$defs": {
+    "Doc": {
+      "description": "Page types, the same names as Day 11's catalogue (a subset: the ones the synthetic batch uses).",
+      "enum": [
+        "application_form",
+        "photograph",
+        "pan_card",
+        "proof_of_identity",
+        "proof_of_address",
+        "income_proof",
+        "bank_statement",
+        "dealer_quotation",
+        "co_applicant_kyc",
+        "gold_appraisal",
+        "pledge_form",
+        "customer_declaration",
+        "key_fact_statement",
+        "unknown"
+      ],
+      "title": "Doc",
+      "type": "string"
+    },
+    "DocumentPresent": {
+      "additionalProperties": false,
+      "properties": {
+        "doc": {
+          "$ref": "#/$defs/Doc"
+        },
+        "pages": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Pages",
+          "type": "array"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "doc",
+        "pages",
+        "confidence"
+      ],
+      "title": "DocumentPresent",
+      "type": "object"
+    },
+    "FieldResult": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Page"
+        },
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "flags": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Flags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "value",
+        "confidence",
+        "page",
+        "evidence"
+      ],
+      "title": "FieldResult",
+      "type": "object"
+    },
+    "IncomeEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "doc": {
+          "$ref": "#/$defs/Doc"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "monthly_income": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Monthly Income"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "doc",
+        "page",
+        "monthly_income",
+        "confidence"
+      ],
+      "title": "IncomeEvidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "The extraction contract for one Godavari loan file: every field with a confidence and a page.",
+  "properties": {
+    "schema_version": {
+      "default": "godavari-extraction/1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "file_id": {
+      "title": "File Id",
+      "type": "string"
+    },
+    "applicant_name": {
+      "$ref": "#/$defs/FieldResult"
+    },
+    "applicant_pan": {
+      "$ref": "#/$defs/FieldResult"
+    },
+    "co_applicant_name": {
+      "$ref": "#/$defs/FieldResult"
+    },
+    "product": {
+      "$ref": "#/$defs/FieldResult"
+    },
+    "requested_amount": {
+      "$ref": "#/$defs/FieldResult"
+    },
+    "income_evidence": {
+      "items": {
+        "$ref": "#/$defs/IncomeEvidence"
+      },
+      "title": "Income Evidence",
+      "type": "array"
+    },
+    "documents_present": {
+      "items": {
+        "$ref": "#/$defs/DocumentPresent"
+      },
+      "title": "Documents Present",
+      "type": "array"
+    },
+    "needs_review": {
+      "title": "Needs Review",
+      "type": "boolean"
+    },
+    "review_reasons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Review Reasons",
+      "type": "array"
+    }
+  },
+  "required": [
+    "file_id",
+    "applicant_name",
+    "applicant_pan",
+    "co_applicant_name",
+    "product",
+    "requested_amount",
+    "income_evidence",
+    "documents_present",
+    "needs_review",
+    "review_reasons"
+  ],
+  "title": "LoanFileExtraction",
+  "type": "object"
+}

@@ -1,0 +1,120 @@
+{
+  "$defs": {
+    "AmountField": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "(minimum 1)"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "whole rupees, digits only; null if not on this page"
+        },
+        "confidence": {
+          "description": "0 to 1, the model's own estimate (minimum 0.0, maximum 1.0)",
+          "type": "number"
+        },
+        "evidence": {
+          "description": "text copied exactly from the page; empty if no value (maxLength 200)",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "confidence",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "Doc": {
+      "description": "Page types, the same names as Day 11's catalogue (a subset: the ones the synthetic batch uses).",
+      "enum": [
+        "application_form",
+        "photograph",
+        "pan_card",
+        "proof_of_identity",
+        "proof_of_address",
+        "income_proof",
+        "bank_statement",
+        "dealer_quotation",
+        "co_applicant_kyc",
+        "gold_appraisal",
+        "pledge_form",
+        "customer_declaration",
+        "key_fact_statement",
+        "unknown"
+      ],
+      "type": "string"
+    },
+    "TextField": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "the value as printed on the page; null means unsure or not on this page"
+        },
+        "confidence": {
+          "description": "0 to 1, the model's own estimate (minimum 0.0, maximum 1.0)",
+          "type": "number"
+        },
+        "evidence": {
+          "description": "text copied exactly from the page; empty if no value (maxLength 200)",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "confidence",
+        "evidence"
+      ],
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Stage 2, on the large model and the full-resolution page. One per extracted page.",
+  "properties": {
+    "page_type": {
+      "$ref": "#/$defs/Doc"
+    },
+    "applicant_name": {
+      "$ref": "#/$defs/TextField"
+    },
+    "applicant_pan": {
+      "$ref": "#/$defs/TextField"
+    },
+    "co_applicant_name": {
+      "$ref": "#/$defs/TextField"
+    },
+    "product": {
+      "$ref": "#/$defs/TextField"
+    },
+    "requested_amount": {
+      "$ref": "#/$defs/AmountField"
+    },
+    "monthly_income": {
+      "$ref": "#/$defs/AmountField"
+    }
+  },
+  "required": [
+    "page_type",
+    "applicant_name",
+    "applicant_pan",
+    "co_applicant_name",
+    "product",
+    "requested_amount",
+    "monthly_income"
+  ],
+  "type": "object"
+}

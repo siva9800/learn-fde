@@ -1,0 +1,3 @@
+# Optional: only for godavari_llm/adapters/anthropic_adapter.py. Not needed to run anything in this chapter.
+# Same version as Day 11 (current as of October 2026).
+anthropic==1.17.0

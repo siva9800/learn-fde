@@ -1,0 +1,159 @@
+{
+  "schema_version": "godavari-extraction/1.0",
+  "file_id": "GNT-26-00005",
+  "applicant_name": {
+    "value": "Divya Rao",
+    "confidence": 0.96,
+    "page": 9,
+    "evidence": "Applicant name / దరఖాస్తుదారు పేరు: Divya Rao",
+    "flags": []
+  },
+  "applicant_pan": {
+    "value": "NACPR9452T",
+    "confidence": 0.88,
+    "page": 9,
+    "evidence": "PAN: NACPR9452T",
+    "flags": []
+  },
+  "co_applicant_name": {
+    "value": "Padma Murthy",
+    "confidence": 0.88,
+    "page": 9,
+    "evidence": "Co-applicant name: Padma Murthy",
+    "flags": []
+  },
+  "product": {
+    "value": "gold",
+    "confidence": 0.71,
+    "page": 9,
+    "evidence": "Product: Gold loan",
+    "flags": [
+      "low_confidence"
+    ]
+  },
+  "requested_amount": {
+    "value": 82000,
+    "confidence": 0.97,
+    "page": 9,
+    "evidence": "Loan amount requested: Rs. 82,000",
+    "flags": []
+  },
+  "income_evidence": [
+    {
+      "doc": "bank_statement",
+      "page": 2,
+      "monthly_income": 40000,
+      "confidence": 0.84
+    },
+    {
+      "doc": "income_proof",
+      "page": 13,
+      "monthly_income": 40000,
+      "confidence": 0.84
+    },
+    {
+      "doc": "income_proof",
+      "page": 14,
+      "monthly_income": 40000,
+      "confidence": 0.93
+    }
+  ],
+  "documents_present": [
+    {
+      "doc": "proof_of_address",
+      "pages": [
+        1
+      ],
+      "confidence": 0.9
+    },
+    {
+      "doc": "bank_statement",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "confidence": 0.89
+    },
+    {
+      "doc": "application_form",
+      "pages": [
+        9,
+        10
+      ],
+      "confidence": 0.87
+    },
+    {
+      "doc": "co_applicant_kyc",
+      "pages": [
+        11
+      ],
+      "confidence": 0.93
+    },
+    {
+      "doc": "pan_card",
+      "pages": [
+        12
+      ],
+      "confidence": 0.96
+    },
+    {
+      "doc": "income_proof",
+      "pages": [
+        13,
+        14
+      ],
+      "confidence": 0.9
+    },
+    {
+      "doc": "gold_appraisal",
+      "pages": [
+        15
+      ],
+      "confidence": 0.99
+    },
+    {
+      "doc": "pledge_form",
+      "pages": [
+        16
+      ],
+      "confidence": 0.87
+    },
+    {
+      "doc": "customer_declaration",
+      "pages": [
+        17
+      ],
+      "confidence": 0.9
+    },
+    {
+      "doc": "proof_of_identity",
+      "pages": [
+        18
+      ],
+      "confidence": 0.88
+    },
+    {
+      "doc": "key_fact_statement",
+      "pages": [
+        19
+      ],
+      "confidence": 0.87
+    },
+    {
+      "doc": "photograph",
+      "pages": [
+        20
+      ],
+      "confidence": 0.89
+    }
+  ],
+  "needs_review": true,
+  "review_reasons": [
+    "product: confidence 0.71 on page 9"
+  ]
+}
