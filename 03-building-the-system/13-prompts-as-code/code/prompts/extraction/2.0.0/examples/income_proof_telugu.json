@@ -1,0 +1,8 @@
+{
+  "source_file_id": "GF-29417",
+  "split": "train",
+  "masked": true,
+  "note": "From the golden set's training split, masked and approved for use in prompts. Never from the test split.",
+  "page_text": "ఆదాయ స్వీయ ధృవీకరణ పత్రం\n[handwritten]\nపేరు: XXXXXX XXXXXXXX\nవ్యాపారం: టైలరింగ్\nనెలసరి ఆదాయం: Rs 36,000\nసంవత్సర ఆదాయం: Rs 4,32,000\nసంతకం: [signed]   సాక్షి: [signed]",
+  "answer": "{\"fields\": {\"monthly_income\": {\"value\": \"36000\", \"page\": 1, \"confidence\": 0.9}, \"employer_name\": {\"value\": null, \"page\": null, \"confidence\": 0.0}}}"
+}

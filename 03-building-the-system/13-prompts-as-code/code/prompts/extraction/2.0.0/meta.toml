@@ -1,0 +1,94 @@
+# Prompt extraction@2.0.0: classify every page first, then extract each page with its own template.
+# Major version: the calls, their variables and the caller's code all changed from 1.x.
+id = "extraction"
+version = "2.0.0"
+strategy = "classify_then_extract"
+author = "fde.kaagaz"
+created = "2026-11-11"
+output_schema = "godavari-extraction/1.0"
+summary = "Page classification on the small tier, then per-page extraction on the large tier with a template per page type and a variant per product. Adds the Telugu label glossary and one few-shot example from the training split."
+
+[calls.classify]
+tier = "small"
+system = "classify.system.j2"
+user = "classify.user.j2"
+
+[calls.classify.variables]
+page = "page"
+page_types = "list"
+
+[calls.extract]
+tier = "large"
+system = "extract.system.j2"
+user = "extract.user.j2"
+
+[calls.extract.variables]
+product = "enum:two-wheeler|gold|small-business|personal"
+page_type = "str"
+fields = "fields"
+telugu = "bool"
+examples = "list"
+page = "page"
+
+[fields]
+applicant_name = "the applicant's full name, as printed, in capitals"
+applicant_pan = "the applicant's PAN, ten characters"
+requested_amount = "the loan amount the applicant asked for, in whole rupees, digits only"
+monthly_income = "the applicant's monthly income in whole rupees, digits only: net pay on a salary slip, or the monthly figure on a self-declaration"
+co_applicant_name = "the co-applicant's full name, or the word none if the page says there is no co-applicant"
+on_road_price = "the on-road price on the dealer's quotation, in whole rupees, digits only"
+net_weight_g = "the net weight of the pledged gold in grams, as printed, for example 38.4"
+business_name = "the name of the applicant's shop or business, as written on the application form"
+employer_name = "the employer printed on the salary slip"
+
+# Which page type carries which fields. Extraction knowledge, versioned with the templates.
+[page_fields]
+application_form = ["applicant_name", "applicant_pan", "requested_amount", "co_applicant_name", "business_name"]
+pan_card = ["applicant_name", "applicant_pan"]
+income_proof = ["monthly_income", "employer_name"]
+dealer_quotation = ["on_road_price"]
+gold_appraisal = ["net_weight_g"]
+co_applicant_kyc = ["co_applicant_name"]
+
+# When two page types carry a field, which one wins. Provenance, applied in code; not a business rule.
+[merge]
+applicant_name = ["application_form", "pan_card"]
+applicant_pan = ["pan_card", "application_form"]
+co_applicant_name = ["co_applicant_kyc", "application_form"]
+
+[page_types.application_form]
+description = "the loan application form, its first page or a continuation"
+titles = ["LOAN APPLICATION FORM", "రుణ దరఖాస్తు ఫారం"]
+
+[page_types.pan_card]
+description = "a copy of the applicant's PAN card"
+titles = ["INCOME TAX DEPARTMENT"]
+
+[page_types.income_proof]
+description = "a salary slip or a self-declaration of income, printed or handwritten"
+titles = ["INCOME PROOF", "ఆదాయ స్వీయ ధృవీకరణ పత్రం"]
+
+[page_types.dealer_quotation]
+description = "a two-wheeler dealer's quotation or proforma invoice"
+titles = ["DEALER QUOTATION"]
+
+[page_types.gold_appraisal]
+description = "the gold appraiser's certificate with weights and purity"
+titles = ["GOLD APPRAISAL CERTIFICATE"]
+
+[page_types.co_applicant_kyc]
+description = "the co-applicant's KYC annexure, often added at sanction"
+titles = ["CO-APPLICANT KYC"]
+
+[page_types.bank_statement]
+description = "a bank statement page, first or continued"
+titles = ["STATEMENT OF ACCOUNT"]
+
+[page_types.terms]
+description = "the loan agreement's terms and conditions"
+titles = ["LOAN AGREEMENT - TERMS AND CONDITIONS"]
+
+[[examples]]
+file = "examples/income_proof_telugu.json"
+page_type = "income_proof"
+telugu = true

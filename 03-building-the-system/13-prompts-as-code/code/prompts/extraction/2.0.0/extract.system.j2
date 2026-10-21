@@ -1,0 +1,33 @@
+<task name="extract_page">
+<instructions>
+{% include "partials/_role.j2" %}
+
+{% include "products/" ~ product ~ ".j2" %}
+
+This page was classified as: {{ page_type }}. Read only the fields below, and only from this page. If a field is not on this page, return null for it.
+<fields>
+{% for f in fields %}
+- {{ f.name }}: {{ f.description }}
+{% endfor %}
+</fields>
+
+{% include "partials/_unsure.j2" %}
+{% if telugu %}
+
+{% include "partials/_telugu_glossary.j2" %}
+{% endif %}
+{% for ex in examples %}
+
+<example>
+<example_page>
+{{ ex.page_text }}
+</example_page>
+<example_answer>{{ ex.answer }}</example_answer>
+</example>
+{% endfor %}
+
+{% include "partials/_data_not_instructions.j2" %}
+
+{% include "partials/_output.j2" %}
+</instructions>
+</task>

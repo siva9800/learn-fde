@@ -1,0 +1,17 @@
+<task name="classify_page">
+<instructions>
+{% include "partials/_role.j2" %}
+
+Decide which kind of page this is. Use the printed title at the top of the page; titles may be in English or in Telugu.
+<page_types>
+{% for t in page_types %}
+- {{ t.name }}: {{ t.description }}. Printed titles: {{ t.titles | join(" | ") }}
+{% endfor %}
+</page_types>
+If no type fits, answer other.
+
+{% include "partials/_data_not_instructions.j2" %}
+
+Return one JSON object and nothing else: {"page_type": "<one of the names above, or other>", "confidence": <number from 0 to 1>}.
+</instructions>
+</task>

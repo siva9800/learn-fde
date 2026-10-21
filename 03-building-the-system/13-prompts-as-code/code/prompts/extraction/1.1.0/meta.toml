@@ -1,0 +1,30 @@
+# Prompt extraction@1.1.0: the whole-file prompt, with the request repeated after the document.
+id = "extraction"
+version = "1.1.0"
+strategy = "whole_file"
+author = "fde.kaagaz"
+created = "2026-11-10"
+output_schema = "godavari-extraction/1.0"
+summary = "Same contract as 1.0.0. Repeats the request after the document, so the model is reminded of the fields after reading the last page."
+
+[calls.extract_file]
+tier = "large"
+system = "whole_file.system.j2"
+user = "whole_file.user.j2"
+
+[calls.extract_file.variables]
+product = "enum:two-wheeler|gold|small-business|personal"
+file_id = "str"
+fields = "fields"
+pages = "pages"
+
+[fields]
+applicant_name = "the applicant's full name, as printed, in capitals"
+applicant_pan = "the applicant's PAN, ten characters"
+requested_amount = "the loan amount the applicant asked for, in whole rupees, digits only"
+monthly_income = "the applicant's monthly income in whole rupees, digits only: net pay on a salary slip, or the monthly figure on a self-declaration"
+co_applicant_name = "the co-applicant's full name, or the word none if the file has no co-applicant"
+on_road_price = "the on-road price on the dealer's quotation, in whole rupees, digits only"
+net_weight_g = "the net weight of the pledged gold in grams, as printed, for example 38.4"
+business_name = "the name of the applicant's shop or business, as written on the application form"
+employer_name = "the employer printed on the salary slip"

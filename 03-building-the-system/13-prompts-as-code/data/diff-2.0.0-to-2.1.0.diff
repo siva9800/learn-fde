@@ -1,0 +1,58 @@
+--- 2.0.0/examples/income_proof_telugu.json
++++ /dev/null
+@@ -1,8 +0,0 @@
+-{
+-  "source_file_id": "GF-29417",
+-  "split": "train",
+-  "masked": true,
+-  "note": "From the golden set's training split, masked and approved for use in prompts. Never from the test split.",
+-  "page_text": "ఆదాయ స్వీయ ధృవీకరణ పత్రం\n[handwritten]\nపేరు: XXXXXX XXXXXXXX\nవ్యాపారం: టైలరింగ్\nనెలసరి ఆదాయం: Rs 36,000\nసంవత్సర ఆదాయం: Rs 4,32,000\nసంతకం: [signed]   సాక్షి: [signed]",
+-  "answer": "{\"fields\": {\"monthly_income\": {\"value\": \"36000\", \"page\": 1, \"confidence\": 0.9}, \"employer_name\": {\"value\": null, \"page\": null, \"confidence\": 0.0}}}"
+-}
+--- 2.0.0/extract.system.j2
++++ 2.1.0/extract.system.j2
+@@ -14,6 +14,2 @@
+ {% include "partials/_unsure.j2" %}
+-{% if telugu %}
+-
+-{% include "partials/_telugu_glossary.j2" %}
+-{% endif %}
+ {% for ex in examples %}
+--- 2.0.0/meta.toml
++++ 2.1.0/meta.toml
+@@ -1,10 +1,9 @@
+-# Prompt extraction@2.0.0: classify every page first, then extract each page with its own template.
+-# Major version: the calls, their variables and the caller's code all changed from 1.x.
++# Prompt extraction@2.1.0: 2.0.0 trimmed to cut input tokens on the extraction call.
+ id = "extraction"
+-version = "2.0.0"
++version = "2.1.0"
+ strategy = "classify_then_extract"
+-author = "fde.kaagaz"
+-created = "2026-11-11"
++author = "platform.kaagaz"
++created = "2026-11-12"
+ output_schema = "godavari-extraction/1.0"
+-summary = "Page classification on the small tier, then per-page extraction on the large tier with a template per page type and a variant per product. Adds the Telugu label glossary and one few-shot example from the training split."
++summary = "Same contract as 2.0.0. Removes the Telugu label glossary and the few-shot example from the extraction call: the model reads Telugu, and the page prompt is shorter."
+ 
+@@ -89,6 +88 @@
+ titles = ["LOAN AGREEMENT - TERMS AND CONDITIONS"]
+-
+-[[examples]]
+-file = "examples/income_proof_telugu.json"
+-page_type = "income_proof"
+-telugu = true
+--- 2.0.0/partials/_telugu_glossary.j2
++++ /dev/null
+@@ -1,10 +0,0 @@
+-<telugu_glossary>
+-This page has Telugu text. Read these labels as follows:
+-పేరు = name
+-దరఖాస్తుదారు పేరు = applicant name
+-నెలసరి ఆదాయం = monthly income
+-సంవత్సర ఆదాయం = annual income (a yearly figure: never use it as monthly_income)
+-వ్యాపారం = business
+-సంతకం = signature
+-సాక్షి = witness
+-</telugu_glossary>

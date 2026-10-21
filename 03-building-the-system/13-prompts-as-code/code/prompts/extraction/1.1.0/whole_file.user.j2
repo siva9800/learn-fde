@@ -1,0 +1,10 @@
+<document file_id="{{ file_id }}">
+{% for page in pages %}
+{% include "partials/_untrusted_page.j2" %}
+{% endfor %}
+</document>
+
+<instructions>
+Read every page of the document above, including the annexures at the back, before you answer.
+Return the fields listed at the top: {{ fields | map(attribute="name") | join(", ") }}.
+</instructions>

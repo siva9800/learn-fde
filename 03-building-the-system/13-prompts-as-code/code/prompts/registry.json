@@ -1,0 +1,496 @@
+{
+  "schema": "godavari-prompt-registry/1",
+  "releases": {
+    "extraction@1.0.0+fake-large-2026-10": {
+      "release_id": "extraction@1.0.0+fake-large-2026-10",
+      "prompt_id": "extraction",
+      "version": "1.0.0",
+      "content_sha256": "2fbe5e5465e292b2229d34ad7d407c7f3e34afb5db77e0e8d12ef42325ce31fb",
+      "models": {
+        "large": "fake-large-2026-10"
+      },
+      "output_schema": "godavari-extraction/1.0",
+      "author": "fde.kaagaz",
+      "created": "2026-11-09",
+      "summary": "One prompt reads the whole file and returns every field. Tried against the 3-page demo samples.",
+      "eval": {
+        "set": "kukatpally-labelled-12",
+        "set_sha256": "c550c832b2b70acb251c256d48d5d51deb204e45ce5b7b436f2b8f997d92ccc8",
+        "n_files": 12,
+        "per_field": {
+          "applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "applicant_pan": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "business_name": {
+            "n": 3,
+            "correct": 3,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "co_applicant_name": {
+            "n": 12,
+            "correct": 10,
+            "unsure": 0,
+            "wrong": 2
+          },
+          "employer_name": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "monthly_income": {
+            "n": 12,
+            "correct": 10,
+            "unsure": 1,
+            "wrong": 1
+          },
+          "net_weight_g": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "on_road_price": {
+            "n": 5,
+            "correct": 4,
+            "unsure": 1,
+            "wrong": 0
+          },
+          "requested_amount": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 1,
+            "wrong": 0
+          }
+        },
+        "correct_rate": 0.9167,
+        "wrong_rate": 0.0417,
+        "input_tokens_per_file": {
+          "small": 0,
+          "large": 11800
+        }
+      },
+      "approved_by": "platform.kaagaz",
+      "compliance_read_by": null,
+      "notes": []
+    },
+    "extraction@1.1.0+fake-large-2026-10": {
+      "release_id": "extraction@1.1.0+fake-large-2026-10",
+      "prompt_id": "extraction",
+      "version": "1.1.0",
+      "content_sha256": "49d7f28ebd351b1814e7f32334ffc766aacb0ffa1ff5b3d5ff119f8a7fa35cd9",
+      "models": {
+        "large": "fake-large-2026-10"
+      },
+      "output_schema": "godavari-extraction/1.0",
+      "author": "fde.kaagaz",
+      "created": "2026-11-10",
+      "summary": "Same contract as 1.0.0. Repeats the request after the document, so the model is reminded of the fields after reading the last page.",
+      "eval": {
+        "set": "kukatpally-labelled-12",
+        "set_sha256": "c550c832b2b70acb251c256d48d5d51deb204e45ce5b7b436f2b8f997d92ccc8",
+        "n_files": 12,
+        "per_field": {
+          "applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "applicant_pan": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "business_name": {
+            "n": 3,
+            "correct": 3,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "co_applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "employer_name": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "monthly_income": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 0,
+            "wrong": 1
+          },
+          "net_weight_g": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "on_road_price": {
+            "n": 5,
+            "correct": 4,
+            "unsure": 1,
+            "wrong": 0
+          },
+          "requested_amount": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 1,
+            "wrong": 0
+          }
+        },
+        "correct_rate": 0.9583,
+        "wrong_rate": 0.0139,
+        "input_tokens_per_file": {
+          "small": 0,
+          "large": 11866
+        }
+      },
+      "approved_by": "platform.kaagaz",
+      "compliance_read_by": null,
+      "notes": []
+    },
+    "extraction@2.0.0+fake-large-2026-10": {
+      "release_id": "extraction@2.0.0+fake-large-2026-10",
+      "prompt_id": "extraction",
+      "version": "2.0.0",
+      "content_sha256": "05889c7b3a1578b0dd898153237eada25d5384fcc45c3efcf824c771a4fb449d",
+      "models": {
+        "small": "fake-small-2026-10",
+        "large": "fake-large-2026-10"
+      },
+      "output_schema": "godavari-extraction/1.0",
+      "author": "fde.kaagaz",
+      "created": "2026-11-11",
+      "summary": "Page classification on the small tier, then per-page extraction on the large tier with a template per page type and a variant per product. Adds the Telugu label glossary and one few-shot example from the training split.",
+      "eval": {
+        "set": "kukatpally-labelled-12",
+        "set_sha256": "c550c832b2b70acb251c256d48d5d51deb204e45ce5b7b436f2b8f997d92ccc8",
+        "n_files": 12,
+        "per_field": {
+          "applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "applicant_pan": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "business_name": {
+            "n": 3,
+            "correct": 3,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "co_applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "employer_name": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "monthly_income": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "net_weight_g": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "on_road_price": {
+            "n": 5,
+            "correct": 4,
+            "unsure": 1,
+            "wrong": 0
+          },
+          "requested_amount": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 1,
+            "wrong": 0
+          }
+        },
+        "correct_rate": 0.9722,
+        "wrong_rate": 0.0,
+        "input_tokens_per_file": {
+          "small": 27784,
+          "large": 2212
+        }
+      },
+      "approved_by": "platform.kaagaz",
+      "compliance_read_by": "compliance-head.godavari",
+      "notes": []
+    },
+    "extraction@2.1.0+fake-large-2026-10": {
+      "release_id": "extraction@2.1.0+fake-large-2026-10",
+      "prompt_id": "extraction",
+      "version": "2.1.0",
+      "content_sha256": "beaa061f646c1f3318525ecfc63023d580d4ca08a2ed627432ac499e8a023d1f",
+      "models": {
+        "small": "fake-small-2026-10",
+        "large": "fake-large-2026-10"
+      },
+      "output_schema": "godavari-extraction/1.0",
+      "author": "platform.kaagaz",
+      "created": "2026-11-12",
+      "summary": "Same contract as 2.0.0. Removes the Telugu label glossary and the few-shot example from the extraction call: the model reads Telugu, and the page prompt is shorter.",
+      "eval": {
+        "set": "kukatpally-labelled-12",
+        "set_sha256": "c550c832b2b70acb251c256d48d5d51deb204e45ce5b7b436f2b8f997d92ccc8",
+        "n_files": 12,
+        "per_field": {
+          "applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "applicant_pan": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "business_name": {
+            "n": 3,
+            "correct": 3,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "co_applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "employer_name": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "monthly_income": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "net_weight_g": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "on_road_price": {
+            "n": 5,
+            "correct": 4,
+            "unsure": 1,
+            "wrong": 0
+          },
+          "requested_amount": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 1,
+            "wrong": 0
+          }
+        },
+        "correct_rate": 0.9722,
+        "wrong_rate": 0.0,
+        "input_tokens_per_file": {
+          "small": 27784,
+          "large": 2212
+        }
+      },
+      "approved_by": "fde.kaagaz",
+      "compliance_read_by": "compliance-head.godavari",
+      "notes": [
+        "rolled back in pilot 2026-11-12T11:40: Telugu monthly income read as annual on the Guntur replay; the labelled set has no Telugu declarations"
+      ]
+    },
+    "extraction@2.0.0+fake-large-2026-11": {
+      "release_id": "extraction@2.0.0+fake-large-2026-11",
+      "prompt_id": "extraction",
+      "version": "2.0.0",
+      "content_sha256": "05889c7b3a1578b0dd898153237eada25d5384fcc45c3efcf824c771a4fb449d",
+      "models": {
+        "small": "fake-small-2026-10",
+        "large": "fake-large-2026-11"
+      },
+      "output_schema": "godavari-extraction/1.0",
+      "author": "fde.kaagaz",
+      "created": "2026-11-11",
+      "summary": "Page classification on the small tier, then per-page extraction on the large tier with a template per page type and a variant per product. Adds the Telugu label glossary and one few-shot example from the training split.",
+      "eval": {
+        "set": "kukatpally-labelled-12",
+        "set_sha256": "c550c832b2b70acb251c256d48d5d51deb204e45ce5b7b436f2b8f997d92ccc8",
+        "n_files": 12,
+        "per_field": {
+          "applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "applicant_pan": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "business_name": {
+            "n": 3,
+            "correct": 3,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "co_applicant_name": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "employer_name": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "monthly_income": {
+            "n": 12,
+            "correct": 12,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "net_weight_g": {
+            "n": 2,
+            "correct": 2,
+            "unsure": 0,
+            "wrong": 0
+          },
+          "on_road_price": {
+            "n": 5,
+            "correct": 4,
+            "unsure": 0,
+            "wrong": 1
+          },
+          "requested_amount": {
+            "n": 12,
+            "correct": 11,
+            "unsure": 0,
+            "wrong": 1
+          }
+        },
+        "correct_rate": 0.9722,
+        "wrong_rate": 0.0278,
+        "input_tokens_per_file": {
+          "small": 27784,
+          "large": 2212
+        }
+      },
+      "approved_by": "platform.kaagaz",
+      "compliance_read_by": "compliance-head.godavari",
+      "notes": []
+    }
+  },
+  "environments": {
+    "dev": {
+      "extraction": "extraction@2.0.0+fake-large-2026-10"
+    },
+    "pilot": {
+      "extraction": "extraction@2.0.0+fake-large-2026-10"
+    },
+    "production": {}
+  },
+  "history": [
+    {
+      "at": "2026-11-09T16:20",
+      "env": "dev",
+      "prompt_id": "extraction",
+      "action": "promote",
+      "from": null,
+      "to": "extraction@1.0.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "first extraction prompt for the skeleton"
+    },
+    {
+      "at": "2026-11-10T15:45",
+      "env": "dev",
+      "prompt_id": "extraction",
+      "action": "promote",
+      "from": "extraction@1.0.0+fake-large-2026-10",
+      "to": "extraction@1.1.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "repeat the request after the document"
+    },
+    {
+      "at": "2026-11-11T17:10",
+      "env": "dev",
+      "prompt_id": "extraction",
+      "action": "promote",
+      "from": "extraction@1.1.0+fake-large-2026-10",
+      "to": "extraction@2.0.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "classify pages first; per-page templates"
+    },
+    {
+      "at": "2026-11-11T18:30",
+      "env": "pilot",
+      "prompt_id": "extraction",
+      "action": "promote",
+      "from": null,
+      "to": "extraction@2.0.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "skeleton environment for the M07 demo; compliance head read the rendered prompts"
+    },
+    {
+      "at": "2026-11-12T10:05",
+      "env": "pilot",
+      "prompt_id": "extraction",
+      "action": "promote",
+      "from": "extraction@2.0.0+fake-large-2026-10",
+      "to": "extraction@2.1.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "token trim; gate passed"
+    },
+    {
+      "at": "2026-11-12T11:40",
+      "env": "pilot",
+      "prompt_id": "extraction",
+      "action": "rollback",
+      "from": "extraction@2.1.0+fake-large-2026-10",
+      "to": "extraction@2.0.0+fake-large-2026-10",
+      "by": "fde.kaagaz",
+      "reason": "Guntur replay: Telugu monthly income read as annual after 2.1.0"
+    }
+  ]
+}
