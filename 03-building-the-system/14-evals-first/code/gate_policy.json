@@ -1,0 +1,15 @@
+{
+  "version": "2026-11-30",
+  "agreed_by": "Lakshmi and the senior analyst (eval owners), with the Kaagaz FDE",
+  "registered_bar": {
+    "overall_field_accuracy_min": 0.90,
+    "source": "Day 9 metric definitions, section C; Day 10 risk R2"
+  },
+  "completeness_recall_min": 1.0,
+  "strata": ["product", "branch", "channel", "language", "pilot", "field", "handwritten_telugu"],
+  "min_net_regressions": 4,
+  "paired_alpha": 0.01,
+  "max_new_confident_wrong": 2,
+  "average_only_max_drop_points": 2.0,
+  "note": "thresholds sit above the noise floor of an unchanged model re-run five times on the development split (max net regressions 3, max net new confident wrong 1); never tuned on the test split"
+}

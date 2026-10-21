@@ -1,0 +1,59 @@
+{
+  "threshold_v1": 6.0,
+  "human_kappa_test": 0.8927958833619212,
+  "notes": {
+    "dev": 75,
+    "test": 225
+  },
+  "people_failed_test": 63,
+  "judge-v1 (holistic)": {
+    "dev": {
+      "name": "judge-v1 (holistic)",
+      "n": 75,
+      "agreement": 0.8933333333333333,
+      "kappa": 0.7101449275362318,
+      "catches_fails": 0.6666666666666666,
+      "passes_passes": 0.9814814814814815,
+      "own_family_pass": 1.0,
+      "other_pass": 0.5,
+      "judge_right_people_wrong": 0
+    },
+    "test": {
+      "name": "judge-v1 (holistic)",
+      "n": 225,
+      "agreement": 0.7911111111111111,
+      "kappa": 0.3759957514604355,
+      "catches_fails": 0.3492063492063492,
+      "passes_passes": 0.9629629629629629,
+      "own_family_pass": 1.0,
+      "other_pass": 0.75,
+      "judge_right_people_wrong": 0
+    },
+    "trusted_in_gate": false
+  },
+  "judge-v2 (rubric)": {
+    "dev": {
+      "name": "judge-v2 (rubric)",
+      "n": 75,
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "catches_fails": 1.0,
+      "passes_passes": 1.0,
+      "own_family_pass": 0.0,
+      "other_pass": 0.0,
+      "judge_right_people_wrong": 0
+    },
+    "test": {
+      "name": "judge-v2 (rubric)",
+      "n": 225,
+      "agreement": 0.9688888888888889,
+      "kappa": 0.9253731343283582,
+      "catches_fails": 1.0,
+      "passes_passes": 0.9567901234567902,
+      "own_family_pass": 0.0,
+      "other_pass": 0.0,
+      "judge_right_people_wrong": 0
+    },
+    "trusted_in_gate": true
+  }
+}

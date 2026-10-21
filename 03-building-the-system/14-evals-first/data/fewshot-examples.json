@@ -1,0 +1,32 @@
+{
+  "split": "dev",
+  "examples": [
+    {
+      "file_id": "GF-40033",
+      "product": "two-wheeler",
+      "fields": {
+        "requested_amount": "53500",
+        "tenure_months": "36",
+        "application_date": "30-10-2026"
+      }
+    },
+    {
+      "file_id": "GF-40148",
+      "product": "two-wheeler",
+      "fields": {
+        "requested_amount": "73500",
+        "tenure_months": "36",
+        "application_date": "05-11-2026"
+      }
+    },
+    {
+      "file_id": "GF-40177",
+      "product": "gold",
+      "fields": {
+        "requested_amount": "315500",
+        "tenure_months": "12",
+        "application_date": "29-10-2026"
+      }
+    }
+  ]
+}

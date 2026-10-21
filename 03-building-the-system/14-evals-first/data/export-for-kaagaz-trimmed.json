@@ -1,0 +1,121 @@
+{
+  "model": "stub-model-v1 + trimmed prompt (2.1.0-style) [run candidate-1]",
+  "as_of": "2026-11-30",
+  "overall": {
+    "accuracy": 0.97,
+    "confident_wrong": 9,
+    "confident_wrong_rate": 0.005,
+    "completeness_recall": 1.0,
+    "completeness_precision": 0.95
+  },
+  "confident_wrong": [
+    {
+      "file": "GF-40821",
+      "product": "two-wheeler",
+      "branch": "Guntur",
+      "channel": "sftp_scan",
+      "language": "mixed",
+      "field": "on_road_price",
+      "model_read": "37150",
+      "label": "137150",
+      "confidence": 0.98,
+      "route": "review"
+    },
+    {
+      "file": "GF-40988",
+      "product": "two-wheeler",
+      "branch": "Guntur",
+      "channel": "sftp_scan",
+      "language": "english",
+      "field": "on_road_price",
+      "model_read": "26800",
+      "label": "126800",
+      "confidence": 0.94,
+      "route": "review"
+    },
+    {
+      "file": "GF-41214",
+      "product": "two-wheeler",
+      "branch": "Rajahmundry",
+      "channel": "phone_photo",
+      "language": "english",
+      "field": "on_road_price",
+      "model_read": "9500",
+      "label": "95050",
+      "confidence": 0.9,
+      "route": "send_back"
+    },
+    {
+      "file": "GF-41867",
+      "product": "gold",
+      "branch": "Dilsukhnagar",
+      "channel": "sftp_scan",
+      "language": "english",
+      "field": "date_of_birth",
+      "model_read": "**-**-1969",
+      "label": "**-**-1969",
+      "confidence": 0.97,
+      "route": "send_back"
+    },
+    {
+      "file": "GF-41934",
+      "product": "two-wheeler",
+      "branch": "Guntur",
+      "channel": "phone_photo",
+      "language": "english",
+      "field": "on_road_price",
+      "model_read": "10430",
+      "label": "104350",
+      "confidence": 0.91,
+      "route": "send_back"
+    },
+    {
+      "file": "GF-41981",
+      "product": "two-wheeler",
+      "branch": "Kukatpally",
+      "channel": "sftp_scan",
+      "language": "mixed",
+      "field": "applicant_name",
+      "model_read": "G. C. T.",
+      "label": "G. C. T.",
+      "confidence": 0.91,
+      "route": "review"
+    },
+    {
+      "file": "GF-42017",
+      "product": "two-wheeler",
+      "branch": "Rajahmundry",
+      "channel": "sftp_scan",
+      "language": "mixed",
+      "field": "on_road_price",
+      "model_read": "12900",
+      "label": "129500",
+      "confidence": 0.96,
+      "route": "send_back"
+    },
+    {
+      "file": "GF-42025",
+      "product": "two-wheeler",
+      "branch": "Guntur",
+      "channel": "sftp_scan",
+      "language": "mixed",
+      "field": "requested_amount",
+      "model_read": "70000",
+      "label": "70060",
+      "confidence": 0.93,
+      "route": "send_back"
+    },
+    {
+      "file": "GF-42254",
+      "product": "two-wheeler",
+      "branch": "Guntur",
+      "channel": "sftp_scan",
+      "language": "mixed",
+      "field": "on_road_price",
+      "model_read": "15370",
+      "label": "153750",
+      "confidence": 0.99,
+      "route": "send_back"
+    }
+  ]
+}

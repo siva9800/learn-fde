@@ -1,0 +1,1059 @@
+{
+  "model": "stub-model-v1 + trimmed prompt (2.1.0-style) [run candidate-1]",
+  "as_of": "2026-11-30",
+  "rules": [
+    "two-wheeler rules v0.3: reviewed-draft (the compliance head, 2026-11-06); fingerprint matches the record",
+    "gold rules v0.1: draft (nobody yet, -); fingerprint matches the record"
+  ],
+  "seconds": 0.12,
+  "overall": {
+    "fields": 1800,
+    "correct": 1746,
+    "accuracy": 0.97,
+    "accuracy_ci": [
+      0.9610633414661356,
+      0.9769347621367528
+    ],
+    "exact_accuracy": 0.8855555555555555,
+    "flagged_rate": 0.14222222222222222,
+    "confident_wrong": 9,
+    "confident_wrong_rate": 0.005,
+    "confident_wrong_ci": [
+      0.0026327196823548353,
+      0.009475660565666944
+    ],
+    "unflagged_precision": 0.9941709844559585,
+    "evidence_page_agreement": 1.0,
+    "files": 150,
+    "incomplete_files": 76,
+    "completeness_recall": 1.0,
+    "completeness_precision": 0.95,
+    "completeness_misses": 0,
+    "completeness_false_flags": 4,
+    "missing_doc_recall": 1.0,
+    "missing_doc_precision": 0.7711864406779662,
+    "send_back_files": 92,
+    "send_back_recall": 1.0,
+    "send_back_precision": 0.9108910891089109,
+    "page_accuracy": 0.9894366197183099,
+    "doc_found_precision": 1.0,
+    "doc_found_recall": 0.9838613269575612,
+    "files_with_confident_wrong": 9,
+    "ready_files_with_confident_wrong": 0,
+    "routes": {
+      "blocked": 11,
+      "send_back": 64,
+      "review": 52,
+      "ready_for_approval": 23
+    },
+    "accuracy_cluster_ci": [
+      0.9616666666666667,
+      0.9783333333333334
+    ],
+    "confident_wrong_cluster_ci": [
+      0.0022222222222222222,
+      0.008333333333333333
+    ]
+  },
+  "strata": {
+    "product=gold": {
+      "fields": 600,
+      "correct": 590,
+      "accuracy": 0.9833333333333333,
+      "accuracy_ci": [
+        0.9695944296370503,
+        0.9909223681456795
+      ],
+      "exact_accuracy": 0.895,
+      "flagged_rate": 0.08166666666666667,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.0016666666666666668,
+      "confident_wrong_ci": [
+        0.0002942606305477184,
+        0.009379799586568826
+      ],
+      "unflagged_precision": 0.9981851179673321,
+      "evidence_page_agreement": 1.0,
+      "files": 50,
+      "incomplete_files": 23,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.8928571428571429,
+      "send_back_files": 31,
+      "send_back_recall": 1.0,
+      "send_back_precision": 1.0,
+      "page_accuracy": 0.9942857142857143,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9929411764705882,
+      "files_with_confident_wrong": 1,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 7,
+        "send_back": 21,
+        "review": 10,
+        "ready_for_approval": 12
+      }
+    },
+    "product=two-wheeler": {
+      "fields": 1200,
+      "correct": 1156,
+      "accuracy": 0.9633333333333334,
+      "accuracy_ci": [
+        0.951135478377789,
+        0.9725740860698926
+      ],
+      "exact_accuracy": 0.8808333333333334,
+      "flagged_rate": 0.1725,
+      "confident_wrong": 8,
+      "confident_wrong_rate": 0.006666666666666667,
+      "confident_wrong_ci": [
+        0.0033818710025124727,
+        0.013100031599956157
+      ],
+      "unflagged_precision": 0.9919436052366566,
+      "evidence_page_agreement": 1.0,
+      "files": 100,
+      "incomplete_files": 53,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9298245614035088,
+      "completeness_misses": 0,
+      "completeness_false_flags": 4,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7333333333333333,
+      "send_back_files": 61,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8714285714285714,
+      "page_accuracy": 0.9883369330453564,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9807692307692307,
+      "files_with_confident_wrong": 8,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 4,
+        "send_back": 43,
+        "review": 42,
+        "ready_for_approval": 11
+      }
+    },
+    "branch=Dilsukhnagar": {
+      "fields": 240,
+      "correct": 232,
+      "accuracy": 0.9666666666666667,
+      "accuracy_ci": [
+        0.9356144031625503,
+        0.983014739690843
+      ],
+      "exact_accuracy": 0.8833333333333333,
+      "flagged_rate": 0.12083333333333333,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.004166666666666667,
+      "confident_wrong_ci": [
+        0.0007358790897501466,
+        0.023220656628519416
+      ],
+      "unflagged_precision": 0.995260663507109,
+      "evidence_page_agreement": 1.0,
+      "files": 20,
+      "incomplete_files": 11,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7647058823529411,
+      "send_back_files": 11,
+      "send_back_recall": 1.0,
+      "send_back_precision": 1.0,
+      "page_accuracy": 0.9898734177215189,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9818181818181818,
+      "files_with_confident_wrong": 1,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 1,
+        "send_back": 6,
+        "review": 9,
+        "ready_for_approval": 4
+      }
+    },
+    "branch=Guntur": {
+      "fields": 420,
+      "correct": 405,
+      "accuracy": 0.9642857142857143,
+      "accuracy_ci": [
+        0.9419156646324229,
+        0.9782394121698541
+      ],
+      "exact_accuracy": 0.8738095238095238,
+      "flagged_rate": 0.13333333333333333,
+      "confident_wrong": 5,
+      "confident_wrong_rate": 0.011904761904761904,
+      "confident_wrong_ci": [
+        0.005095354131040463,
+        0.02756212923066825
+      ],
+      "unflagged_precision": 0.9862637362637363,
+      "evidence_page_agreement": 1.0,
+      "files": 35,
+      "incomplete_files": 17,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9444444444444444,
+      "completeness_misses": 0,
+      "completeness_false_flags": 1,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.8461538461538461,
+      "send_back_files": 20,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8695652173913043,
+      "page_accuracy": 0.992503748125937,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9898477157360406,
+      "files_with_confident_wrong": 5,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 2,
+        "send_back": 15,
+        "review": 11,
+        "ready_for_approval": 7
+      }
+    },
+    "branch=Kukatpally": {
+      "fields": 420,
+      "correct": 409,
+      "accuracy": 0.9738095238095238,
+      "accuracy_ci": [
+        0.9537159826760839,
+        0.9853140700605989
+      ],
+      "exact_accuracy": 0.888095238095238,
+      "flagged_rate": 0.15476190476190477,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.002380952380952381,
+      "confident_wrong_ci": [
+        0.0004204094577228085,
+        0.013362097969580222
+      ],
+      "unflagged_precision": 0.9971830985915493,
+      "evidence_page_agreement": 1.0,
+      "files": 35,
+      "incomplete_files": 21,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9130434782608695,
+      "completeness_misses": 0,
+      "completeness_false_flags": 2,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7272727272727273,
+      "send_back_files": 23,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8846153846153846,
+      "page_accuracy": 0.9862804878048781,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9768637532133676,
+      "files_with_confident_wrong": 1,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 1,
+        "send_back": 20,
+        "review": 11,
+        "ready_for_approval": 3
+      }
+    },
+    "branch=Rajahmundry": {
+      "fields": 240,
+      "correct": 234,
+      "accuracy": 0.975,
+      "accuracy_ci": [
+        0.9465400421995467,
+        0.9884931924905143
+      ],
+      "exact_accuracy": 0.8958333333333334,
+      "flagged_rate": 0.1875,
+      "confident_wrong": 2,
+      "confident_wrong_rate": 0.008333333333333333,
+      "confident_wrong_ci": [
+        0.002288235363161974,
+        0.029870346273441456
+      ],
+      "unflagged_precision": 0.9897435897435898,
+      "evidence_page_agreement": 1.0,
+      "files": 20,
+      "incomplete_files": 10,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.9285714285714286,
+      "send_back_files": 15,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.9375,
+      "page_accuracy": 0.9974747474747475,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.995475113122172,
+      "files_with_confident_wrong": 2,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 4,
+        "send_back": 10,
+        "review": 3,
+        "ready_for_approval": 3
+      }
+    },
+    "branch=Vijayawada-Benz Circle": {
+      "fields": 240,
+      "correct": 232,
+      "accuracy": 0.9666666666666667,
+      "accuracy_ci": [
+        0.9356144031625503,
+        0.983014739690843
+      ],
+      "exact_accuracy": 0.8833333333333333,
+      "flagged_rate": 0.1375,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.015754489799935698
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0,
+      "files": 20,
+      "incomplete_files": 7,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.875,
+      "completeness_misses": 0,
+      "completeness_false_flags": 1,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.5714285714285714,
+      "send_back_files": 11,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8461538461538461,
+      "page_accuracy": 0.9829545454545454,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.973568281938326,
+      "files_with_confident_wrong": 0,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 2,
+        "send_back": 6,
+        "review": 9,
+        "ready_for_approval": 3
+      }
+    },
+    "branch=Warangal": {
+      "fields": 240,
+      "correct": 234,
+      "accuracy": 0.975,
+      "accuracy_ci": [
+        0.9465400421995467,
+        0.9884931924905143
+      ],
+      "exact_accuracy": 0.8958333333333334,
+      "flagged_rate": 0.11666666666666667,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.015754489799935698
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0,
+      "files": 20,
+      "incomplete_files": 10,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7857142857142857,
+      "send_back_files": 12,
+      "send_back_recall": 1.0,
+      "send_back_precision": 1.0,
+      "page_accuracy": 0.9866310160427807,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9864864864864865,
+      "files_with_confident_wrong": 0,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 1,
+        "send_back": 7,
+        "review": 9,
+        "ready_for_approval": 3
+      }
+    },
+    "channel=mixed": {
+      "fields": 396,
+      "correct": 388,
+      "accuracy": 0.9797979797979798,
+      "accuracy_ci": [
+        0.9606476718996629,
+        0.9897286771345545
+      ],
+      "exact_accuracy": 0.8939393939393939,
+      "flagged_rate": 0.1111111111111111,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.0096078046906575
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0,
+      "files": 33,
+      "incomplete_files": 21,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.8846153846153846,
+      "send_back_files": 26,
+      "send_back_recall": 1.0,
+      "send_back_precision": 1.0,
+      "page_accuracy": 0.9917355371900827,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9915966386554622,
+      "files_with_confident_wrong": 0,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 2,
+        "send_back": 21,
+        "review": 7,
+        "ready_for_approval": 3
+      }
+    },
+    "channel=phone_photo": {
+      "fields": 576,
+      "correct": 554,
+      "accuracy": 0.9618055555555556,
+      "accuracy_ci": [
+        0.9428480490808284,
+        0.9746439004446972
+      ],
+      "exact_accuracy": 0.875,
+      "flagged_rate": 0.2222222222222222,
+      "confident_wrong": 2,
+      "confident_wrong_rate": 0.003472222222222222,
+      "confident_wrong_ci": [
+        0.0009527056381496138,
+        0.012570987729142419
+      ],
+      "unflagged_precision": 0.9955357142857143,
+      "evidence_page_agreement": 1.0,
+      "files": 48,
+      "incomplete_files": 34,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9444444444444444,
+      "completeness_misses": 0,
+      "completeness_false_flags": 2,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.734375,
+      "send_back_files": 35,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.9459459459459459,
+      "page_accuracy": 0.9798206278026906,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9672447013487476,
+      "files_with_confident_wrong": 2,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 2,
+        "send_back": 23,
+        "review": 20,
+        "ready_for_approval": 3
+      }
+    },
+    "channel=sftp_scan": {
+      "fields": 828,
+      "correct": 804,
+      "accuracy": 0.9710144927536232,
+      "accuracy_ci": [
+        0.9572327049611273,
+        0.9804458146031743
+      ],
+      "exact_accuracy": 0.8888888888888888,
+      "flagged_rate": 0.10144927536231885,
+      "confident_wrong": 7,
+      "confident_wrong_rate": 0.008454106280193236,
+      "confident_wrong_ci": [
+        0.004101038260988976,
+        0.01734727593729108
+      ],
+      "unflagged_precision": 0.9905913978494624,
+      "evidence_page_agreement": 1.0,
+      "files": 69,
+      "incomplete_files": 21,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9130434782608695,
+      "completeness_misses": 0,
+      "completeness_false_flags": 2,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.75,
+      "send_back_files": 31,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8157894736842105,
+      "page_accuracy": 0.9947877885331348,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9912170639899623,
+      "files_with_confident_wrong": 7,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 7,
+        "send_back": 20,
+        "review": 25,
+        "ready_for_approval": 17
+      }
+    },
+    "language=english": {
+      "fields": 540,
+      "correct": 532,
+      "accuracy": 0.9851851851851852,
+      "accuracy_ci": [
+        0.9710413490427308,
+        0.9924744982186777
+      ],
+      "exact_accuracy": 0.9,
+      "flagged_rate": 0.05740740740740741,
+      "confident_wrong": 4,
+      "confident_wrong_rate": 0.007407407407407408,
+      "confident_wrong_ci": [
+        0.002884210671036898,
+        0.01888977646051023
+      ],
+      "unflagged_precision": 0.9921414538310412,
+      "evidence_page_agreement": 1.0,
+      "files": 45,
+      "incomplete_files": 17,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.85,
+      "completeness_misses": 0,
+      "completeness_false_flags": 3,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.6451612903225806,
+      "send_back_files": 21,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8076923076923077,
+      "page_accuracy": 0.9875706214689266,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9783037475345168,
+      "files_with_confident_wrong": 4,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 0,
+        "send_back": 15,
+        "review": 13,
+        "ready_for_approval": 17
+      }
+    },
+    "language=mixed": {
+      "fields": 660,
+      "correct": 640,
+      "accuracy": 0.9696969696969697,
+      "accuracy_ci": [
+        0.95365838235153,
+        0.980299356964596
+      ],
+      "exact_accuracy": 0.8878787878787879,
+      "flagged_rate": 0.17575757575757575,
+      "confident_wrong": 5,
+      "confident_wrong_rate": 0.007575757575757576,
+      "confident_wrong_ci": [
+        0.0032400783511901806,
+        0.017610678817387385
+      ],
+      "unflagged_precision": 0.9908088235294118,
+      "evidence_page_agreement": 1.0,
+      "files": 55,
+      "incomplete_files": 31,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.96875,
+      "completeness_misses": 0,
+      "completeness_false_flags": 1,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.8409090909090909,
+      "send_back_files": 39,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.9285714285714286,
+      "page_accuracy": 0.99317738791423,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9888,
+      "files_with_confident_wrong": 5,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 5,
+        "send_back": 29,
+        "review": 19,
+        "ready_for_approval": 2
+      }
+    },
+    "language=telugu": {
+      "fields": 600,
+      "correct": 574,
+      "accuracy": 0.9566666666666667,
+      "accuracy_ci": [
+        0.9372635612213899,
+        0.9702592063388445
+      ],
+      "exact_accuracy": 0.87,
+      "flagged_rate": 0.18166666666666667,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.006361933328210577
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0,
+      "files": 50,
+      "incomplete_files": 28,
+      "completeness_recall": 1.0,
+      "completeness_precision": 1.0,
+      "completeness_misses": 0,
+      "completeness_false_flags": 0,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7906976744186046,
+      "send_back_files": 32,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.9696969696969697,
+      "page_accuracy": 0.9870828848223897,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9833641404805915,
+      "files_with_confident_wrong": 0,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 6,
+        "send_back": 20,
+        "review": 20,
+        "ready_for_approval": 4
+      }
+    },
+    "pilot=other": {
+      "fields": 960,
+      "correct": 932,
+      "accuracy": 0.9708333333333333,
+      "accuracy_ci": [
+        0.9581687168819288,
+        0.9797447327969395
+      ],
+      "exact_accuracy": 0.8895833333333333,
+      "flagged_rate": 0.140625,
+      "confident_wrong": 3,
+      "confident_wrong_rate": 0.003125,
+      "confident_wrong_ci": [
+        0.0010633195939767377,
+        0.009147486828987366
+      ],
+      "unflagged_precision": 0.9963636363636363,
+      "evidence_page_agreement": 1.0,
+      "files": 80,
+      "incomplete_files": 38,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.9743589743589743,
+      "completeness_misses": 0,
+      "completeness_false_flags": 1,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7627118644067796,
+      "send_back_files": 49,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.9423076923076923,
+      "page_accuracy": 0.989452867501648,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9842696629213483,
+      "files_with_confident_wrong": 3,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 8,
+        "send_back": 29,
+        "review": 30,
+        "ready_for_approval": 13
+      }
+    },
+    "pilot=pilot": {
+      "fields": 840,
+      "correct": 814,
+      "accuracy": 0.969047619047619,
+      "accuracy_ci": [
+        0.955033330551512,
+        0.9787912166146862
+      ],
+      "exact_accuracy": 0.8809523809523809,
+      "flagged_rate": 0.14404761904761904,
+      "confident_wrong": 6,
+      "confident_wrong_rate": 0.007142857142857143,
+      "confident_wrong_ci": [
+        0.003277582501075212,
+        0.015495609055254793
+      ],
+      "unflagged_precision": 0.9916550764951322,
+      "evidence_page_agreement": 1.0,
+      "files": 70,
+      "incomplete_files": 38,
+      "completeness_recall": 1.0,
+      "completeness_precision": 0.926829268292683,
+      "completeness_misses": 0,
+      "completeness_false_flags": 3,
+      "missing_doc_recall": 1.0,
+      "missing_doc_precision": 0.7796610169491526,
+      "send_back_files": 43,
+      "send_back_recall": 1.0,
+      "send_back_precision": 0.8775510204081632,
+      "page_accuracy": 0.9894179894179894,
+      "doc_found_precision": 1.0,
+      "doc_found_recall": 0.9833971902937421,
+      "files_with_confident_wrong": 6,
+      "ready_files_with_confident_wrong": 0,
+      "routes": {
+        "blocked": 3,
+        "send_back": 35,
+        "review": 22,
+        "ready_for_approval": 10
+      }
+    },
+    "field=address": {
+      "fields": 150,
+      "correct": 149,
+      "accuracy": 0.9933333333333333,
+      "accuracy_ci": [
+        0.9632062470660241,
+        0.9988222289768665
+      ],
+      "exact_accuracy": 0.006666666666666667,
+      "flagged_rate": 0.013333333333333334,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.02497113914571871
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=applicant_name": {
+      "fields": 150,
+      "correct": 142,
+      "accuracy": 0.9466666666666667,
+      "accuracy_ci": [
+        0.8982949952532904,
+        0.9727307871098676
+      ],
+      "exact_accuracy": 0.9466666666666667,
+      "flagged_rate": 0.34,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.006666666666666667,
+      "confident_wrong_ci": [
+        0.0011777710231334546,
+        0.036793752933975674
+      ],
+      "unflagged_precision": 0.98989898989899,
+      "evidence_page_agreement": 1.0
+    },
+    "field=application_date": {
+      "fields": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "accuracy_ci": [
+        0.9750288608542812,
+        1.0
+      ],
+      "exact_accuracy": 1.0,
+      "flagged_rate": 0.006666666666666667,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.02497113914571871
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=appraisal_date": {
+      "fields": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "accuracy_ci": [
+        0.9286499658256813,
+        1.0
+      ],
+      "exact_accuracy": 1.0,
+      "flagged_rate": 0.0,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.07135003417431873
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=date_of_birth": {
+      "fields": 150,
+      "correct": 146,
+      "accuracy": 0.9733333333333334,
+      "accuracy_ci": [
+        0.9334450938998244,
+        0.9895822277088953
+      ],
+      "exact_accuracy": 0.9733333333333334,
+      "flagged_rate": 0.28,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.006666666666666667,
+      "confident_wrong_ci": [
+        0.0011777710231334546,
+        0.036793752933975674
+      ],
+      "unflagged_precision": 0.9907407407407407,
+      "evidence_page_agreement": 1.0
+    },
+    "field=dealer_code": {
+      "fields": 100,
+      "correct": 99,
+      "accuracy": 0.99,
+      "accuracy_ci": [
+        0.9455124752390653,
+        0.9982326134344526
+      ],
+      "exact_accuracy": 0.99,
+      "flagged_rate": 0.03,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.03699480747600191
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=gross_weight_g": {
+      "fields": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "accuracy_ci": [
+        0.9286499658256813,
+        1.0
+      ],
+      "exact_accuracy": 0.92,
+      "flagged_rate": 0.0,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.07135003417431873
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=mobile": {
+      "fields": 150,
+      "correct": 149,
+      "accuracy": 0.9933333333333333,
+      "accuracy_ci": [
+        0.9632062470660241,
+        0.9988222289768665
+      ],
+      "exact_accuracy": 0.9933333333333333,
+      "flagged_rate": 0.013333333333333334,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.02497113914571871
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=monthly_income": {
+      "fields": 100,
+      "correct": 86,
+      "accuracy": 0.86,
+      "accuracy_ci": [
+        0.7786263961619276,
+        0.914737342455351
+      ],
+      "exact_accuracy": 0.86,
+      "flagged_rate": 0.63,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.03699480747600191
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=net_weight_g": {
+      "fields": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "accuracy_ci": [
+        0.9286499658256813,
+        1.0
+      ],
+      "exact_accuracy": 1.0,
+      "flagged_rate": 0.02,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.07135003417431873
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=on_road_price": {
+      "fields": 100,
+      "correct": 91,
+      "accuracy": 0.91,
+      "accuracy_ci": [
+        0.8377362530335634,
+        0.9519280048361151
+      ],
+      "exact_accuracy": 0.91,
+      "flagged_rate": 0.05,
+      "confident_wrong": 6,
+      "confident_wrong_rate": 0.06,
+      "confident_wrong_ci": [
+        0.02778574526665662,
+        0.12476968531222507
+      ],
+      "unflagged_precision": 0.9368421052631579,
+      "evidence_page_agreement": 1.0
+    },
+    "field=pan": {
+      "fields": 150,
+      "correct": 141,
+      "accuracy": 0.94,
+      "accuracy_ci": [
+        0.8899090795570952,
+        0.9681163179946721
+      ],
+      "exact_accuracy": 0.94,
+      "flagged_rate": 0.3333333333333333,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.02497113914571871
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=purity_carat": {
+      "fields": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "accuracy_ci": [
+        0.9286499658256813,
+        1.0
+      ],
+      "exact_accuracy": 1.0,
+      "flagged_rate": 0.0,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.07135003417431873
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=quotation_date": {
+      "fields": 100,
+      "correct": 99,
+      "accuracy": 0.99,
+      "accuracy_ci": [
+        0.9455124752390653,
+        0.9982326134344526
+      ],
+      "exact_accuracy": 0.99,
+      "flagged_rate": 0.04,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.03699480747600191
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "field=requested_amount": {
+      "fields": 150,
+      "correct": 145,
+      "accuracy": 0.9666666666666667,
+      "accuracy_ci": [
+        0.9243471574929044,
+        0.9856797793044249
+      ],
+      "exact_accuracy": 0.9666666666666667,
+      "flagged_rate": 0.2,
+      "confident_wrong": 1,
+      "confident_wrong_rate": 0.006666666666666667,
+      "confident_wrong_ci": [
+        0.0011777710231334546,
+        0.036793752933975674
+      ],
+      "unflagged_precision": 0.9916666666666667,
+      "evidence_page_agreement": 1.0
+    },
+    "field=tenure_months": {
+      "fields": 150,
+      "correct": 149,
+      "accuracy": 0.9933333333333333,
+      "accuracy_ci": [
+        0.9632062470660241,
+        0.9988222289768665
+      ],
+      "exact_accuracy": 0.9933333333333333,
+      "flagged_rate": 0.013333333333333334,
+      "confident_wrong": 0,
+      "confident_wrong_rate": 0.0,
+      "confident_wrong_ci": [
+        0.0,
+        0.02497113914571871
+      ],
+      "unflagged_precision": 1.0,
+      "evidence_page_agreement": 1.0
+    },
+    "handwritten_telugu=no": {
+      "fields": 1304,
+      "correct": 1278,
+      "accuracy": 0.9800613496932515,
+      "accuracy_ci": [
+        0.9709448996140818,
+        0.986357574936353
+      ],
+      "exact_accuracy": 0.9156441717791411,
+      "flagged_rate": 0.11733128834355828,
+      "confident_wrong": 7,
+      "confident_wrong_rate": 0.005368098159509203,
+      "confident_wrong_ci": [
+        0.0026026760411298052,
+        0.011039342992367827
+      ],
+      "unflagged_precision": 0.9939183318853171,
+      "evidence_page_agreement": 1.0
+    },
+    "handwritten_telugu=yes": {
+      "fields": 496,
+      "correct": 468,
+      "accuracy": 0.9435483870967742,
+      "accuracy_ci": [
+        0.919621274342667,
+        0.9606575980040926
+      ],
+      "exact_accuracy": 0.8064516129032258,
+      "flagged_rate": 0.20766129032258066,
+      "confident_wrong": 2,
+      "confident_wrong_rate": 0.004032258064516129,
+      "confident_wrong_ci": [
+        0.001106464800994457,
+        0.014581705211265426
+      ],
+      "unflagged_precision": 0.9949109414758269,
+      "evidence_page_agreement": 1.0
+    }
+  },
+  "truth_sha256": "b1724584fd14c0d9e58ec213cb7429dad7c1d5e5b01b10b4bfb51102fd621c3a"
+}

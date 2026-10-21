@@ -1,0 +1,98 @@
+file_id,item,lakshmi,senior_analyst,final,decided_by,reason
+GF-40030,field:date_of_birth,09-01-1997,69-01-1997,09-01-1997,Srinivas and the Vijayawada team lead,read from the source page
+GF-40109,reason:ADDRESS_STALE,False,True,True,the compliance head,decided against ADDR-AGE (60 days)
+GF-40130,field:requested_amount,57000,"Rs 50,700",57000,Srinivas and the Vijayawada team lead,read from the source page
+GF-40170,field:address,"35-19, Brodipet, Guntur 522002","35-19, Brodipet","35-19, BRODIPET, GUNTUR 522002",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-40170,field:dealer_code,DLR-GNT-011,DLR-GN-T011,DLR-GNT-011,Srinivas and the Vijayawada team lead,read from the source page
+GF-40170,document:proof_of_address,True,False,True,the compliance head,page checked against the checklist
+GF-40170,reason:MISSING:proof_of_address,False,True,False,the compliance head,decided against the checklist
+GF-40284,document:cancelled_cheque,True,False,True,the compliance head,page checked against the checklist
+GF-40284,reason:MISSING:cancelled_cheque,False,True,False,the compliance head,decided against the checklist
+GF-40417,field:pan,None,MVPPM5456S,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40430,reason:PHOTO_UNCLEAR,True,False,False,the compliance head,no signed rule makes this a send-back reason
+GF-40470,field:applicant_name,VENKATA RAMANA UPPALAPATI,VENKATA RAMANA UPAPLAPATI,VENKATA RAMANA UPPALAPATI,Srinivas and the Vijayawada team lead,read from the source page
+GF-40482,field:mobile,88037 00976,8803700967,8803700967,Srinivas and the Vijayawada team lead,read from the source page
+GF-40497,field:pan,None,YTAPA7757H,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40667,document:pan_card,True,False,True,the compliance head,page checked against the checklist
+GF-40667,reason:MISSING:pan_card,False,True,False,the compliance head,decided against the checklist
+GF-40672,field:date_of_birth,06-05-2004,06/50/2004,06-05-2004,Srinivas and the Vijayawada team lead,read from the source page
+GF-40672,document:gold_appraisal,False,True,True,the compliance head,page checked against the checklist
+GF-40672,reason:MISSING:gold_appraisal,True,False,False,the compliance head,decided against the checklist
+GF-40734,field:application_date,26-10-2026,26-10-2626,26-10-2026,Srinivas and the Vijayawada team lead,read from the source page
+GF-40753,field:application_date,02-11-2062,02-11-2026,02-11-2026,Srinivas and the Vijayawada team lead,read from the source page
+GF-40783,field:pan,None,EZNPA9998C,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40810,field:pan,None,FRYPN8672Y,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40878,field:date_of_birth,040-5-2002,04-05-2002,04-05-2002,Srinivas and the Vijayawada team lead,read from the source page
+GF-40878,reason:PHOTO_UNCLEAR,False,True,False,the compliance head,no signed rule makes this a send-back reason
+GF-40880,document:proof_of_identity,True,False,True,the compliance head,page checked against the checklist
+GF-40880,reason:MISSING:proof_of_identity,False,True,False,the compliance head,decided against the checklist
+GF-40895,field:pan,BJPFA2355V,BJFPA2355V,BJFPA2355V,Srinivas and the Vijayawada team lead,read from the source page
+GF-40938,field:address,"11-42, Brodipet, Guntur 522002","11-42, Brodipet","11-42, BRODIPET, GUNTUR 522002",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-40938,reason:PHOTO_UNCLEAR,True,False,False,the compliance head,no signed rule makes this a send-back reason
+GF-41072,field:applicant_name,ANUSHA VPPALAPATI,ANUSHA UPPALAPATI,ANUSHA UPPALAPATI,Srinivas and the Vijayawada team lead,read from the source page
+GF-41089,field:pan,SZXPG593M4,SZXPG5934M,SZXPG5934M,Srinivas and the Vijayawada team lead,read from the source page
+GF-41104,document:nach_mandate,True,False,True,the compliance head,page checked against the checklist
+GF-41104,reason:MISSING:nach_mandate,False,True,False,the compliance head,decided against the checklist
+GF-41129,field:purity_carat,20,26,20,Srinivas and the Vijayawada team lead,read from the source page
+GF-41133,document:field_verification,False,True,True,the compliance head,page checked against the checklist
+GF-41133,reason:MISSING:field_verification,True,False,False,the compliance head,decided against the checklist
+GF-41142,field:requested_amount,90000,90060,90000,Srinivas and the Vijayawada team lead,read from the source page
+GF-41160,reason:PHOTO_UNCLEAR,True,False,False,the compliance head,no signed rule makes this a send-back reason
+GF-41168,reason:PHOTO_UNCLEAR,True,False,False,the compliance head,no signed rule makes this a send-back reason
+GF-41252,document:bank_statement,False,True,True,the compliance head,page checked against the checklist
+GF-41252,reason:MISSING:bank_statement,True,False,False,the compliance head,decided against the checklist
+GF-41334,field:pan,None,PPDPC6882G,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-41490,field:address,"1-30, Gunadala, Vijayawada 520004","1-30, Gunadala","1-30, GUNADALA, VIJAYAWADA 520004",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-41491,field:address,"16-18, Brodipet, Guntur 522002","16-78, Brodipet","16-78, BRODIPET, GUNTUR 522002",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-41512,field:pan,EVYPP9818C,EVYPP9878C,EVYPP9818C,Srinivas and the Vijayawada team lead,read from the source page
+GF-41512,field:tenure_months,78,18,18,Srinivas and the Vijayawada team lead,read from the source page
+GF-41611,field:tenure_months,86,36,36,Srinivas and the Vijayawada team lead,read from the source page
+GF-41638,field:address,"3-48, KPHB Colony, Kukatpally, Hyderabad 500072","3-48, KPHB Colony, Kukatpally, yHderabad 500072","3-48, KPHB COLONY, KUKATPALLY, HYDERABAD 500072",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-41655,field:applicant_name,MADHAVI LRTHA UPPALAPATI,Madhavi Latha Uppalapati,MADHAVI LATHA UPPALAPATI,Srinivas and the Vijayawada team lead,read from the source page
+GF-41697,field:mobile,8351810005,8351180005,8351810005,Srinivas and the Vijayawada team lead,read from the source page
+GF-41700,field:address,"16-77, Gunadala, Vijayawada 520004","16-77, Gunadala","16-77, GUNADALA, VIJAYAWADA 520004",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-41815,field:quotation_date,2-310-2026,23-10-2026,23-10-2026,Srinivas and the Vijayawada team lead,read from the source page
+GF-41869,field:pan,None,KGDPB7068W,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-42016,field:date_of_birth,06-01-2003,06/01/2030,06-01-2003,Srinivas and the Vijayawada team lead,read from the source page
+GF-42025,document:proof_of_identity,False,True,True,the compliance head,page checked against the checklist
+GF-42025,reason:MISSING:proof_of_identity,True,False,False,the compliance head,decided against the checklist
+GF-42216,field:pan,None,CFYPB3225S,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-42216,field:address,"35-14, KPHB Colony, Kukatpally, Hyderabad 500072","35-14, KPHB Colony, Kukatpally","35-14, KPHB COLONY, KUKATPALLY, HYDERABAD 500072",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-42216,field:mobile,8116926235,8116922635,8116922635,Srinivas and the Vijayawada team lead,read from the source page
+GF-42220,field:pan,None,HFZPM7173P,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-42243,document:application_form,False,True,True,the compliance head,page checked against the checklist
+GF-42243,reason:MISSING:application_form,True,False,False,the compliance head,decided against the checklist
+GF-42281,field:dealer_code,DLR-GNT-101,DLR-GNT-011,DLR-GNT-011,Srinivas and the Vijayawada team lead,read from the source page
+GF-42338,field:pan,None,WUHPV4569B,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40033,document:proof_of_identity,False,True,True,the compliance head,page checked against the checklist
+GF-40033,reason:MISSING:proof_of_identity,True,False,False,the compliance head,decided against the checklist
+GF-40235,field:pan,None,DKEPB4764J,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40235,field:address,"42-22, Danavaipeta, Rajahmundry 533103","42-22, Danavaipeta","42-22, DANAVAIPETA, RAJAHMUNDRY 533103",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-40288,field:mobile,9009047668,9009047663,9009047668,Srinivas and the Vijayawada team lead,read from the source page
+GF-40288,reason:PHOTO_UNCLEAR,True,False,False,the compliance head,no signed rule makes this a send-back reason
+GF-40381,field:pan,None,NPHPK2302H,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40465,field:applicant_name,RAVI TEJR YARLAGADDA,RAVI TEJA YARLAGADDA,RAVI TEJA YARLAGADDA,Srinivas and the Vijayawada team lead,read from the source page
+GF-40499,field:pan,JXVPU2399A,JXVPU3299A,JXVPU3299A,Srinivas and the Vijayawada team lead,read from the source page
+GF-40589,field:pan,None,FCZPK2321Y,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40807,field:requested_amount,87000,78000,78000,Srinivas and the Vijayawada team lead,read from the source page
+GF-40824,field:pan,None,TBEPK6933H,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40824,reason:ADDRESS_STALE,False,True,True,the compliance head,decided against ADDR-AGE (60 days)
+GF-40869,field:mobile,7010198685,7010198658,7010198685,Srinivas and the Vijayawada team lead,read from the source page
+GF-40937,field:pan,None,JTAPN3488T,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-40937,document:proof_of_identity,True,False,True,the compliance head,page checked against the checklist
+GF-40937,reason:MISSING:proof_of_identity,False,True,False,the compliance head,decided against the checklist
+GF-41081,field:pan,None,YFXPK3781Z,None,Srinivas and the Vijayawada team lead,labelling guide 4.2: PAN only from the PAN card
+GF-41166,reason:OVER_MARGIN,True,False,True,the compliance head,decided against TW-AMT-MARGIN (90 percent)
+GF-41366,field:requested_amount,541000,"Rs 5,41,006",541000,Srinivas and the Vijayawada team lead,read from the source page
+GF-41438,field:purity_carat,221,22,22,Srinivas and the Vijayawada team lead,read from the source page
+GF-41583,field:application_date,29-10-2026,291-0-2026,29-10-2026,Srinivas and the Vijayawada team lead,read from the source page
+GF-41583,reason:OVER_MARGIN,True,False,True,the compliance head,decided against TW-AMT-MARGIN (90 percent)
+GF-42035,field:applicant_name,RAVI TFJA ALLURI,RAVI TEJA ALLURI,RAVI TEJA ALLURI,Srinivas and the Vijayawada team lead,read from the source page
+GF-42035,field:mobile,66035 75030,0603575030,6603575030,Srinivas and the Vijayawada team lead,read from the source page
+GF-42142,field:address,"8-87, Kothapet, Dilsukhnagar, Hyderabad 500036","8-87, Kothapet, Dilsukhnagar, Hyderabad 500035","8-87, KOTHAPET, DILSUKHNAGAR, HYDERABAD 500035",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-42142,document:nach_mandate,False,True,True,the compliance head,page checked against the checklist
+GF-42142,reason:MISSING:nach_mandate,True,False,False,the compliance head,decided against the checklist
+GF-42146,field:on_road_price,115850,151850,115850,Srinivas and the Vijayawada team lead,read from the source page
+GF-42148,field:requested_amount,212000,"Rs 2,12,060",212000,Srinivas and the Vijayawada team lead,read from the source page
+GF-42353,field:address,"11-119, Danavaipeta, Rajahmundry 533103","11-119, Danavaipeta","11-119, DANAVAIPETA, RAJAHMUNDRY 533103",Srinivas and the Vijayawada team lead,labelling guide 4.1: the full address as on the form
+GF-42353,field:purity_carat,22,221,22,Srinivas and the Vijayawada team lead,read from the source page
