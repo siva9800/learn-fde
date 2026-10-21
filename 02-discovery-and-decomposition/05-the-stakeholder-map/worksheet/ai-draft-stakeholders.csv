@@ -1,0 +1,8 @@
+id,name,category,side,location,power,interest,stops_it_by,must_change,proxy,first_contact_week,their_version,they_want,number_they_would_believe,engagement
+A01,CTO,sponsor,customer,Hyderabad HQ,5,5,funding,no,,0,"loan processing is slow and needs AI","a modern AI platform","turnaround days","weekly steering committee"
+A02,Users (loan officers and analysts),operators,customer,Hyderabad,4,5,none,yes,,4,"loan processing is slow and needs AI","a faster system","turnaround days","training session at launch"
+A03,"Lakshmi, champion",operator and champion,customer,Hyderabad,5,5,none,yes,,0,"loan processing is slow and needs AI","to lead the AI transformation","turnaround days","appointed champion by the CTO; demo in week 4"
+A04,Head of AI,sponsor,customer,Hyderabad HQ,4,5,funding,no,,0,"we need an LLM platform across all 300 branches","a RAG chatbot over all documents","number of branches live","weekly steering committee"
+A05,CISO,blocker,customer,Hyderabad HQ,2,1,none,no,,8,"security sign-off happens at UAT","a completed security checklist","checklist signed","inform at UAT in week 8"
+A06,IT helpdesk,blocker (admin),customer,Hyderabad,1,1,none,no,,6,"raise a ticket","fewer tickets","tickets closed","inform at launch"
+A07,Branch staff,operators,customer,Branches,1,1,none,no,,12,"loan processing is slow and needs AI","a mobile app","app downloads","inform at launch"
