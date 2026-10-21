@@ -76,7 +76,8 @@ weighted.
 
 ## 5. Why loan-file intake and completeness
 
-1. **Frequent and at the core.** About 1,400 new files a month, every one of them through forty
+1. **Frequent and at the core.** About 1,400 new files a month (the 60 percent of Godavari's roughly 2,400 monthly applications that
+   arrive as paper or PDF, per Day 7's inputs inventory), every one of them through forty
    analysts in two cities, in the process that is Godavari's business. It is the largest unit of
    work on the list that the credit-ops team itself does.
 2. **Painful in hours and in rework.** About 2,100 analyst hours a month on intake and completeness
