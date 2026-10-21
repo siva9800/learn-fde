@@ -77,8 +77,8 @@ team builds the medicine. You make it work in the house.
 ## Where the title came from
 
 The title was invented at Palantir, where the forward deployed engineers are called
-"Delta" internally and the product engineers "Echo". For years it was mostly a Palantir
-word.
+"Delta" internally, the deployment strategists who work beside them "Echo", and the product
+engineers "Dev" (Day 1 has the full mapping). For years it was mostly a Palantir word.
 
 Then generative AI changed who needed it. Every company could buy a capable model; very
 few could make it do useful work inside their own systems. The vendors with the best
