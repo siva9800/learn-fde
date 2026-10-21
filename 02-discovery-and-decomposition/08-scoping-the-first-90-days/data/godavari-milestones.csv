@@ -1,0 +1,23 @@
+id,week,weekday,workstream,kind,tags,site,depends_on,direction,hard_by,kaagaz_owner,godavari_owner,coo_line,question
+M01,1,Wed,W5,milestone,security,all,,later,,Kaagaz security lead,CISO,The CISO has told us in writing what her review needs; the longest task has started.,
+M02,1,Thu,W4,milestone,,all,,later,,Kaagaz FDE,IT identity team,"Access to the file share, the core system's test copy and the staff directory is requested.",
+M03,2,Tue,W5,milestone,security,all,M01,later,,Kaagaz security lead,CISO,Our complete answers to the security questionnaire are with the CISO.,
+M04,2,Fri,PLAN,checkpoint,exec,all,M03,later,,Kaagaz FDE,COO,The 90-day plan and the list of what we will not build are signed.,"Is this the problem, and is this the plan you will hold us to?"
+M05,2,Fri,W3,milestone,analyst-event,all,,later,,Kaagaz FDE,Lakshmi and the senior analyst,Thirty real files are labelled by Godavari's own analysts; correct now has a definition.,
+M06,3,Fri,P1,milestone,measurement,all,,later,,Kaagaz FDE,Srinivas and the Vijayawada team lead,"The two-week count of where the nine days go is finished, counted the way the team leads agreed.",
+M07,3,Fri,P2,milestone,,all,M02 M05,later,,Kaagaz FDE,Vijayawada team lead and core-system owner,"Ten real files go from PDF to the core system's test copy, each approved by an analyst, every step timed.",
+M08,4,Fri,P1,checkpoint,exec|compliance,all,M06 M07,later,,Kaagaz FDE,COO,The discovery document is signed with its numbers and its risks.,"Do you commit to a two-branch pilot in December, on these terms and these numbers?"
+M09,4,Fri,W3,milestone,analyst-event,all,M05,later,,Kaagaz FDE,Lakshmi and the senior analyst,The labelled set reaches 100 files; every accuracy claim is measured against it.,
+M10,6,Wed,W2,gate,compliance,all,,later,,Kaagaz FDE,Compliance head,The compliance head has signed the two-wheeler document rules; the system runs exactly what she signed.,
+M11,6,Thu,W5,gate,security,all,M03,later,,Kaagaz security lead,CISO,The CISO approves real files from two branches on the machine inside the Hyderabad building.,
+M12,6,Fri,P3,checkpoint,exec,all,M09 M10 M11,later,,Kaagaz FDE,COO,Go or no-go for the two-branch pilot.,"Is accuracy on your analysts' files at the agreed bar, and are the rules and the security approval signed, so two branches start on Monday?"
+M13,7,Mon,W6,milestone,go-live|analyst-event,all,M12,later,,Kaagaz FDE,Srinivas and the Vijayawada team lead,Kukatpally and Guntur files go through the new review queue; six analysts use it every day.,
+M14,7,Tue,W4,gate,core-change,all,M07,later,2026-12-16,Kaagaz FDE,Core-system owner,"Approved files are written into the live core system with no duplicates, after a month of clean test calls.",
+M15,8,Wed,W5,gate,security,all,M11,later,,Kaagaz security lead,CISO,The security review is passed and the AWS Mumbai environment is approved.,
+M16,8,Thu,W4,milestone,core-change,all,M14 M15,later,,Kaagaz FDE,Core-system owner and Godavari application-support engineer,The system moves from the machine in the building to the approved Mumbai environment; nothing leaves India.,
+M17,10,Fri,P4,milestone,exec|measurement,all,M13,later,,Kaagaz FDE,COO,"Pilot results: turnaround, hours per file and send-backs in two branches, against the November count.",
+M18,11,Wed,W6,milestone,go-live|analyst-event,hyderabad,M16 M17,later,,Kaagaz FDE,Srinivas,All twenty-two Hyderabad analysts work from the new queue.,
+M19,12,Mon,W6,milestone,go-live|analyst-event,vijayawada,M18,later,2027-01-28,Kaagaz FDE,Vijayawada team lead,All eighteen Vijayawada analysts work from the new queue.,
+M20,12,Fri,PLAN,checkpoint,exec,all,M18,earlier,,Kaagaz FDE,COO,"Handoff check: Godavari's people run the system for a week, with us watching.",Can your team run this without us?
+M21,12,Tue,W4,milestone,,all,M16,later,,Kaagaz FDE,Godavari application-support engineer,Godavari's own engineer releases a rule change to the live system without our help.,
+M22,13,Fri,PLAN,checkpoint,exec|compliance,all,M19 M20 M21,later,,Kaagaz engagement lead,COO,"Day 90: forty analysts on the system, the pilot numbers, and what the next 90 days are for.",What do the next 90 days buy you?

@@ -1,0 +1,687 @@
+{
+  "day_1": "2026-10-26",
+  "day_90": "2027-01-23",
+  "workstreams": [
+    {
+      "code": "W4",
+      "name": "Integration: SFTP, tracker, SOAP create with idempotency",
+      "start_week": 1,
+      "end_week": 8,
+      "depends_on": [],
+      "owner": "Kaagaz FDE with core-system owner",
+      "tags": [
+        "core-change"
+      ],
+      "reason": "production writes need the core-system owner's month of clean test calls (week 7) and must land before the 17 December freeze",
+      "changed": true,
+      "kind": "workstream",
+      "start": "2026-10-26",
+      "end": "2026-12-18",
+      "working_days": 40,
+      "blocked": {
+        "Core-system release freeze (last two weeks of the quarter)": 2
+      }
+    },
+    {
+      "code": "W5",
+      "name": "Security review and VPC path",
+      "start_week": 1,
+      "end_week": 8,
+      "depends_on": [],
+      "owner": "Kaagaz security lead with CISO",
+      "tags": [
+        "security"
+      ],
+      "reason": "unchanged; the CISO's eight weeks from the week-1 meeting are outside our control",
+      "changed": false,
+      "kind": "workstream",
+      "start": "2026-10-26",
+      "end": "2026-12-18",
+      "working_days": 40,
+      "blocked": {}
+    },
+    {
+      "code": "W3",
+      "name": "Evals: golden set of 100 to 200 labelled files",
+      "start_week": 1,
+      "end_week": 13,
+      "depends_on": [],
+      "owner": "Kaagaz FDE with two senior analysts",
+      "tags": [
+        "analyst-event"
+      ],
+      "reason": "the golden set reaches 100 files by week 4 and 200 by week 6, then runs as the weekly regression gate until handoff (Day 14); Day 7 counted only the build",
+      "changed": true,
+      "kind": "workstream",
+      "start": "2026-10-26",
+      "end": "2027-01-22",
+      "working_days": 60,
+      "blocked": {
+        "Sankranti week (half the Vijayawada analysts on leave)": 2
+      }
+    },
+    {
+      "code": "W1",
+      "name": "Extraction: pages and fields from scanned PDFs",
+      "start_week": 2,
+      "end_week": 10,
+      "depends_on": [
+        "W3"
+      ],
+      "owner": "Kaagaz FDE",
+      "tags": [],
+      "reason": "Day 7's six weeks cover the two-wheeler slice; weeks 8 to 10 add gold loans and phone photos, and that extension is the first thing to slip",
+      "changed": true,
+      "kind": "workstream",
+      "start": "2026-11-02",
+      "end": "2027-01-01",
+      "working_days": 43,
+      "blocked": {}
+    },
+    {
+      "code": "W2",
+      "name": "Completeness checks: deterministic rules per product",
+      "start_week": 5,
+      "end_week": 7,
+      "depends_on": [],
+      "owner": "Kaagaz FDE with compliance head",
+      "tags": [
+        "compliance"
+      ],
+      "reason": "unchanged; the compliance head's signature is the week-6 gate",
+      "changed": false,
+      "kind": "workstream",
+      "start": "2026-11-23",
+      "end": "2026-12-11",
+      "working_days": 15,
+      "blocked": {}
+    },
+    {
+      "code": "W6",
+      "name": "Enablement: review queue, tracker migration, resubmission",
+      "start_week": 6,
+      "end_week": 13,
+      "depends_on": [
+        "W2",
+        "W4"
+      ],
+      "owner": "credit-ops team lead with FDE",
+      "tags": [
+        "analyst-event",
+        "go-live"
+      ],
+      "reason": "Day 7 stopped enablement at the pilot; it carries the rollout to forty analysts to day 90 (Day 33)",
+      "changed": true,
+      "kind": "workstream",
+      "start": "2026-11-30",
+      "end": "2027-01-22",
+      "working_days": 35,
+      "blocked": {
+        "Month-end disbursement push": 4,
+        "Sankranti week (half the Vijayawada analysts on leave)": 2
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M01",
+      "week": 1,
+      "weekday": "Wed",
+      "workstream": "W5",
+      "kind": "milestone",
+      "tags": [
+        "security"
+      ],
+      "site": "all",
+      "depends_on": [],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz security lead",
+      "godavari_owner": "CISO",
+      "coo_line": "The CISO has told us in writing what her review needs; the longest task has started.",
+      "question": "",
+      "planned": "2026-10-28",
+      "dated": "2026-10-28",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M02",
+      "week": 1,
+      "weekday": "Thu",
+      "workstream": "W4",
+      "kind": "milestone",
+      "tags": [],
+      "site": "all",
+      "depends_on": [],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "IT identity team",
+      "coo_line": "Access to the file share, the core system's test copy and the staff directory is requested.",
+      "question": "",
+      "planned": "2026-10-29",
+      "dated": "2026-10-29",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M03",
+      "week": 2,
+      "weekday": "Tue",
+      "workstream": "W5",
+      "kind": "milestone",
+      "tags": [
+        "security"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M01"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz security lead",
+      "godavari_owner": "CISO",
+      "coo_line": "Our complete answers to the security questionnaire are with the CISO.",
+      "question": "",
+      "planned": "2026-11-03",
+      "dated": "2026-11-03",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M04",
+      "week": 2,
+      "weekday": "Fri",
+      "workstream": "PLAN",
+      "kind": "checkpoint",
+      "tags": [
+        "exec"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M03"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "COO",
+      "coo_line": "The 90-day plan and the list of what we will not build are signed.",
+      "question": "Is this the problem, and is this the plan you will hold us to?",
+      "planned": "2026-11-06",
+      "dated": "2026-11-06",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M05",
+      "week": 2,
+      "weekday": "Fri",
+      "workstream": "W3",
+      "kind": "milestone",
+      "tags": [
+        "analyst-event"
+      ],
+      "site": "all",
+      "depends_on": [],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Lakshmi and the senior analyst",
+      "coo_line": "Thirty real files are labelled by Godavari's own analysts; correct now has a definition.",
+      "question": "",
+      "planned": "2026-11-06",
+      "dated": "2026-11-06",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M06",
+      "week": 3,
+      "weekday": "Fri",
+      "workstream": "P1",
+      "kind": "milestone",
+      "tags": [
+        "measurement"
+      ],
+      "site": "all",
+      "depends_on": [],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Srinivas and the Vijayawada team lead",
+      "coo_line": "The two-week count of where the nine days go is finished, counted the way the team leads agreed.",
+      "question": "",
+      "planned": "2026-11-13",
+      "dated": "2026-11-13",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M07",
+      "week": 3,
+      "weekday": "Fri",
+      "workstream": "P2",
+      "kind": "milestone",
+      "tags": [],
+      "site": "all",
+      "depends_on": [
+        "M02",
+        "M05"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Vijayawada team lead and core-system owner",
+      "coo_line": "Ten real files go from PDF to the core system's test copy, each approved by an analyst, every step timed.",
+      "question": "",
+      "planned": "2026-11-13",
+      "dated": "2026-11-13",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M08",
+      "week": 4,
+      "weekday": "Fri",
+      "workstream": "P1",
+      "kind": "checkpoint",
+      "tags": [
+        "compliance",
+        "exec"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M06",
+        "M07"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "COO",
+      "coo_line": "The discovery document is signed with its numbers and its risks.",
+      "question": "Do you commit to a two-branch pilot in December, on these terms and these numbers?",
+      "planned": "2026-11-20",
+      "dated": "2026-11-20",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M09",
+      "week": 4,
+      "weekday": "Fri",
+      "workstream": "W3",
+      "kind": "milestone",
+      "tags": [
+        "analyst-event"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M05"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Lakshmi and the senior analyst",
+      "coo_line": "The labelled set reaches 100 files; every accuracy claim is measured against it.",
+      "question": "",
+      "planned": "2026-11-20",
+      "dated": "2026-11-20",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M10",
+      "week": 6,
+      "weekday": "Wed",
+      "workstream": "W2",
+      "kind": "gate",
+      "tags": [
+        "compliance"
+      ],
+      "site": "all",
+      "depends_on": [],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Compliance head",
+      "coo_line": "The compliance head has signed the two-wheeler document rules; the system runs exactly what she signed.",
+      "question": "",
+      "planned": "2026-12-02",
+      "dated": "2026-12-02",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M11",
+      "week": 6,
+      "weekday": "Thu",
+      "workstream": "W5",
+      "kind": "gate",
+      "tags": [
+        "security"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M03"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz security lead",
+      "godavari_owner": "CISO",
+      "coo_line": "The CISO approves real files from two branches on the machine inside the Hyderabad building.",
+      "question": "",
+      "planned": "2026-12-03",
+      "dated": "2026-12-03",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M12",
+      "week": 6,
+      "weekday": "Fri",
+      "workstream": "P3",
+      "kind": "checkpoint",
+      "tags": [
+        "exec"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M09",
+        "M10",
+        "M11"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "COO",
+      "coo_line": "Go or no-go for the two-branch pilot.",
+      "question": "Is accuracy on your analysts' files at the agreed bar, and are the rules and the security approval signed, so two branches start on Monday?",
+      "planned": "2026-12-04",
+      "dated": "2026-12-04",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M13",
+      "week": 7,
+      "weekday": "Mon",
+      "workstream": "W6",
+      "kind": "milestone",
+      "tags": [
+        "analyst-event",
+        "go-live"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M12"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Srinivas and the Vijayawada team lead",
+      "coo_line": "Kukatpally and Guntur files go through the new review queue; six analysts use it every day.",
+      "question": "",
+      "planned": "2026-12-07",
+      "dated": "2026-12-07",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M14",
+      "week": 7,
+      "weekday": "Tue",
+      "workstream": "W4",
+      "kind": "gate",
+      "tags": [
+        "core-change"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M07"
+      ],
+      "direction": "later",
+      "hard_by": "2026-12-16",
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Core-system owner",
+      "coo_line": "Approved files are written into the live core system with no duplicates, after a month of clean test calls.",
+      "question": "",
+      "planned": "2026-12-08",
+      "dated": "2026-12-08",
+      "moved_by": [],
+      "buffer_days": 6,
+      "problems": []
+    },
+    {
+      "id": "M15",
+      "week": 8,
+      "weekday": "Wed",
+      "workstream": "W5",
+      "kind": "gate",
+      "tags": [
+        "security"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M11"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz security lead",
+      "godavari_owner": "CISO",
+      "coo_line": "The security review is passed and the AWS Mumbai environment is approved.",
+      "question": "",
+      "planned": "2026-12-16",
+      "dated": "2026-12-16",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M16",
+      "week": 8,
+      "weekday": "Thu",
+      "workstream": "W4",
+      "kind": "milestone",
+      "tags": [
+        "core-change"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M14",
+        "M15"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Core-system owner and Godavari application-support engineer",
+      "coo_line": "The system moves from the machine in the building to the approved Mumbai environment; nothing leaves India.",
+      "question": "",
+      "planned": "2026-12-17",
+      "dated": "2027-01-04",
+      "moved_by": [
+        "Core-system release freeze (last two weeks of the quarter)",
+        "Christmas",
+        "New Year's Day (Godavari HQ closed)"
+      ],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M17",
+      "week": 10,
+      "weekday": "Fri",
+      "workstream": "P4",
+      "kind": "milestone",
+      "tags": [
+        "exec",
+        "measurement"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M13"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "COO",
+      "coo_line": "Pilot results: turnaround, hours per file and send-backs in two branches, against the November count.",
+      "question": "",
+      "planned": "2027-01-01",
+      "dated": "2027-01-04",
+      "moved_by": [
+        "New Year's Day (Godavari HQ closed)"
+      ],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M18",
+      "week": 11,
+      "weekday": "Wed",
+      "workstream": "W6",
+      "kind": "milestone",
+      "tags": [
+        "analyst-event",
+        "go-live"
+      ],
+      "site": "hyderabad",
+      "depends_on": [
+        "M16",
+        "M17"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Srinivas",
+      "coo_line": "All twenty-two Hyderabad analysts work from the new queue.",
+      "question": "",
+      "planned": "2027-01-06",
+      "dated": "2027-01-06",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M19",
+      "week": 12,
+      "weekday": "Mon",
+      "workstream": "W6",
+      "kind": "milestone",
+      "tags": [
+        "analyst-event",
+        "go-live"
+      ],
+      "site": "vijayawada",
+      "depends_on": [
+        "M18"
+      ],
+      "direction": "later",
+      "hard_by": "2027-01-28",
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Vijayawada team lead",
+      "coo_line": "All eighteen Vijayawada analysts work from the new queue.",
+      "question": "",
+      "planned": "2027-01-11",
+      "dated": "2027-01-18",
+      "moved_by": [
+        "Sankranti week (half the Vijayawada analysts on leave)",
+        "Bhogi, Sankranti, Kanuma (to confirm against the 2027 notifications)"
+      ],
+      "buffer_days": 7,
+      "problems": []
+    },
+    {
+      "id": "M20",
+      "week": 12,
+      "weekday": "Fri",
+      "workstream": "PLAN",
+      "kind": "checkpoint",
+      "tags": [
+        "exec"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M18"
+      ],
+      "direction": "earlier",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "COO",
+      "coo_line": "Handoff check: Godavari's people run the system for a week, with us watching.",
+      "question": "Can your team run this without us?",
+      "planned": "2027-01-15",
+      "dated": "2027-01-12",
+      "moved_by": [
+        "Bhogi, Sankranti, Kanuma (to confirm against the 2027 notifications)"
+      ],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M21",
+      "week": 12,
+      "weekday": "Tue",
+      "workstream": "W4",
+      "kind": "milestone",
+      "tags": [],
+      "site": "all",
+      "depends_on": [
+        "M16"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz FDE",
+      "godavari_owner": "Godavari application-support engineer",
+      "coo_line": "Godavari's own engineer releases a rule change to the live system without our help.",
+      "question": "",
+      "planned": "2027-01-12",
+      "dated": "2027-01-12",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    },
+    {
+      "id": "M22",
+      "week": 13,
+      "weekday": "Fri",
+      "workstream": "PLAN",
+      "kind": "checkpoint",
+      "tags": [
+        "compliance",
+        "exec"
+      ],
+      "site": "all",
+      "depends_on": [
+        "M19",
+        "M20",
+        "M21"
+      ],
+      "direction": "later",
+      "hard_by": null,
+      "kaagaz_owner": "Kaagaz engagement lead",
+      "godavari_owner": "COO",
+      "coo_line": "Day 90: forty analysts on the system, the pilot numbers, and what the next 90 days are for.",
+      "question": "What do the next 90 days buy you?",
+      "planned": "2027-01-22",
+      "dated": "2027-01-22",
+      "moved_by": [],
+      "buffer_days": null,
+      "problems": []
+    }
+  ],
+  "findings": []
+}

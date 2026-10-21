@@ -1,0 +1,12 @@
+kind,code,name,start_week,end_week,tags,site,reason
+workstream,W1,,2,10,,all,"Day 7's six weeks cover the two-wheeler slice; weeks 8 to 10 add gold loans and phone photos, and that extension is the first thing to slip"
+workstream,W2,,,,compliance,all,unchanged; the compliance head's signature is the week-6 gate
+workstream,W3,,1,13,analyst-event,all,"the golden set reaches 100 files by week 4 and 200 by week 6, then runs as the weekly regression gate until handoff (Day 14); Day 7 counted only the build"
+workstream,W4,,1,8,core-change,all,production writes need the core-system owner's month of clean test calls (week 7) and must land before the 17 December freeze
+workstream,W5,,,,security,all,unchanged; the CISO's eight weeks from the week-1 meeting are outside our control
+workstream,W6,,6,13,analyst-event|go-live,all,Day 7 stopped enablement at the pilot; it carries the rollout to forty analysts to day 90 (Day 33)
+phase,P1,Discovery,1,4,,all,access and reality; interviews and shadowing; the baseline count; the readout
+phase,P2,Walking skeleton,1,3,,all,"one product, one branch, every layer thin (Day 7 step 5; shipped on Day 20)"
+phase,P3,Prototype,3,6,,all,the skeleton widened and measured against the golden set
+phase,P4,Pilot (two branches),7,10,,all,Kukatpally and Guntur; real files; six analysts
+phase,P5,Rollout and handoff,11,13,,all,"forty analysts; Godavari's engineers run it; the 12-week bar (Day 28)"

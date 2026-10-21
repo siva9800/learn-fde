@@ -1,0 +1,9 @@
+code,K:FDE,K:security lead,K:engagement lead,G:COO,G:CISO,G:compliance head,G:core-system owner,G:IT identity team,G:credit-ops team leads,G:eval owners,G:app-support engineer
+W1,AR,,I,I,,C,,,,C,I
+W2,R,,,I,,A,,,C,C,I
+W3,R,,,I,,C,,,C,AR,I
+W4,AR,,,,C,,R,R,,,R
+W5,C,R,I,I,A,C,,R,,,I
+W6,R,,,I,,,,,AR,C,I
+PLAN,R,,C,A,C,C,I,,R,I,I
+RUN,C,,I,I,C,,C,,I,,AR
