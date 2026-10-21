@@ -1,0 +1,18 @@
+Thu 26 Nov 09:00  45 files from Kukatpally and Guntur received
+Thu 26 Nov 09:00  CRASH at mid_drafting; a new worker opens the same store and recovers
+Thu 26 Nov 09:00    resumed 37 unfinished run(s); mid-step: GF-25047 from DRAFTING; the other 36 had not started their step
+Thu 26 Nov 10:00  lakshmi rejected SB-GF-25059-c0: she will phone the branch herself
+Thu 26 Nov 10:00  lakshmi's edit of SB-GF-25074-c0 refused: the body carries an email address or phone number; recipients and contacts come from the directory
+Thu 26 Nov 10:00  lakshmi rejected SB-GF-25197-c0: she will phone the branch herself
+Thu 26 Nov 10:00  CRASH at after_send_before_record; a new worker opens the same store and recovers
+Thu 26 Nov 10:00    resumed 1 unfinished run(s); mid-step: GF-25175 from SENDING; the other 0 had not started their step
+Thu 26 Nov 10:30  CRASH at after_tracker_before_transition; a new worker opens the same store and recovers
+Thu 26 Nov 10:30    resumed 5 unfinished run(s); mid-step: GF-25060 from SENDING, GF-25073 from SENDING, GF-25109 from SENDING, GF-25139 from SENDING, GF-25177 from SENDING; the other 0 had not started their step
+Thu 26 Nov 11:30  CRASH at after_core_write_before_record; a new worker opens the same store and recovers
+Thu 26 Nov 11:30    resumed 23 unfinished run(s); mid-step: GF-25003 from PUSHING, GF-25079 from SENDING; the other 21 had not started their step
+Thu 26 Nov 14:30  srinivas (team lead) approved SB-GF-25080-c0 after escalation
+Thu 26 Nov 14:30  vjw.team.lead (team lead) approved SB-GF-25087-c0 after escalation
+Thu 26 Nov 14:30  srinivas (team lead) approved SB-GF-25098-c0 after escalation
+Thu 26 Nov 14:30  srinivas (team lead) approved SB-GF-25121-c0 after escalation
+Thu 26 Nov 14:30  vjw.team.lead (team lead) approved SB-GF-25157-c0 after escalation
+Fri 27 Nov 09:30  GF-25058: the same resubmission uploaded twice; second upload: duplicate
