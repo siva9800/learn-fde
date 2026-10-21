@@ -1,0 +1,17 @@
+# Day 19 · tested on Python 3.14.3 (Windows 11), 21 October 2026. Needs Python 3.12 or newer.
+# The observability layer uses the standard library (sqlite3, html, json). These pins are for the chapters it imports
+# by path: Pydantic for Day 12's client, Jinja2 for Day 13's registry and Day 18's review package, pytest for the tests.
+# The same pins as Days 12 to 18, so one environment runs every chapter. No network after install, no API key.
+pydantic==2.12.5
+pydantic_core==2.41.5
+annotated-types==0.8.0
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+jinja2==3.1.6
+markupsafe==3.0.4
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+colorama==0.4.6 ; sys_platform == "win32"
